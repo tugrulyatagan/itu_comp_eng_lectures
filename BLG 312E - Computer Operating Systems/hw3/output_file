@@ -1,0 +1,22 @@
+Cashier 3: Type 2 is ordered
+Cashier 1: Type 1 is ordered
+Cashier 2: Type 3 is ordered
+Cashier 3: Type 3 is ordered
+Cashier 1: Type 1 is ordered
+Server  1: Type 1 is ready to be served
+Cashier 2: Type 1 is ordered
+Server  3: Type 2 is ready to be served
+Cashier 1: Type 2 is ordered
+Server  1: Type 1 is ready to be served
+Cashier 2: Type 2 is ordered
+Server  2: Type 3 is ready to be served
+Cashier 1: Type 1 is ordered
+Server  2: Type 1 is ready to be served
+Server  1: Type 2 is ready to be served
+Cashier 1: Type 3 is ordered
+Server  3: Type 3 is ready to be served
+Server  1: Type 1 is ready to be served
+Server  2: Type 2 is ready to be served
+Server  1: Type 3 is ready to be served
+
+Parent: All executions are completed. Exiting.
