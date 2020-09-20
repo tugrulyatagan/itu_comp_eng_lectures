@@ -1,0 +1,151 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<ctype.h>
+#include<stdlib.h>
+
+#define N 64
+
+#define LP 10
+#define RP 20
+#define OPERATOR 30
+#define OPERAND 40
+
+// Left parentheses precedence. Minimum of all
+#define LPP 0
+
+// Addition Subtraction precedence. Minimum among all operator precedence
+#define AP 1
+#define SP AP
+
+// Multiplication divisor precedence.
+#define MP 2
+#define DP MP
+
+// Remainder precedence.
+#define REMP 2
+
+#define NONE 9
+
+static char infix[N+1],stack[N],postfix[N+1];
+static int top;
+
+void infixtopostfix(void);     /** POSTFIX CONVERSION FUNCTION **/
+int gettype(char);             /** TYPE OF EXPRESSION GENERATOR **/
+void push(char);               /** PUSH FUNCTION **/
+char pop(void);                /** POP FUNCTION **/
+int getprec(char);             /** PRECEDENCE CHECKER FUNCTION **/
+
+void main()
+{
+    char ch;
+    do
+    {
+        top=-1;
+        printf("\nEnter an infix expression\n");
+        fflush(stdin);
+        gets(infix);
+        infixtopostfix();
+        printf("\ninfix = %s\npost fix =%s\n",infix,postfix);
+        printf("\nDo you wish to continue\n");
+        ch=getche();
+    }while(ch=='Y' || ch=='y');
+}
+
+void infixtopostfix(void)
+{
+    int i,p,l,type,prec;
+    char next;
+    i=p=0;
+    l=strlen(infix);
+    while(i<l)
+    {
+        type=gettype(infix[i]);
+        switch(type)
+        {
+        case LP:
+            push(infix[i]);
+            break;
+        case RP:
+            while((next=pop())!='(')
+                postfix[p++]=next;
+            break;
+        case OPERAND:
+            postfix[p++]=infix[i];
+            break;
+        case OPERATOR:
+            prec=getprec(infix[i]);
+            while(top>-1 && prec <= getprec(stack[top]))
+                postfix[p++]=pop();
+            push(infix[i]);
+            break;
+        }
+        i++;
+    }
+    while(top>-1)
+        postfix[p++]=pop();
+    postfix[p]='\0';
+}
+
+
+int gettype(char sym)
+{
+    switch(sym)
+    {
+    case '(':
+        return(LP);
+    case ')':
+        return(RP);
+    case '+':
+    case '-':
+    case '*':
+    case '/':
+    case '%':
+        return(OPERATOR);
+    default :
+        return(OPERAND);
+    }
+}
+
+void push(char sym)
+{
+    if(top>N)
+    {
+        printf("\nStack is full\n");
+        exit(0);
+    }
+    else
+        stack[++top]=sym;
+}
+
+char pop(void)
+{
+    if(top<=-1)
+    {
+        printf("\nStack is empty\n");
+        exit(0);
+    }
+    else
+        return(stack[top--]);
+}
+
+int getprec(char sym)
+{
+    switch(sym)
+    {
+    case '(':
+        return(LPP);
+    case '+':
+        return(AP);
+    case '-':
+        return(SP);
+    case '*':
+        return(MP);
+    case '/':
+        return(DP);
+    case '%':
+        return(REMP);
+    default :
+        return(NONE);
+    }
+}

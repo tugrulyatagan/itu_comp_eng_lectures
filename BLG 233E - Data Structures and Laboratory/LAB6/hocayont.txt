@@ -1,0 +1,19 @@
+	for(int infixCount=0; infixCount < sizeof(infix); infixCount++){
+		if(!check_precedence(infix[infixCount]))
+			postfix[postfixCount++] = infix[infixCount];
+		else if(check_precedence(infix[infixCount])){
+			if (s.isempty() || (infix[infixCount] == '('))
+				s.push(infix[infixCount]);
+			else if (!s.isempty()){
+				if (check_precedence(s.head->data) > check_precedence(infix[infixCount]))
+					postfix[postfixCount++] = s.pop();
+				else
+					s.push(infix[infixCount]);
+			}
+			else if (infix[infixCount] == ')')
+				while(!(s.head->data == '('))
+					postfix[postfixCount++] = s.pop();
+		}
+	}
+	while(!s.isempty())
+		postfix[postfixCount++] = s.pop();

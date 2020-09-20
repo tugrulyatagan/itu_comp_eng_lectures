@@ -1,0 +1,48 @@
+Serial ATA (SATA) is a computer bus interface for connecting host bus adapters to mass storage devices such as hard disk drives and optical drives. Serial ATA was designed to replace the older AT Attachment standard (ATA; later referred to as Parallel ATA or PATA), offering several advantages over the older interface: reduced cable size and cost (seven conductors instead of 40), native hot swapping, faster data transfer through higher signalling rates, and more efficient transfer through an (optional) I/O queuing protocol.
+SATA host adapters and devices communicate via a high-speed serial cable over two pairs of conductors. In contrast, parallel ATA (the redesignation for the legacy ATA specifications) used a 16-bit wide data bus with many additional support and control signals, all operating at much lower frequency. To ensure backward compatibility with legacy ATA software and applications, SATA uses the same basic ATA and ATAPI command-set as legacy ATA devices.
+SATA has replaced parallel ATA in consumer desktop and laptop computers, and has largely replaced PATA in new embedded applications. SATA's market share in the desktop PC market was 99% in 2008.[2] PATA remains widely used in industrial and embedded applications that use CompactFlash storage, even though the new CFast standard is based on SATA.[3][4]
+Serial ATA industry compatibility specifications originate from The Serial ATA International Organization (aka. SATA-IO, serialata.org). The SATA-IO group collaboratively creates, reviews, ratifies, and publishes the interoperability specifications, the test cases, and plug-fests. As with many other industry compatibility standards, the SATA content ownership is transferred to other industry bodies: primarily the INCITS T13 subcommittee ATA, the INCITS T10 subcommittee (SCSI); a subgroup of T10 responsible for Serial Attached SCSI (SAS). The complete specification from SATA-IO.[5] The remainder of this article will try to use the terminology and specifications of SATA-IO.
+Features
+[edit]Hotplug
+The Serial ATA Spec includes logic for SATA device hotplugging. Devices and motherboards that meet the interoperability specification are capable of hot plugging.
+[edit]Advanced Host Controller Interface
+Advanced Host Controller Interface (AHCI) is an open host controller interface published and used by Intel, which has become a de facto standard. It allows the use of advanced features of SATA such as hotplug and native command queuing (NCQ). If AHCI is not enabled by the motherboard and chipset, SATA controllers typically operate in "IDE emulation" mode, which does not allow features of devices to be accessed if the ATA/IDE standard does not support them.
+Windows device drivers that are labeled as SATA are often running in IDE emulation mode unless they explicitly state that they are AHCI mode, in RAID mode, or a mode provided by a proprietary driver and command set that was designed to allow access to SATA's advanced features before AHCI became popular. Modern versions of Microsoft Windows, Mac OS X, FreeBSD, Linux with version 2.6.19 onward,[6] as well as Solaris and OpenSolaris, include support for AHCI, but older operating systems such as Windows XP do not. Even in those instances, a proprietary driver may have been created for a specific chipset, such as Intel's.[7]
+[edit]Revisions
+[edit]SATA revision 1.0 - 1.5 Gbit/s - 150 MB/s
+Revision 1.0a was released on January 7, 2003. First-generation SATA interfaces, now known as SATA 1.5 Gbit/s, communicate at a rate of 1.5 Gbit/s, and do not support Native Command Queuing (NCQ). Taking 8b/10b encoding overhead into account, they have an actual uncoded transfer rate of 1.2 Gbit/s (150 MB/s). The theoretical burst throughput of SATA 1.5 Gbit/s is similar to that of PATA/133, but newer SATA devices offer enhancements such as NCQ, which improve performance in a multitasking environment.
+During the initial period after SATA 1.5 Gbit/s finalization, adapter and drive manufacturers used a "bridge chip" to convert existing PATA designs for use with the SATA interface.[citation needed] Bridged drives have a SATA connector, may include either or both kinds of power connectors, and, in general, perform identically to their PATA equivalents. Most lack support for some SATA-specific features such as NCQ. Native SATA products quickly eclipsed bridged products with the introduction of the second generation of SATA drives.[citation needed]
+As of April 2010 the fastest 10,000 RPM SATA mechanical hard disk drives could transfer data at maximum (not average) rates of up to 157 MB/s,[8] which is beyond the capabilities of the older PATA/133 specification and also exceeds a SATA 1.5 Gbit/s link.
+[edit]SATA revision 2.0 - 3 Gbit/s - 300 MB/s
+Second generation SATA interfaces run with a native transfer rate of 3.0 Gbit/s, and taking 8b/10b encoding into account, the maximum uncoded transfer rate is 2.4 Gbit/s (300 MB/s). The theoretical burst throughput of SATA 3.0 Gbit/s is double that of SATA revision 1.0.
+All SATA data cables meeting the SATA spec are rated for 3.0 Gbit/s and will handle current mechanical drives without any loss of sustained and burst data transfer performance. However, high-performance flash drives can exceed the SATA 3 Gbit/s transfer rate; this is addressed with the SATA 6 Gbit/s interoperability standard.
+SATA 3 Gbit/s is backward compatible with SATA 1.5 Gbit/s.[9]
+[edit]SATA revision 3.0 - 6 Gbit/s - 600 MB/s
+Serial ATA International Organization presented the draft specification of SATA 6 Gbit/s physical layer in July 2008,[10] and ratified its physical layer specification on August 18, 2008.[11] The full 3.0 standard was released on May 27, 2009.[12] It runs with a native transfer rate of 6.0 Gbit/s, and taking 8b/10b encoding into account, the maximum uncoded transfer rate is 4.8 Gbit/s (600 MB/s). The theoretical burst throughput of SATA 6.0 Gbit/s is double that of SATA revision 2.0. The 3.0 specification contains the following changes:
+6 Gbit/s for scalable performance
+Continued compatibility with SAS, including SAS 6 Gbit/s. "A SAS domain may support attachment to and control of unmodified SATA devices connected directly into the SAS domain using the Serial ATA Tunneled Protocol (STP)" from the SATA_Revision_3_0_Gold specification.
+Isochronous Native Command Queuing (NCQ) streaming command to enable isochronous quality of service data transfers for streaming digital content applications.
+An NCQ Management feature that helps optimize performance by enabling host processing and management of outstanding NCQ commands.
+Improved power management capabilities.
+A small low insertion force (LIF) connector for more compact 1.8-inch storage devices.
+A connector designed to accommodate 7 mm optical disk drives for thinner and lighter notebooks.
+Alignment with the INCITS ATA8-ACS standard.
+In general, the enhancements are aimed at improving quality of service for video streaming and high-priority interrupts. In addition, the standard continues to support distances up to one meter. The newer speeds may require higher power consumption for supporting chips, although improved process technologies and power management techniques may mitigate this. The later specification can use existing SATA cables and connectors, although it was reported in 2008 that some OEMs were expected to upgrade host connectors for the higher speeds.[13]
+The later standard is backwards compatible with SATA 3 Gbit/s.[9]
+[edit]SATA revision 3.1
+New:[14]
+mSATA, SATA for solid-state drives in mobile computing devices, a PCI Express Mini Card-like connector which is electrically SATA[15]
+Zero-power optical disk drive, idle SATA optical drive draws no power
+Queued TRIM Command, improves solid-state drive performance
+Required Link Power Management, reduces overall system power demand of several SATA devices
+Hardware Control Features, enable host identification of device capabilities
+Universal Storage Module, a new standard for cableless plug-in (slot) powered storage for consumer electronics devices[16]
+[edit]SATA revision 3.2
+SATA Express uses SATA software protocols over the PCIe hardware interface to increase SATA transfer speeds up to 8Gb/s or 16Gb/s.[17][18]
+µSSD (micro SSD) introduces a ball grid array electrical interface for miniaturized, embedded SATA storage.[19]
+[edit]Cables, connectors, and ports
+Connectors and cables present the most visible differences between SATA and parallel ATA drives. Unlike PATA, the same connectors are used on 3.5-inch (89 mm) SATA hard disks for desktop or server computers and 2.5-inch (64 mm) disks for portable or small computers.
+Standard SATA connectors for both data and power have a conductor pitch of 1.27 mm (0.050").
+A smaller mini-SATA or mSATA connector is used by smaller devices such as 1.8" SATA drives, some DVD and Blu-ray drives, and mini SSDs.[20]
+A special eSATA connector is specified for external devices, and an optionally implemented provision for clips to hold internal connectors firmly in place. SATA drives may be plugged into SAS controllers and communicate on the same physical cable as native SAS disks, but SATA controllers cannot handle SAS disks.
+Female SATA ports (on motherboards for example) are intended to be used with SATA data cables that have locks or clips to reduce the chance of accidental unplugging. Some SATA cables have right-angled connectors to ease the connection of devices to circuit boards.

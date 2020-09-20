@@ -1,0 +1,30 @@
+Ali 1910 Male 0 0
+Berna 1935 Female 1 0
+Cem 1937 Male 2 0
+Deniz 1940 Male 3 0
+Ceyda 1962 Female 4 1
+Ahmet 1965 Male 5 1
+Hasan 1970 Male 6 2
+Omer 1963 Male 7 3
+Aysegul 1968 Female 8 3
+Ziya 1970 Male 9 3
+Mustafa 1982 Male 10 4
+Emre 1985 Male 11 4
+Zafer 1986 Male 12 6
+Can 1987 Male 13 6
+Burak 1986 Male 14 7
+Asli 1984 Female 15 8
+Sibel 1984 Female 16 9
+Meral 2010 Female 17 11
+Neval 2012 Female 18 11
+
+spouse Fatma 0 1913
+spouse Tacettin 1 1933
+spouse Sinem 2 1940
+spouse Ece 3 1941
+spouse Ibrahim 4 1960
+spouse Gozde 6 1971
+spouse Hatice 7 1965
+spouse Recep 8 1965
+spouse Burcu 9 1972
+spouse Bahar 11 1986

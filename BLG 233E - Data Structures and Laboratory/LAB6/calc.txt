@@ -1,0 +1,95 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+
+#define N 100
+
+void push(float,float **);
+void pop(float **);
+
+/**********************************************************/
+/*****  Evaluation of generalised postfix expression  *****/
+/*****       inputed as floating point numbers        *****/
+/**********************************************************/
+
+void main()
+{
+    int var,i,j;
+    float stack[N];
+    float *top;
+    float num[N],res;
+    char pfix[N],ch;
+    do
+    {
+        j=0;
+        top=stack;
+        do
+        {
+            printf("\nEnter the total number of variables you will use\n");
+            scanf("%d",&var);
+            if(var>26)
+                printf("\nMaximum 26 variables\n");
+        }while(var>26);
+        printf("\nAssign values to each of them\n");
+        for(i=0;i<var;i++)
+        {
+            printf("\nAssign value to %c\t",('A'+i));
+            scanf("%f",&num[i]);
+        }
+        printf("\nEnter a postfix expression using above variables\n");
+        for(i=0;(pfix[i]=getche())!=13;i++)
+        {
+            if(islower(pfix[i])!=NULL)
+            {
+                pfix[i]=toupper(pfix[i]);
+                printf("\b%c",pfix[i]);
+            }
+        }
+        pfix[i]='\0';
+        for(i=0;pfix[i]!='\0';i++)
+        {
+            if(isalpha(pfix[i])!=NULL)
+                push(num[j++],&top);
+            else
+            {
+                pop(&top);
+                pop(&top);
+                if(pfix[i]=='+')
+                {
+                    res=*top+*(top+1);
+                    push(res,&top);
+                }
+                else if(pfix[i]=='-')
+                {
+                    res=*top-*(top+1);
+                    push(res,&top);
+                }
+                else if(pfix[i]=='*')
+                {
+                    res=*top**(top+1);
+                    push(res,&top);
+                }
+                else if(pfix[i]=='/')
+                {
+                    res=*top/(*(top+1));
+                    push(res,&top);
+                }
+            }
+        }
+        printf("\nResult is %g\n",stack[0]);
+        printf("\nDo you wish to continue[y/n]\n");
+        ch=getche();
+    }while(ch=='Y' || ch=='y');
+    getch();
+}
+
+void push(float num,float **top)
+{
+    *(*top)=num;
+    (*top)++;
+}
+
+void pop(float **top)
+{
+    (*top)--;
+}
