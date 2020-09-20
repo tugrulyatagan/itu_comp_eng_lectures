@@ -1,0 +1,12 @@
+- Computer architecture:
+--- Computer organization, microarchitecture, instruction set architecture
+--- ARM, Thumb, x86, MIPS
+- Hardware:
+--- FPGA, digital design, RTL design
+--- Verilog, Altera, Xilinx
+- Programming languages:
+--- C, C++, Python
+- Linux:
+--- Kernel programming, system programming
+- Software tools:
+--- Xilinx ISE, Altera Quartus, Eclipse, GNU Emacs
