@@ -1,0 +1,1314 @@
+PLPL
+
+Language Definition
+
+1  The Logic Language
+
+PLPL is a logic language used to simplify the design and
+definition of Boolean logic functions.  These functions can be
+described using logic equations with Boolean operators in
+canonical or standard sum-of-product form, or through high-
+level language constructs such as IF-THEN-ELSE and CASE.
+
+1.1  Language Elements
+
+The three main elements in the PLPL language are: keywords,
+punctuation marks (or operators), and user-defined elements.
+
+1.1.1  Keywords
+
+The following list includes the keywords that are used by the
+PLC compiler.  Note that either uppercase or lowercase letters
+can be used for all keywords.
+
+BEGIN     DEVICE         END       PRESET
+CASE      ELSE           IF        RESET
+DEFINE    ENABLE         PIN       THEN
+
+These keywords should not be used as variables or constant
+names.
+
+1.1.2  Punctuation Marks and Operators
+
+Table 1 lists and defines the symbols that are interpreted in
+the PLC language.
+
+Symbol         Description                        Example
+
+
++ plus         Boolean OR Operators	          C = A+B
+
+* asterisk     Boolean AND operator               C = A*B
+
+% percent      Boolean XOR operator               C = A%B
+
+() parentheses Operators to control logic evaluation
+                                                  C = A*(B+E)
+                                                  is not the same as:
+                                                  C = A*B+E
+
+/ backslash    Boolean complement operator        C =/A
+
+= equal        Assignment operator                C = A
+
+" " quotation  Enclose comments.  Improves        "end of statement"
+               readability of the design file and
+               documents your design.  Comments
+               can be placed anywhere in a PLPL
+               file, but can't be nested.
+
+; semicolon    Statement terminator.  You must
+               include a semicolon at the end
+               of each statement.
+
+: colon        Indicates a range of values.       0:1023
+
+' apostrophe   Concatenates values and
+               variables in CASE statements
+               and functions.
+
+. period       Indicates the end of file and      END.
+               must be preceded by the END
+               command.
+
+         Table 1 Punctuation Marks
+
+The PLC language includes four logical operators: NOT (/), AND
+(*), OR (+), AND XOR (%).  The parentheses operators are also
+used to control the grouping or associativity of these
+operators.  The  operators are arranged in order of precedence,
+as shown in Table 2.
+
+          Symbol    Operation           Associativity
+
+          ()        Primary             right to left
+
+          /         Bitwise complement  right to left
+
+          *         Bitwise AND         right to left
+
+          +, %      Bitwise OR, XOR     right to left
+
+       Table 2 Operator Precedence
+
+Example:
+
+     F = A*B + /C + D
+
+In this expression, A and B are Anded first because * has a
+higher precedence than +.  Also, C is complemented before the
++ operator is evaluated; that is, the expression is evaluated
+as:
+
+     F = ((A*B) + ((/C) + D))
+
+Note in Table 4.2 that the + and % operators have the same
+precedence.  Use parentheses to prevent any ambiguities in the
+logic expression.  For example, the following two expressions
+are evaluated differently:
+
+     F = (A%B) + (C%D)
+     F =  A%B  +  C%D
+
+1.1.3  User-Defined Elements
+
+You can create variables or numbers in PLPL.  Variables 
+are alphanumeric strings that begin with an alphabetic
+character and may contain up to 24 characters.
+
+These include all 26 letters (either uppercase or lowercase),
+the numbers 0-9, and the underscore (_) symbol.  Spaces cannot
+be used, and upper and lower case characters are treated the
+same.
+
+Syntax:
+
+     VAR_A     Valid variable name
+     VAR A     Invalid variable name
+
+Numbers can be expressed in one of four
+radices.  If you do not specify a radix,
+the number is assumed to be decimal.
+
+To specify this radix...        Use this symbol...
+
+binary                          #b
+
+octal                           #o
+
+decimal                         #d
+
+hexadecimal                     #h
+
+In the PLPL language numbers must be positive integers.
+
+Syntax:
+
+     #b1110    binary representation of 14
+
+     #o016     octal representation of 14
+
+     #d14      14 base 10
+
+     14        decimal representation of 14
+
+     #hE       hexadecimal representation of 14
+
+1.2  PLPL Design File
+
+Logic equations or function definitions are specified in an
+ASCII PLPL design file.  Most text editors or word processors
+can create files in ASCII mode, which are free of any control
+characters.
+
+The design file contains the following sections:
+
+   š design name
+
+   š header
+
+   š logic specification
+
+1.2.1  Design Name
+
+The design name section contains the keyword DEVICE, the
+design name, and the part to be used in parentheses.
+
+Syntax:
+
+     DEVICE design_name (part_name)
+
+1.2.2  Header
+
+The header consists of two subsections: a pin definition and
+an optional define section.  Pin names and variables defined
+in these two subsections can be used in the logic
+specification section.
+
+1.2.2.1  Pin Definition Section
+
+You can assign a name and architectural features to each pin on
+the PLD.  For example, the AmPAL16R8 (P16R8) has eight inputs
+and eight registered active-low outputs.  A design making
+use of two inputs and five outputs on this device is
+described in the following example.
+
+Example:
+
+DEVICE example (P16R8)
+PIN a          = 1 (input combinatorial)
+   /b          = 2 (input combinatorial) "active-low input"
+   /state[3:0] = 13:16 (output reg active_low)
+   /c          = 18 (output registered active_low) ;
+
+In this example, pins 1 and 2 have been defined as the input
+variables A and /B (active-low input), and pin 18 as the
+registered output variable C that is also active-low.  Pins
+can also be associated in groups called vectors.  After a
+group of pins has been defined as a vector, this group can be
+referred to by the vector definition.  This is helpful when
+specifying state machines or address/data buses.  In the example,
+the group of pins 13, 14, 15 and 16 have been assigned to the
+output vector state[3.0].  This is logically equivalent to the
+definition:
+
+PIN a          = 1 (input combinatorial)
+   /b          = 2 (input combinatorial) "active-low input"
+   /state[3]   = 13 (output registered active_low)
+   /state[2]   = 14 (output registered active_low)
+   /state[1]   = 15 (output registered active_low)
+   /state[0]   = 16 (output registered active_low)
+   /c          = 18 (output registered active_low) ;
+
+The range of pins to be assigned to a vector can be tersely
+described by using the colon symbol, as in 13:16.  In
+addition, non-sequential pin numbers can be specified by using
+a comma symbol.
+
+Examples:
+
+     /state[3:0] = 13:15,17 (output reg active_low)
+
+     /state[3:0] = 18,20:22 (output reg active_low)
+
+     /state[3:0] = 13,16:14 (output reg active_low)
+
+An element or elements in a vector can be accessed by using
+the appropriate subscripts.
+
+Example:
+
+c              = a*b*state[3];  "access the 3rd vector element"
+state[3:2]     = state[1:0];    "assign the last two vector
+                                 elements to the two most
+                                 significant bits"
+
+If an input is active-low, you must preface the input pin
+name with the / operator.  This is demonstrated with the
+above definition of input signal B.  The same is true with
+output pins, but not the architecture definition of the output
+pin must include the ACTIVE_LOW description.
+
+All architecture features (such as INPUT, OUTPUT, REGISTERED,
+and ACTIVE_LOW) are enclosed in parentheses.  The pin definition
+section is terminated by a semicolon.  The number of pins
+available and the corresponding architectural features are
+different for various PLDs.  A list of architecture features
+for each PLD is listed in the corresponding database file.
+
+1.2.2.2 DEFINE Section (optional)
+
+PLPL supports macro/intermediate variable definitions.  A PLPL
+macro is a scalar element assigned to an integer constant
+or an often-used logic equation.  Vector macros are currently
+not supported.  Each macro definition is separated
+by a comma and the DEFINE section is terminated by a semicolon.
+This is an optional section.
+
+Example:
+
+     DEFINE LOAD         = ENABLE1*ENABLE2 ,
+            OUTPUT1      = 20 ,
+            SET_SIGNAL   = LOAD + SYSRESET ; "last definition"
+
+In the example, LOAD has been assigned to the logic equation
+ENABLE1*ENABLE2, while the name OUTPUT1 has been assigned to
+the constant decimal 20.  The signals named ENABLE1 and
+ENABLE2 are assumed to be names in the pin definition section.
+
+The logic equations assigned to macro names can contain
+variables and logic operators.
+
+The variables can also be previously defined macro names, as
+shown in the definition for the macro SET_SIGNAL, where the
+macro LOAD is logically ORed with the signal SYSRESET.
+
+Macros are used to simplify the logic specification section by
+assigning easily recognised names to logic equations or
+constants.  It is easier to remember that a load signal is
+LOAD instead of a logic equation ENABLE1*ENABLE2 and that an
+often used value is called OUTPUT1 instead of the decimal
+number 20.
+
+1.2.3  Logic Specification
+
+This section contains the logic definition of functions to be
+programmed into a PLD.  These function definitions can be
+written in terms of statements consisting of:
+
+   š logic equations, such as         C = A*B + C*/E;
+
+   š high-level statements, such as   IF (A*B) THEN C = D + /E;
+
+
+2  Specify the Design Logic
+
+This chapter guides you through creating Boolean design logic
+equations with PLPL software.  You can express the logic
+functions in terms of logic equations or high level
+statements.
+
+2.1  Logic Equations
+
+Boolean logic equations can be written using the logic
+operators described in Chapter 1, The Logic Language.  This
+capability is provided for designers who want to specify the
+Boolean logic for a function.  The logic equation is composed
+of three parts: the variable on the left side, the assignment
+symbol (=), and the logic expression on the right side.  Each
+logic equation is terminated by a semicolon.  Logic
+equations can be expressed in scalar or vector formats.
+
+2.1.1  Scalar Expressions
+
+The left side  of the equation can be a pin name or a pin
+vector element, such as SIGNAL[3].  This pin must be defined
+in the PIN definition section as an output, I/O, or internal
+register.  The logic expression on the right side of the
+equation can be any Boolean algebraic expression using the
+logic operators AND(*), OR(+), NOT(/), and XOR(%).  In
+addition, evaluation of logic statements can also be
+controlled by the use of the parentheses.  Each equation is
+considered a single statement.
+
+Example:
+
+     C = A*(B+C)*/D ;
+
+In this example, the variables B and C, which are enclosed in
+parentheses, are evaluated first.
+
+2.1.2  Vector Expressions
+
+Logic equations can be assigned to pins which have been
+defined as vectors.  If you want a logic equation to be
+assigned the value of another vector, then logically
+ANDed with a different vector, you could enter:
+
+     VCTR_A[3] = VCTR_B[0]*VCTR_C[3];
+     VCTR_A[2] = VCTR_B[1]*VCTR_C[2];
+     VCTR_A[1] = VCTR_B[2]*VCTR_C[1];
+     VCTR_A[0] = VCTR_B[3]*VCTR_C[0];
+
+Or you could enter:
+
+     VCTR_A[3:0] = VCTR_B[0:3]*VCTR_C[3:0];
+
+Scalar variables can also be used when working with vector
+variables.  For example, this vector expression
+
+     VCTR_A[3:0] = VCTR_B[0:3]*/A;
+
+is equivalent to
+
+     VCTR_A[3] = VCTR_B[0]*/A;
+     VCTR_A[2] = VCTR_B[1]*/A;
+     VCTR_A[1] = VCTR_B[2]*/A;
+     VCTR_A[0] = VCTR_B[3]*/A;
+
+Vectors can also be assigned numbers:
+
+     VCTR_A[3:0] = 6;
+
+PLPL converts the number into binary form and assigns a binary
+digit to every vector element.  The preceding example is
+equivalent to:
+
+     VCTR_A[3:0] = #b0110; ==> VCTR_A[3] = 0;
+                               VCTR_A[2] = 1;
+                               VCTR_A[1] = 1;
+                               VCTR_A[0] = 0;
+
+The vector must be large enough to represent the binary form
+of the number, or an error is generated.
+
+Vectors cannot be assigned to scalar variables, as in
+
+     C = VCTR_A[3:0];                   "is not valid"
+
+Vectors cannot be created by concatenating scalars or parts of
+vectors (using a comma), in a logic expression.  An error
+would be generated for the following statement:
+
+     VCTR_A[3:0] = A,B,VCTR_A[1:0];     "is not valid"
+
+2.2  Logic Equations
+
+You can describe logic functions in a higher level format by
+making use of the PLPL statement constructs.  PLPL supports
+two statement formats: IF-THEN-ELSE and CASE.
+
+2.2.1  IF-THEN-ELSE Statement
+
+This language is similar to the IF-THEN-ELSE used in regular
+programming languages.  In PLPL, logic equations are
+constructed from statements in the THEN and ELSE sections.
+
+Syntax:
+
+     IF (logic condition) THEN
+        [statement]
+     ELSE
+        [statement]
+
+You can also specify that an output pin is set when a
+condition, such as A, is true, and reset when not true.
+
+Example:
+
+     IF (A) THEN
+        OUTPUT = 1;
+     ELSE
+        OUTPUT = 0;
+
+This is the same as writing OUTPUT = A, where OUTPUT is active
+(1) when the condition A is true and inactive (0) when not
+true.  The IF-THEN-ELSE statement makes the function more
+understandable.  A two-input AND gate can be similarly
+described.
+
+Example:
+
+     IF (A*B) THEN
+        OUTPUT = 1;
+     ELSE
+        OUTPUT = 0;
+
+
+     Truth Table   A  B  OUTPUT
+                   0  0     0
+                   0  1     0
+                   1  0     0
+                   1  1     1
+
+The high-level description is equivalent to OUTPUT = A*B.
+
+The [statement] can be a single statement or a group of
+statements bracketed by BEGIN and END and followed by a semicolon.
+
+Example:
+
+     IF (/A) THEN
+     BEGIN
+        A = B+C;
+        G = VCTR_A[3]+B;
+     END;
+     ELSE
+        etc..
+
+The entire IF-THEN-ELSE statement is considered a single
+statement and can be nested inside another IF-THEN-ELSE.
+
+Example:
+
+     IF (/A) THEN
+        IF (B+C) THEN     "nested IF-THEN-ELSE"
+           C = A*B;
+        ELSE
+           C = A*D;
+     ELSE
+        A = B;
+
+The ELSE part in any IF-THEN-ELSE statement is optional, but
+any ELSE section is matched with the most recent IF section,
+hence care must be taken when using nested IF-THEN-ELSE
+statements.
+
+Example:
+
+     IF (/A) THEN
+        IF (B+C) THEN    "nested IF-THEN"
+           C = A*B;
+     ELSE                "(1)"
+        A = B;
+
+Despite appearances, the ELSE (1) is matched with IF(B+C)
+THEN, and not IF (/A) THEN.  To match the ELSE with (/A),
+BEGIN and END keywords must be used to bracket the statements
+between IF (/A) THEN and the ELSE.
+
+Example:
+
+     IF (/A) THEN
+     BEGIN
+        IF (B+C) THEN  "nested IF-THEN is a single statement"
+           C = A*B;
+     END;
+     ELSE           "ELSE matches with IF (/A) THEN"
+        A + B;
+
+2.2.2  Logic Test Conditions
+
+The IF-THEN-ELSE statement requires a logic test condition.
+This condition can be a logic expression, a vector test, or a
+combination of both.
+
+A logic expression can be used as a test condition.  This
+expression can contain scalar and vector variables and logic
+operators, including parentheses.
+
+Examples:
+
+     IF (/A) THEN ..
+
+     IF (A+B*(A+/C)) THEN ..
+
+     IF (A+VCTR_A[3]) THEN ..
+
+     IF (VCTR_A[3:0] = #b1001) THEN ..
+
+In the last of the four examples above, a vector test is used
+as the test condition.  This logic expression checks if the
+vector is a specific value.  The value can be expressed in any
+radix, as long as it can be represented by the vector.  In the
+next example, VCTR_A[3:0] is tested to determine if it has a
+value of binary 1001; this is equivalent to the test
+condition.
+
+Example:
+
+     IF (VCTR_A[3]*/VCTR_A[2]*/VCTR_A[1]* VCTR_A[0]) THEN ..
+
+If the vector test condition did not include the equal sign
+and a value (as in IF (VCTR_A[3:0]) THEN), then this is the
+same as logically ANDing every element in the vector.
+
+Example:
+
+     IF (VCTR_A[3]*VCTR_A[2]*VCTR_A[1]*VCTR_A[0]) THEN ..
+
+Vector test conditions can be mixed with other vector or
+scalar test conditions.  The following are some examples of
+mixed element logic test condition.
+
+Example 1:
+
+     IF ((VCTR_A[3:0] = #b1001)*/A + B) THEN ..
+
+Example 2:
+
+     IF ((VCTR_A[0:3] = #hA) * (VCTR_B[3:0] = #o12)) THEN ..
+
+In example 2, each vector test must be enclosed in its own set
+of parentheses.
+
+A vector test condition can be performed by concatenating scalar
+vectors and testing for a value.  In example 3, scalar variables
+A, B and VCTR_A[2] are tested to determine if they have the value
+#b110.
+
+Example 3:
+
+     IF (A,B,VCTR_A[2] = #b110) THEN ..
+
+The test condition must be enclosed in parentheses or an error
+is generated.
+
+2.2.3  CASE Statement
+
+The CASE statement is similar to the multi-way branch
+statement provided in computer programming languages such as
+Pascal and C.  Depending on the value the CASE condition
+variable takes, a different set of logic equations is
+generated.  The CASE statement has the following format.
+
+Syntax:
+
+     CASE (pin_vector)
+     BEGIN
+           value0) [statement]
+           value1) [statement]
+           value2) [statement]
+              :
+              :
+           valueN) [statement]
+     END;
+
+The pin_vector must be large enough to represent the values
+VALUE0 to VALUEN.  For example, if the pin vector contained
+two elements, then only a maximum of four different values can
+be tested.  You can also specify a range of values by using
+the colon and comma symbols.  The following example shows a
+CASE value range specification.
+
+Example:
+
+     CASE (VCTR_A[3:0])            "(A)"
+     BEGIN
+        0:5,9)  BEGIN              "(B)"
+                   F = A*B;
+                   E = /A*C + B;
+                END;
+        12,#b1111) A_FLAG = 1;     "(C)"
+     END;                          "end of CASE"
+
+In the example, the CASE statement (A) is used to check the
+possible values of VCTR_A.  The first values tested (B) are
+from 0 to 5 and the decimal number 9.  The second value set
+(C) tests if VCTR_A[3:0] is equal to 12 or 15 (specified in
+binary).  Any number radix can be used to specify the values,
+and a name defined as a macro constant in the DEFINE section
+can also be used as a CASE value.
+
+The statement at each variable value can be a single logic
+equation, a set of logic equations (bracketed by BEGIN and
+END), an IF-THEN-ELSE, or another CASE statement.  There is no
+default statement to handle values that are not specified.
+
+Example:
+
+     CASE (VCTR_A[3:0])
+     BEGIN
+        0 )BEGIN
+              VCTR_a[3:0] = 1;
+              A_FLAG = 1;
+           END;
+        1 )BEGIN
+              VCTR_A[3:0] = 12;
+              A_FLAG = 1;
+           END;
+        12)   VCTR_A[3:0] = 0;
+     END;     "end of CASE statement"
+
+In the above example, only three possible values for
+VCTR_A[3:0] are tested (0,1,12) and the corresponding logic
+statement(s) for each of the three values are listed.
+
+The vector used in the CASE condition can be created from
+scalar elements.  The concatenation operator `,' is used
+to group scalars and vectors together, as shown in the
+following examples.
+
+Examples:
+
+     CASE (A,B,C)
+     BEGIN
+           #b100)  [statement]
+              :
+     END;
+
+
+     CASE (A,VCTR_A[3:2],C)
+     BEGIN
+           #b1100) [statement]
+              :
+     END;
+
+
+     CASE (VCTR_A[3:2],VCTR_B[3:2])
+     BEGIN
+           #b1101) [statement]
+              :
+     END;
+
+2.2.4  Defining State Machines
+
+CASE statements are useful in creating sequential state machines.
+The vector variable specified in the CASE statement can be
+considered the state indicators, with the values in the CASE
+statement being the range of possible states the state indicators
+can take. Equations and state transition statements can be
+written for each state to control the operation of the state
+machine.
+
+A multi-mode counter is an example of a sequential state
+machine.  By defining two pins as state registers or indicators
+(these can be defined as vectors), the count sequence can be
+totally customized.  In this example, the next state of the
+machine at any count/state is determined by the present
+count/state and the mode bit MODE.  If the MODE bit is UP,
+then the counter/state machine operates as an up counter.
+If the MODE bit is DOWN, then the device operates as a down
+counter.  The following is an example of a multi-mode counter.
+
+Example:
+
+     DEFINE UP = 0,      "constant definitions"
+          DOWN = 1;      "for better readability"
+
+     CASE (COUNT[1:0])   "4-bit up-down counter"
+     BEGIN
+        0) IF (MODE = UP) THEN
+              COUNT[1:0] = 1;
+           ELSE
+              COUNT[1:0] = 3;
+        ::::::
+        3) IF (MODE = UP) THEN
+              COUNT[1:0] = 0;
+           ELSE
+              COUNT[1:0] = 2;
+     END;                "end of CASE statement"
+
+Note: The use of CASE statements with large numbers of values
+to be tested forces the PLC compiler to consume all available
+memory.  For example, the range 0:1023 in the following
+example causes the compiler to generate 1024 statements.  This
+will probably cause the program to run out of memory.
+
+Example:
+
+     CASE (STATE[11:0])
+        BEGIN
+        0:1023) signal = 1;
+           ::::::
+     END;
+
+2.3  Pin Polarities
+
+Input and output signals can be defined as having active-high
+or active-low polarities.  A pin is defined as active-low by
+prefacing the pin name with the / operator; if it is an output
+or I/O pin, then include the definition ACTIVE_LOW inside the
+parentheses.  The ACTIVE_HIGH definition is added for active-
+high/positive polarity output/IO pins with the / symbol.  An
+active-low input or output pin or vector is defined in the
+following example.
+
+Example:
+
+     PIN /A             = 1      (input combinatorial)
+         /B[3:0]        = 2:5    (input combinatorial)
+         /SIGNAL[3:0]   = 14:17  (output registered active_low);
+
+In this example, pins A and B[3:0] have been defined as input
+pins that are combinatorial and active-low.  The registered
+output pin vector SIGNAL[3:0] has also been defined as active-
+low, but since it is an output, the feature ACTIVE_LOW must
+also be included in the architecture definition.
+
+After the pins have been defined as active-high or low, you
+can use these pins in the logic specification section without
+regard to its polarity.  The absence or presence of the
+complement operator, /, in the logic specification section now
+refers to the pin variable being true or false.
+
+Example:
+
+     PIN  /A           = 1      (input combinatorial)
+          /B           = 2      (input combinatorial)
+          /SIGNAL[3:0] = 14:17  (output registered active_low);
+
+     BEGIN    "start logic specification section"
+     IF (A*/B) THEN
+          SIGNAL[3:0]  = 12;
+     ELSE
+          SIGNAL[3:0]  = 2;
+             ::::::
+     END.
+
+The output vector SIGNAL[3:0] is set to 12 if the input
+variables A and B are asserted (true) and not asserted
+(false), respectively.  If this condition is not true, then
+the SIGNAL[3:0] vector is set to 2.
+
+In the previous example, the test condition is true if input
+variable A is active and variable B inactive.  Note that there
+is no need to know whether the pin was defined active-high or
+low.
+
+To summarize, the PIN definition section defines the physical
+architecture of the pins.  The equations in the logic section
+are asserted/active or not asserted/inactive without regard
+to how the pins were defined.
+
+2.3.1  Inverting Equations
+
+If an output variable/vector is prefaced by a complement /
+operator on the left side of a logic equation, then the right
+side of the logic equation DeMorganized.
+
+Example:
+
+     IF (/A) THEN
+        /SIGNAL[3:0] = /B*C;
+
+In this example, the right side of the equation is
+DeMorganized before assignment to each element in the vector
+SIGNAL[3:0].  In other words, the resulting logic expression
+for each element in the vector SIGNAL is:
+
+     SIGNAL[3] = B + /C;
+     SIGNAL[2] = B + /C;
+     SIGNAL[1] = B + /C;
+     SIGNAL[0] = B + /C;
+
+
+2.3.2  Positive Polarity Signals on Negative Polarity Outputs
+
+A positive polarity signal can be represented with
+a negative polarity pin by defining the output pin as
+active-high (without the / symbol) and explicitly
+DeMorganizing the equation in the logic equation section.
+
+This may be necessary if your PLD does not have output
+polarity control, such as the PAL16L8.  For example, the
+active-high function F(H) = A*B can be implemented on a
+PAL16L8 by complementing the following function in the PLPL
+language.
+
+Syntax:
+
+     DEVICE a_design (P16L8)
+     PIN A = 1  (input combinatorial)
+         B = 2  (input combinatorial)
+         F = 15 (output active_low combinatorial);
+
+     BEGIN
+        /F = A*B;
+     END.
+
+Note that the architecture definition ACTIVE_LOW in
+parentheses is still necessary because the pin is physically
+active-low.  The result is two product terms, as shown in the
+following derivation.
+
+Example:
+
+     /F(L) = A*B;
+      F(H) = /(A*B);
+      F(H) = /A + /B;
+
+2.4  Special Product Term Functions
+
+PLPL supports product terms that have special functions on PLD
+pins.  RESET, PRESET and ENABLE are examples of special
+functions for output pins.  These product terms are used to
+reset, set and enable pins.  Newer advanced devices may have
+other control functions, such as OBSERVE on the PAL23S8.
+
+The special functions for newer PLDs are listed in the
+corresponding PLD database file and are preceded by the !
+symbol.  A special function consists of the function name
+followed by parentheses. Enclosed in the parentheses are
+the pins and/or vectors that are to be associated with the
+logic equations used to define the special function product
+terms.
+
+For example, to define the special function Product terms
+for a set of output vectors, enter the following example.
+
+Example:
+
+     DEVICE a_design (P22V10)
+     PIN MODE0 = 1 (input combinatorial)
+         MODE1 = 2 (input combinatorial)
+         A = 3 (input combinatorial)
+         SIGNAL[3:0] = 14:17 (output registered
+                              active_high);
+
+     IF (MODE0*MODE1) THEN
+         ENABLE (SIGNAL[3:0]) = #b1111;      (i)
+     IF (MODE0*/MODE1) THEN
+         RESET (SIGNAL[3]) = A;              (ii)
+     IF (/MODE0*MODE1) THEN
+         PRESET (SIGNAL[3]);                 (iii)
+
+In the above example, the ENABLE function product term (i) for
+each vector element is set to 1 (logic true) when both mode
+inputs are high.  The enable function term for each element is
+set to 1 because each bit in the binary value #b1111
+corresponds to one of the four vector elements.  If the number
+1 is used, then this is equivalent to #b0001, which means the
+enable term for SIGNAL[0] is set to 1 and the other 3 vector
+elements are set to 0.
+
+The special function product terms can also be equated to
+logic expressions.  The RESET function (ii) is active for the
+vector element SIGNAL[3] if the test condition (MODE0*/MODE1)
+is true and the variable A is true.  If no logic expression is
+specified (iii), the function is dependent on the test
+condition (/MODE0*MODE1).
+
+If no test condition is specified
+
+     BEGIN
+     ENABLE(SIGNAL[3:0]);
+      ...
+     END.
+
+then this is equivalent to ENABLE(SIGNAL[3:0]) = #b1111; where
+each variable enclosed in parentheses is assigned to the
+constant 1.  The function can also be defined as a logic
+expression.  Example (ii), the RESET function, can be entered as:
+
+     RESET(SIGNAL[3]) = MODE0*/MODE1*A;
+
+
+3  Build Simulation
+
+This chapter describes the additional commands and control
+structures that allow you to simulate your design.  Though
+simulating is optional, verifying a design before programming
+a device saves time.  Simulating the design helps verify that
+the equations actually implement the required function.
+
+Simulating the design means specifying a trial set of input
+values for your design and checking that the resulting outputs
+are correct.  PLD programmers or logic simulators use test
+vectors to verify that the logic functions defined for a PLD
+are correct.  These vectors describe the inputs to the PLD and
+the outputs expected from the device after applying these
+inputs.
+
+In PLPL, these test vectors are listed at the end of the
+design file.  These vectors are processed by the test vector
+generator program (TESTV) which then produces a JEDEC-format
+test vector file.  The PLPL simulator builds a model of the
+logic design from the JEDEC fuse map and applies the vectors
+to this model.
+
+3.1  Test Vector Format
+
+Enter test vectors into your design file in the following
+format.
+
+Syntax:
+
+     DEVICE
+     .
+     .  (pins and logic description)
+     .
+     END
+
+     TEST_VECTORS
+     [Pin Classification]
+     BEGIN
+     [Vectors]
+     END.
+
+The user-defined test vectors are attached to the end of a
+PLPL file (after the END keyword).  The keyword TEST_VECTORS
+marks the beginning of the vector section.  This is followed
+by a pin classification section which specifies the pin types.
+The four pin types are:
+
+   š IN (input)
+
+   š OUT (output)
+
+   š I_O (input/output)
+
+   š BREG (internal register pins)
+
+The pin names specified in the pin classification section must
+be already defined in the PIN definition section (see Chapter
+1, The Logic Language).  The pin names must also be classified
+under the appropriate types.  For example, an input pin must
+be classified as an input pin in the test vector section.
+
+Example:
+
+     DEVICE Ex1 (p29m14)
+     PIN    A = 1 (input ...)
+           /B = 2 (input ...)
+           /C = 15 (io active_low ...)
+            D = 16 (output ...)
+           /E = 22 (breg active_low ...);
+
+     BEGIN       "logic equation section"
+        ::::
+     END
+
+     TEST_VECTORS       "test vector section"
+     IN A,B;
+     I_O C;
+     OUT D;
+     BREG E;
+     BEGIN
+        :::::
+     END
+
+Pins A and B are classified as inputs, C as an I/O, D as a
+dedicated output pin, and E as an internal register.  This
+matches the PIN section.  Note that the '/' symbols can be
+left out in the test vector section.
+
+The pin classification section specifies the order in which
+the user must specify the pin values.  This means that since
+the pin order is now A,B,C,D, and E, the values specified for
+the test vectors must also follow this order.
+
+Example:
+
+     TEST_VECTORS
+     IN A,B;
+     I_O C;
+     OUT D;
+     BREG E;
+     BEGIN
+     "A B C D E"
+     ----------
+(1)   1 1 H L L;
+      1 0 H H L;
+      0 1 L L H;
+      0 0 L H L;
+      END
+
+In the first vector (1), the first value 1 is associated with
+pin A, the next 1 with pin B, H with pin C, L with pin D and L
+with E.  The vector is then terminated with a semicolon.  If a
+different pin order is required, then the pin order in the pin
+classification section can be changed.
+
+Example:
+
+     TEST_VECTORS
+     OUT D;
+     IN  A;
+     I_O C;
+     BREG E;
+     IN B;     "sections can be split up also"
+     BEGIN
+     L 1 L H 1;
+     ::::
+     END.
+
+3.2  Test Vector Values
+
+The values a pin can take in a test vector are determined by
+its pin type.  These values are outlined in the JEDEC
+standard.  Table 3 lists the possible pin values.
+
+          Pin       Value
+
+          0         drive input low
+
+          1         drive input high
+
+          2-9       drive input to super voltage #2 to 9
+
+          L         test output low
+
+          H         test output high
+
+          F         float input or output
+
+          Z         test input or output for high-impedance
+
+          C         drive input low, high, low (i.e., clock)
+
+          K         drive input high, low, high
+
+          P         preload registers
+
+          B         preload buried/internal registers
+
+          N         power pins and output not tested
+
+          X         output not tested, use input default level
+
+Table 3 Pin Values in a Test Vector
+
+The default level for unspecified pins is a 0 or L.  In the
+test vector generator program TESTV, this can be set to a
+1 or H.
+
+3.3  Pin Types
+
+The two types of pins are: supply, and I/O pins.
+
+   š Supply Pins.  These pins are not tested by the PLD
+     programmer or logic simulator.  These are the power and
+     ground pins.  They should not be specified in the pin
+     classification section.
+
+   š I/O Pins.  I/O pins are dedicated input, output, clock,
+     or input/output pins.  Control pins such as dedicated
+     enable pins (for example, AmPAL16R8) are considered input
+     pins.  The values these pins may take are listed below:
+
+If the pin is...             Then the test vector value could be...
+
+input                        0,1,2,3,4,5,6,7,8,9
+                             F,Z
+                             X,N
+
+output; internal register    L,H,F,Z
+                             0,1(*)
+                             X,N
+
+clock                        C,K,P
+                             X,N
+
+input/output                 (see both input and output)
+
+
+(*) Output pins can take the values 0/1 when preloading the
+output registers.
+
+The following example tests a two-input AND function
+programmed into an AmPAL16R8 with the following PLPL
+definition.
+
+Example:
+
+     DEVICE AND_FUNCTION (P16R8)  "Pin definition section"
+     PIN  CLK1      = 1 (clock)
+          A         = 2  (input combinatorial)
+          B         = 3  (input combinatorial)
+          ENB       = 11 (control)
+          /AND      = 19 (registered output active_low);
+
+     BEGIN
+        AND         = A*B;
+     END.
+
+     TEST_VECTORS
+     IN  CLK1,ENB,A,B;  "pin classification section"
+     OUT AND;
+     BEGIN
+     "CLK1 ENB A B AND"
+     -----------------
+       C    1  0 0  Z;
+       C    0  0 1  L;
+       C    0  1 0  L;
+       C    0  1 1  H;
+     END.
+
+The JEDEC test vectors produced are:
+
+     V0001 COOXXXXXXN1XXXXXXXZN*
+     V0002 CO1XXXXXXN0XXXXXXXHN*
+     V0003 C10XXXXXXN0XXXXXXXHN*
+     V0004 C11XXXXXXNOXXXXXXXLN*
+           ^^^       ^       ^
+     Pin   123      11      19
+
+Note that the values for pin 19 are inverted.  This is because
+the name AND in the pin classification section did not have a
+`/' as in the PIN definition section.  TESTV reverses polarity
+of the vector value if the pins do not have the same definitions
+(one defined with the `/' and the other without).  If they have
+the same definition in both the pin classification and definition
+section (both with or without `/'), the vector values are not modified.
+
+This capability is useful because now you can think in terms
+of asserted/not asserted or voltage levels in the test
+vectors.  If you are thinking of assertion levels, then the
+names are specified in the pin classification section without
+any `/'s.  A 0/1 or L/H means not asserted and asserted for
+inputs and outputs, respectively.  TESTV converts the 0/1s and
+L/Hs by resolving any polarity discrepancies in both the pin
+definition and test vector pin classification sections.
+
+Example:
+
+In the AND function example, pin 19 (AND) is defined as active-
+low in the PIN definition section but defined without the `/'
+in the test vector pin classification section.  The vector
+values specified now refer to AND being asserted (H) or not
+asserted (L).  TESTV automatically inverts them.
+
+If you want to think in terms of voltages with a 0/1 and L/H
+referring to the low and high voltages respectively, then the
+names must match in both pin definition sections.
+
+Example:
+
+In the AND example, if pin AND were defined as /AND in the pin
+classification section, then the test value specified for AND
+must be the voltage or physical level expected.  This means
+that when AND is asserted, an L is expected at the output,
+with H expected when AND is not asserted.
+
+The test vectors are numbered in increasing order (decimal)
+and contain the number of vector values equivalent to the
+physical number of pins on the device.  In the preceding example,
+all pin locations on the AmPAL16R8 except pins 1,2,3,10,11,19,
+and 20 are specified as X or don't care.  Pins 10 and 20 are
+the power and GND pins (automatically set by the TESTV
+program) while pins 1,2,3,11 and 19 are taken from the
+test vector specification.
+
+3.4  Power-Up Reset
+
+AMD devices have the power-up reset feature.  In a test vector
+sequence, any registered outputs in the first test vector are
+assumed reset.  The output at the pins depend on the circuitry
+in front of the register.
+
+Example:
+
+A 22V10, on power-up reset, has the output pins LOW if the
+outputs have been defined as active-high.  If the output were
+defined as active-low, then the power-up reset outputs are
+HIGH.
+
+The power-up reset feature for PLDs must observe certain
+requirements.  For example: monotonic Vcc rise, and no noise
+on the clock lines.  Consult the datasheet for more details.
+
+3.5  Preloading Registers
+
+A typical functional test sequence for registered/state
+machine designs would be to verify all possible state
+transitions.  AMD PLDs have the preload feature available
+which lets the designer specify any arbitrary present state in
+the registers.  This simplifies logic verification because any
+present state value can be forced into the state indicators to
+test the next state transition.
+
+Registers can be preloaded by putting the `P' value on the
+clock pin controlling the registers.  This means that if a
+clock pin controls a separate bank of registers, a `P' should
+be placed there to preload that register bank.  The value to
+be loaded into the registers is then specified using 0 and 1,
+not L and H.
+
+Example:
+
+To preload a PAL16R8 with 10010110, the following vector
+sequence is used (note that the outputs are active-low):
+
+     TEST_VECTORS
+     IN  CLK1,IN_A,IN_B;
+     OUT /out7,/out6,/out5,/out4,/out3,/out2,/out1,/out0;
+     BEGIN
+     C 0 1 XXXX XXXX;  "do one test"
+     P X X 1001 0110;  "preload reg with 10010110"
+     0 X X HLLH LHHL;  "test registers without clocking"
+     C 1 1 XXXX XXXX;  "do another test with preloaded reg"
+     END.
+
+Consult the datasheet for the preload characteristics of a
+PLD.  The value preloaded into the registers of a P16R4/6/8 is
+the value measured at the outputs.  This means a 1 preloaded
+into the device appears as an H at the output.  This means a 0
+was actually loaded into the register to get an H at the
+output (due to the inverting output buffer in front of the
+register), but the value measured at the outputs is determined
+by the polarity you select.
+
+For preloading buried or internal registers on a device such
+as the AmPAL23S8, use the keyword LOAD_INTERNAL.  A sequence
+of 0s and 1s follows, which corresponds directly to the states
+of the 6 internal registers.
+
+Examples:
+
+The AmPAL23S8 is a 20-pin device.  To preload the six
+internal registers with `110100' write:
+
+     TEST_VECTORS
+     IN IN0,IN1,IN2;
+     OUT OUT0,OUT1,OUT2;
+     BEGIN
+     1 0 1 H L H;
+     1 1 1 H L Z;
+     LOAD_INTERNAL 1 1 0 1 0 0;
+     0 0 1 L H X;
+     0 1 1 L H X;
+     END.
+
+3.6  Simulation Notes
+
+1.   The preload vector values are inverted (for example, 0 to
+     1) if the variable declarations in the pin classification
+     section and the pin definition section are different.
+
+     Example:
+
+          DEVICE Ex2 (P22V10)
+          PIN
+             clk line = 1 (clk_input)
+             /out23   = 23 (output active_low registered);
+          BEGIN  "logic equation section"
+             ....
+          END.
+          TEST_VECTORS
+          IN clk_line;
+          OUT out23; "declaration is different: no `/'"
+          BEGIN
+          C H;
+          P 0; "the 0 will be inverted"
+          END.
+
+2.   The preload value generated by TESTV (which may have been
+     inverted, as described in Note 1) is the value that is
+     loaded into the register.  The result at the output pins
+     depends on the polarity of the pin.  If a 1 is preloaded
+     into an active-low registered pin, a LOW voltage is
+     detected at that pin.
+
+3.   The vector values specified with the LOAD_INTERNAL
+     keyword are not inverted.
+
+4.   Test vector values may be grouped together if they are
+     all numbers or all alphabetic characters.
+
+     Example:
+
+          TEST_VECTORS
+          IN  IN0,IN1,IN2;
+          OUT OUT0,OUT1,OUT2;
+          BEGIN
+          111 HHL;
+          100 LHH;
+          101 LHL;
+          END.
+
+
+This manual is represents the core of the "AMD PLPL Software
+Manual, Version 2.2".
+AMD generously placed their entire PLPL language support in
+the Public Domain.

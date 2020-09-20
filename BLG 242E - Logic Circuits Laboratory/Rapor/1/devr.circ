@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="1a">
+    <a name="circuit" val="1a"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(280,270)" to="(310,270)"/>
+    <wire from="(280,310)" to="(330,310)"/>
+    <wire from="(310,250)" to="(310,270)"/>
+    <wire from="(380,290)" to="(420,290)"/>
+    <wire from="(310,270)" to="(330,270)"/>
+    <wire from="(310,250)" to="(420,250)"/>
+    <wire from="(470,270)" to="(500,270)"/>
+    <comp lib="6" loc="(409,248)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(380,290)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(449,238)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(477,261)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(323,267)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(470,270)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(280,310)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="6" loc="(411,286)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(280,270)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(500,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(322,306)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(350,340)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(386,288)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+  </circuit>
+  <circuit name="3a">
+    <a name="circuit" val="3a"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(260,70)" to="(260,80)"/>
+    <wire from="(260,120)" to="(260,130)"/>
+    <wire from="(330,100)" to="(360,100)"/>
+    <wire from="(260,120)" to="(280,120)"/>
+    <wire from="(130,110)" to="(190,110)"/>
+    <wire from="(240,130)" to="(260,130)"/>
+    <wire from="(130,150)" to="(190,150)"/>
+    <wire from="(260,80)" to="(280,80)"/>
+    <wire from="(130,70)" to="(260,70)"/>
+    <comp lib="0" loc="(360,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="F"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Z"/>
+    </comp>
+    <comp lib="6" loc="(211,181)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(271,75)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(130,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="0" loc="(130,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="6" loc="(183,148)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(240,130)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(330,100)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(249,127)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(335,96)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(273,115)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(315,63)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(184,106)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+  </circuit>
+  <circuit name="4">
+    <a name="circuit" val="4"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(250,130)" to="(290,130)"/>
+    <wire from="(250,210)" to="(290,210)"/>
+    <wire from="(320,170)" to="(370,170)"/>
+    <wire from="(510,170)" to="(540,170)"/>
+    <wire from="(430,190)" to="(460,190)"/>
+    <wire from="(320,130)" to="(370,130)"/>
+    <wire from="(250,170)" to="(290,170)"/>
+    <wire from="(420,150)" to="(460,150)"/>
+    <wire from="(430,190)" to="(430,210)"/>
+    <wire from="(320,210)" to="(430,210)"/>
+    <comp lib="6" loc="(326,125)" name="Text">
+      <a name="text" val="6"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(510,170)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(327,206)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(320,210)" name="NOT Gate"/>
+    <comp lib="0" loc="(250,210)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="6" loc="(304,243)" name="Text">
+      <a name="text" val="7404"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(277,208)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(452,188)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(250,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(250,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(540,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="F"/>
+    </comp>
+    <comp lib="6" loc="(360,122)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(450,147)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(277,167)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(492,139)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(425,143)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(393,116)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(320,170)" name="NOT Gate"/>
+    <comp lib="6" loc="(515,165)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(320,130)" name="NOT Gate"/>
+    <comp lib="6" loc="(361,167)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(420,150)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(250,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="6" loc="(277,125)" name="Text">
+      <a name="text" val="5"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(326,166)" name="Text">
+      <a name="text" val="4"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+  </circuit>
+  <circuit name="1b">
+    <a name="circuit" val="1b"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(240,150)" to="(280,150)"/>
+    <wire from="(130,170)" to="(190,170)"/>
+    <wire from="(130,130)" to="(170,130)"/>
+    <wire from="(170,110)" to="(170,130)"/>
+    <wire from="(170,130)" to="(190,130)"/>
+    <wire from="(330,130)" to="(360,130)"/>
+    <wire from="(170,110)" to="(280,110)"/>
+    <comp lib="0" loc="(130,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(207,196)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(182,167)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(246,145)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(299,98)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(269,106)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(272,147)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(240,150)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="6" loc="(336,127)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(360,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(182,128)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(330,130)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="2">
+    <a name="circuit" val="2"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(120,180)" to="(120,220)"/>
+    <wire from="(80,220)" to="(120,220)"/>
+    <wire from="(170,260)" to="(200,260)"/>
+    <wire from="(150,220)" to="(200,220)"/>
+    <wire from="(100,140)" to="(150,140)"/>
+    <wire from="(260,220)" to="(290,220)"/>
+    <wire from="(340,200)" to="(370,200)"/>
+    <wire from="(150,140)" to="(200,140)"/>
+    <wire from="(120,180)" to="(200,180)"/>
+    <wire from="(120,220)" to="(120,260)"/>
+    <wire from="(80,160)" to="(100,160)"/>
+    <wire from="(150,140)" to="(150,220)"/>
+    <wire from="(120,260)" to="(140,260)"/>
+    <wire from="(250,160)" to="(260,160)"/>
+    <wire from="(260,160)" to="(260,180)"/>
+    <wire from="(260,180)" to="(290,180)"/>
+    <wire from="(260,220)" to="(260,240)"/>
+    <wire from="(100,140)" to="(100,160)"/>
+    <wire from="(250,240)" to="(260,240)"/>
+    <comp lib="6" loc="(284,212)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(193,215)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(192,176)" name="Text">
+      <a name="text" val="4"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(250,240)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(311,168)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(152,288)" name="Text">
+      <a name="text" val="7404"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(340,200)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(353,195)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(258,151)" name="Text">
+      <a name="text" val="6"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(80,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="6" loc="(211,288)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(229,126)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(370,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="A"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(170,260)" name="NOT Gate"/>
+    <comp lib="0" loc="(80,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(169,253)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(284,177)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(132,255)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(194,257)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(250,160)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(192,137)" name="Text">
+      <a name="text" val="5"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(253,234)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+  </circuit>
+  <circuit name="3b">
+    <a name="circuit" val="3b"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(260,50)" to="(370,50)"/>
+    <wire from="(370,50)" to="(370,60)"/>
+    <wire from="(360,110)" to="(380,110)"/>
+    <wire from="(200,90)" to="(230,90)"/>
+    <wire from="(260,90)" to="(310,90)"/>
+    <wire from="(450,80)" to="(490,80)"/>
+    <wire from="(380,100)" to="(380,110)"/>
+    <wire from="(370,60)" to="(400,60)"/>
+    <wire from="(200,130)" to="(230,130)"/>
+    <wire from="(380,100)" to="(400,100)"/>
+    <wire from="(260,130)" to="(310,130)"/>
+    <wire from="(200,50)" to="(230,50)"/>
+    <comp lib="6" loc="(421,50)" name="Text">
+      <a name="text" val="7408"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(360,110)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(363,106)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(303,89)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(200,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Z"/>
+    </comp>
+    <comp lib="1" loc="(260,50)" name="NOT Gate"/>
+    <comp lib="0" loc="(200,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="1" loc="(260,90)" name="NOT Gate"/>
+    <comp lib="6" loc="(221,48)" name="Text">
+      <a name="text" val="5"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(260,130)" name="NOT Gate"/>
+    <comp lib="6" loc="(268,88)" name="Text">
+      <a name="text" val="4"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(268,128)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(200,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="6" loc="(244,160)" name="Text">
+      <a name="text" val="7404"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(390,97)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(490,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="F'"/>
+    </comp>
+    <comp lib="6" loc="(388,56)" name="Text">
+      <a name="text" val="2"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(269,48)" name="Text">
+      <a name="text" val="6"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(217,127)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="1" loc="(450,80)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(219,88)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(304,128)" name="Text">
+      <a name="text" val="1"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(458,73)" name="Text">
+      <a name="text" val="3"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(331,155)" name="Text">
+      <a name="text" val="74LS32"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+  </circuit>
+</project>
