@@ -1,0 +1,916 @@
+Steady state probablities = [ 0.16231984  0.19494644  0.22844714  0.2324721   0.18181449]
+Inverse of steady state probablities = [ 0.24188566  0.20140323  0.17186839  0.1688927   0.21595002]
+Optimal initial bicycle distribution = [18, 15, 13, 13, 16]
+
+*** Station 1 between [0 - 60]
+Available bicycle is 18 at start 0
+3 New riders arrived to station 1 at [2, 17, 56]
+0 Cyclists completed travel to station 1 at []
+1 @ 2 => 3 @ 62
+1 @ 17 => 4 @ 77
+1 @ 56 => 3 @ 116
+Available bicycle is 15 at the end 60
+
+*** Station 2 between [0 - 60]
+Available bicycle is 15 at start 0
+1 New riders arrived to station 2 at [17]
+0 Cyclists completed travel to station 2 at []
+2 @ 17 => 1 @ 77
+Available bicycle is 14 at the end 60
+
+*** Station 3 between [0 - 60]
+Available bicycle is 13 at start 0
+2 New riders arrived to station 3 at [38, 51]
+0 Cyclists completed travel to station 3 at []
+3 @ 38 => 2 @ 98
+3 @ 51 => 4 @ 111
+Available bicycle is 11 at the end 60
+
+*** Station 4 between [0 - 60]
+Available bicycle is 13 at start 0
+6 New riders arrived to station 4 at [16, 26, 31, 42, 44, 53]
+0 Cyclists completed travel to station 4 at []
+4 @ 16 => 3 @ 76
+4 @ 26 => 3 @ 86
+4 @ 31 => 5 @ 91
+4 @ 42 => 1 @ 102
+4 @ 44 => 3 @ 104
+4 @ 53 => 5 @ 113
+Available bicycle is 7 at the end 60
+
+*** Station 5 between [0 - 60]
+Available bicycle is 16 at start 0
+7 New riders arrived to station 5 at [8, 9, 23, 34, 48, 51, 55]
+0 Cyclists completed travel to station 5 at []
+5 @ 8 => 1 @ 68
+5 @ 9 => 3 @ 69
+5 @ 23 => 4 @ 83
+5 @ 34 => 3 @ 94
+5 @ 48 => 4 @ 108
+5 @ 51 => 4 @ 111
+5 @ 55 => 2 @ 115
+Available bicycle is 9 at the end 60
+
+========================================================
+
+*** Station 1 between [60 - 120]
+Available bicycle is 15 at start 60
+8 New riders arrived to station 1 at [62, 78, 82, 82, 87, 95, 101, 113]
+3 Cyclists completed travel to station 1 at [68, 77, 102]
+1 @ 62 => 3 @ 122
+1 @ 78 => 4 @ 138
+1 @ 82 => 5 @ 142
+1 @ 82 => 4 @ 142
+1 @ 87 => 4 @ 147
+1 @ 95 => 3 @ 155
+1 @ 101 => 4 @ 161
+1 @ 113 => 3 @ 173
+Available bicycle is 10 at the end 120
+
+*** Station 2 between [60 - 120]
+Available bicycle is 14 at start 60
+4 New riders arrived to station 2 at [67, 69, 81, 98]
+2 Cyclists completed travel to station 2 at [98, 115]
+2 @ 67 => 1 @ 127
+2 @ 69 => 4 @ 129
+2 @ 81 => 3 @ 141
+2 @ 98 => 3 @ 158
+Available bicycle is 12 at the end 120
+
+*** Station 3 between [60 - 120]
+Available bicycle is 11 at start 60
+3 New riders arrived to station 3 at [61, 82, 85]
+7 Cyclists completed travel to station 3 at [62, 69, 76, 86, 94, 104, 116]
+3 @ 61 => 4 @ 121
+3 @ 82 => 4 @ 142
+3 @ 85 => 5 @ 145
+Available bicycle is 15 at the end 120
+
+*** Station 4 between [60 - 120]
+Available bicycle is 7 at start 60
+5 New riders arrived to station 4 at [72, 75, 78, 79, 92]
+5 Cyclists completed travel to station 4 at [77, 83, 108, 111, 111]
+4 @ 72 => 3 @ 132
+4 @ 75 => 3 @ 135
+4 @ 78 => 5 @ 138
+4 @ 79 => 5 @ 139
+4 @ 92 => 1 @ 152
+Available bicycle is 7 at the end 120
+
+*** Station 5 between [60 - 120]
+Available bicycle is 9 at start 60
+5 New riders arrived to station 5 at [74, 84, 95, 109, 110]
+2 Cyclists completed travel to station 5 at [91, 113]
+5 @ 74 => 2 @ 134
+5 @ 84 => 2 @ 144
+5 @ 95 => 4 @ 155
+5 @ 109 => 4 @ 169
+5 @ 110 => 4 @ 170
+Available bicycle is 6 at the end 120
+
+========================================================
+
+*** Station 1 between [120 - 180]
+Available bicycle is 10 at start 120
+5 New riders arrived to station 1 at [143, 147, 160, 162, 166]
+2 Cyclists completed travel to station 1 at [127, 152]
+1 @ 143 => 2 @ 203
+1 @ 147 => 4 @ 207
+1 @ 160 => 2 @ 220
+1 @ 162 => 4 @ 222
+1 @ 166 => 3 @ 226
+Available bicycle is 7 at the end 180
+
+*** Station 2 between [120 - 180]
+Available bicycle is 12 at start 120
+5 New riders arrived to station 2 at [135, 144, 151, 170, 173]
+2 Cyclists completed travel to station 2 at [134, 144]
+2 @ 135 => 5 @ 195
+2 @ 144 => 2 @ 204
+2 @ 151 => 3 @ 211
+2 @ 170 => 2 @ 230
+2 @ 173 => 5 @ 233
+Available bicycle is 9 at the end 180
+
+*** Station 3 between [120 - 180]
+Available bicycle is 15 at start 120
+7 New riders arrived to station 3 at [123, 147, 148, 150, 160, 166, 168]
+7 Cyclists completed travel to station 3 at [122, 132, 135, 141, 155, 158, 173]
+3 @ 123 => 2 @ 183
+3 @ 147 => 2 @ 207
+3 @ 148 => 5 @ 208
+3 @ 150 => 1 @ 210
+3 @ 160 => 2 @ 220
+3 @ 166 => 4 @ 226
+3 @ 168 => 2 @ 228
+Available bicycle is 15 at the end 180
+
+*** Station 4 between [120 - 180]
+Available bicycle is 7 at start 120
+5 New riders arrived to station 4 at [133, 137, 144, 153, 160]
+10 Cyclists completed travel to station 4 at [121, 129, 138, 142, 142, 147, 155, 161, 169, 170]
+4 @ 133 => 2 @ 193
+4 @ 137 => 5 @ 197
+4 @ 144 => 1 @ 204
+4 @ 153 => 1 @ 213
+4 @ 160 => 3 @ 220
+Available bicycle is 12 at the end 180
+
+*** Station 5 between [120 - 180]
+Available bicycle is 6 at start 120
+4 New riders arrived to station 5 at [140, 152, 158, 167]
+4 Cyclists completed travel to station 5 at [138, 139, 142, 145]
+5 @ 140 => 2 @ 200
+5 @ 152 => 4 @ 212
+5 @ 158 => 3 @ 218
+5 @ 167 => 4 @ 227
+Available bicycle is 6 at the end 180
+
+========================================================
+
+*** Station 1 between [180 - 240]
+Available bicycle is 7 at start 180
+2 New riders arrived to station 1 at [204, 207]
+3 Cyclists completed travel to station 1 at [204, 210, 213]
+1 @ 204 => 1 @ 264
+1 @ 207 => 4 @ 267
+Available bicycle is 8 at the end 240
+
+*** Station 2 between [180 - 240]
+Available bicycle is 9 at start 180
+8 New riders arrived to station 2 at [194, 197, 203, 209, 210, 213, 239, 239]
+10 Cyclists completed travel to station 2 at [183, 193, 200, 203, 204, 207, 220, 220, 228, 230]
+2 @ 194 => 3 @ 254
+2 @ 197 => 5 @ 257
+2 @ 203 => 5 @ 263
+2 @ 209 => 4 @ 269
+2 @ 210 => 2 @ 270
+2 @ 213 => 3 @ 273
+2 @ 239 => 3 @ 299
+2 @ 239 => 4 @ 299
+Available bicycle is 11 at the end 240
+
+*** Station 3 between [180 - 240]
+Available bicycle is 15 at start 180
+3 New riders arrived to station 3 at [200, 214, 225]
+4 Cyclists completed travel to station 3 at [211, 218, 220, 226]
+3 @ 200 => 5 @ 260
+3 @ 214 => 2 @ 274
+3 @ 225 => 1 @ 285
+Available bicycle is 16 at the end 240
+
+*** Station 4 between [180 - 240]
+Available bicycle is 12 at start 180
+4 New riders arrived to station 4 at [193, 199, 215, 227]
+5 Cyclists completed travel to station 4 at [207, 212, 222, 226, 227]
+4 @ 193 => 2 @ 253
+4 @ 199 => 3 @ 259
+4 @ 215 => 5 @ 275
+4 @ 227 => 1 @ 287
+Available bicycle is 13 at the end 240
+
+*** Station 5 between [180 - 240]
+Available bicycle is 6 at start 180
+1 New riders arrived to station 5 at [184]
+4 Cyclists completed travel to station 5 at [195, 197, 208, 233]
+5 @ 184 => 4 @ 244
+Available bicycle is 9 at the end 240
+
+========================================================
+
+*** Station 1 between [240 - 300]
+Available bicycle is 8 at start 240
+7 New riders arrived to station 1 at [243, 244, 264, 265, 267, 279, 296]
+3 Cyclists completed travel to station 1 at [264, 285, 287]
+1 @ 243 => 5 @ 303
+1 @ 244 => 2 @ 304
+1 @ 264 => 2 @ 324
+1 @ 265 => 4 @ 325
+1 @ 267 => 4 @ 327
+1 @ 279 => 2 @ 339
+1 @ 296 => 4 @ 356
+Available bicycle is 4 at the end 300
+
+*** Station 2 between [240 - 300]
+Available bicycle is 11 at start 240
+4 New riders arrived to station 2 at [251, 264, 271, 296]
+3 Cyclists completed travel to station 2 at [253, 270, 274]
+2 @ 251 => 4 @ 311
+2 @ 264 => 4 @ 324
+2 @ 271 => 4 @ 331
+2 @ 296 => 3 @ 356
+Available bicycle is 10 at the end 300
+
+*** Station 3 between [240 - 300]
+Available bicycle is 16 at start 240
+5 New riders arrived to station 3 at [244, 246, 280, 283, 291]
+4 Cyclists completed travel to station 3 at [254, 259, 273, 299]
+3 @ 244 => 1 @ 304
+3 @ 246 => 4 @ 306
+3 @ 280 => 1 @ 340
+3 @ 283 => 4 @ 343
+3 @ 291 => 2 @ 351
+Available bicycle is 15 at the end 300
+
+*** Station 4 between [240 - 300]
+Available bicycle is 13 at start 240
+6 New riders arrived to station 4 at [241, 258, 260, 261, 270, 273]
+4 Cyclists completed travel to station 4 at [244, 267, 269, 299]
+4 @ 241 => 5 @ 301
+4 @ 258 => 3 @ 318
+4 @ 260 => 5 @ 320
+4 @ 261 => 3 @ 321
+4 @ 270 => 3 @ 330
+4 @ 273 => 3 @ 333
+Available bicycle is 11 at the end 300
+
+*** Station 5 between [240 - 300]
+Available bicycle is 9 at start 240
+6 New riders arrived to station 5 at [245, 248, 250, 257, 269, 284]
+4 Cyclists completed travel to station 5 at [257, 260, 263, 275]
+5 @ 245 => 2 @ 305
+5 @ 248 => 1 @ 308
+5 @ 250 => 2 @ 310
+5 @ 257 => 4 @ 317
+5 @ 269 => 4 @ 329
+5 @ 284 => 2 @ 344
+Available bicycle is 7 at the end 300
+
+========================================================
+
+*** Station 1 between [300 - 360]
+Available bicycle is 4 at start 300
+3 New riders arrived to station 1 at [305, 310, 331]
+3 Cyclists completed travel to station 1 at [304, 308, 340]
+1 @ 305 => 4 @ 365
+1 @ 310 => 2 @ 370
+1 @ 331 => 3 @ 391
+Available bicycle is 4 at the end 360
+
+*** Station 2 between [300 - 360]
+Available bicycle is 10 at start 300
+4 New riders arrived to station 2 at [313, 332, 352, 354]
+7 Cyclists completed travel to station 2 at [304, 305, 310, 324, 339, 344, 351]
+2 @ 313 => 5 @ 373
+2 @ 332 => 3 @ 392
+2 @ 352 => 4 @ 412
+2 @ 354 => 4 @ 414
+Available bicycle is 13 at the end 360
+
+*** Station 3 between [300 - 360]
+Available bicycle is 15 at start 300
+7 New riders arrived to station 3 at [303, 319, 324, 328, 331, 344, 357]
+5 Cyclists completed travel to station 3 at [318, 321, 330, 333, 356]
+3 @ 303 => 5 @ 363
+3 @ 319 => 5 @ 379
+3 @ 324 => 5 @ 384
+3 @ 328 => 2 @ 388
+3 @ 331 => 5 @ 391
+3 @ 344 => 2 @ 404
+3 @ 357 => 4 @ 417
+Available bicycle is 13 at the end 360
+
+*** Station 4 between [300 - 360]
+Available bicycle is 11 at start 300
+3 New riders arrived to station 4 at [322, 353, 355]
+10 Cyclists completed travel to station 4 at [306, 311, 317, 324, 325, 327, 329, 331, 343, 356]
+4 @ 322 => 5 @ 382
+4 @ 353 => 3 @ 413
+4 @ 355 => 1 @ 415
+Available bicycle is 18 at the end 360
+
+*** Station 5 between [300 - 360]
+Available bicycle is 7 at start 300
+9 New riders arrived to station 5 at [310, 314, 320, 323, 340, 344, 354, 355, 356]
+3 Cyclists completed travel to station 5 at [301, 303, 320]
+5 @ 310 => 4 @ 370
+5 @ 314 => 2 @ 374
+5 @ 320 => 2 @ 380
+5 @ 323 => 2 @ 383
+5 @ 340 => 4 @ 400
+5 @ 344 => 4 @ 404
+5 @ 354 => 3 @ 414
+5 @ 355 => 4 @ 415
+5 @ 356 => 2 @ 416
+Available bicycle is 1 at the end 360
+
+========================================================
+
+*** Station 1 between [360 - 420]
+Available bicycle is 4 at start 360
+7 New riders arrived to station 1 at [366, 374, 379, 381, 391, 406, 418]
+1 Cyclists completed travel to station 1 at [415]
+1 @ 366 => 5 @ 426
+1 @ 374 => 4 @ 434
+1 @ 379 => 4 @ 439
+1 @ 381 => 3 @ 441
+!!!!!! No bicycle available at station 1 at time 391
+!!!!!! No bicycle available at station 1 at time 406
+1 @ 418 => 4 @ 478
+Available bicycle is 0 at the end 420
+
+*** Station 2 between [360 - 420]
+Available bicycle is 13 at start 360
+2 New riders arrived to station 2 at [362, 367]
+7 Cyclists completed travel to station 2 at [370, 374, 380, 383, 388, 404, 416]
+2 @ 362 => 5 @ 422
+2 @ 367 => 3 @ 427
+Available bicycle is 18 at the end 420
+
+*** Station 3 between [360 - 420]
+Available bicycle is 13 at start 360
+7 New riders arrived to station 3 at [371, 373, 390, 391, 398, 403, 414]
+4 Cyclists completed travel to station 3 at [391, 392, 413, 414]
+3 @ 371 => 4 @ 431
+3 @ 373 => 2 @ 433
+3 @ 390 => 4 @ 450
+3 @ 391 => 5 @ 451
+3 @ 398 => 2 @ 458
+3 @ 403 => 1 @ 463
+3 @ 414 => 4 @ 474
+Available bicycle is 10 at the end 420
+
+*** Station 4 between [360 - 420]
+Available bicycle is 18 at start 360
+5 New riders arrived to station 4 at [378, 384, 387, 393, 396]
+8 Cyclists completed travel to station 4 at [365, 370, 400, 404, 412, 414, 415, 417]
+4 @ 378 => 5 @ 438
+4 @ 384 => 3 @ 444
+4 @ 387 => 1 @ 447
+4 @ 393 => 1 @ 453
+4 @ 396 => 1 @ 456
+Available bicycle is 21 at the end 420
+
+*** Station 5 between [360 - 420]
+Available bicycle is 1 at start 360
+7 New riders arrived to station 5 at [362, 370, 395, 402, 407, 417, 418]
+6 Cyclists completed travel to station 5 at [363, 373, 379, 382, 384, 391]
+5 @ 362 => 4 @ 422
+5 @ 370 => 4 @ 430
+5 @ 395 => 2 @ 455
+5 @ 402 => 4 @ 462
+5 @ 407 => 4 @ 467
+5 @ 417 => 2 @ 477
+5 @ 418 => 2 @ 478
+Available bicycle is 0 at the end 420
+
+========================================================
+
+*** Station 1 between [420 - 480]
+Available bicycle is 0 at start 420
+4 New riders arrived to station 1 at [421, 427, 445, 477]
+4 Cyclists completed travel to station 1 at [447, 453, 456, 463]
+!!!!!! No bicycle available at station 1 at time 421
+!!!!!! No bicycle available at station 1 at time 427
+!!!!!! No bicycle available at station 1 at time 445
+1 @ 477 => 4 @ 537
+Available bicycle is 3 at the end 480
+
+*** Station 2 between [420 - 480]
+Available bicycle is 18 at start 420
+9 New riders arrived to station 2 at [423, 435, 442, 444, 451, 456, 457, 475, 475]
+5 Cyclists completed travel to station 2 at [433, 455, 458, 477, 478]
+2 @ 423 => 4 @ 483
+2 @ 435 => 3 @ 495
+2 @ 442 => 4 @ 502
+2 @ 444 => 3 @ 504
+2 @ 451 => 4 @ 511
+2 @ 456 => 3 @ 516
+2 @ 457 => 3 @ 517
+2 @ 475 => 5 @ 535
+2 @ 475 => 4 @ 535
+Available bicycle is 14 at the end 480
+
+*** Station 3 between [420 - 480]
+Available bicycle is 10 at start 420
+6 New riders arrived to station 3 at [434, 445, 452, 456, 458, 464]
+3 Cyclists completed travel to station 3 at [427, 441, 444]
+3 @ 434 => 1 @ 494
+3 @ 445 => 5 @ 505
+3 @ 452 => 4 @ 512
+3 @ 456 => 5 @ 516
+3 @ 458 => 1 @ 518
+3 @ 464 => 5 @ 524
+Available bicycle is 7 at the end 480
+
+*** Station 4 between [420 - 480]
+Available bicycle is 21 at start 420
+9 New riders arrived to station 4 at [461, 464, 464, 473, 474, 474, 477, 478, 479]
+10 Cyclists completed travel to station 4 at [422, 430, 431, 434, 439, 450, 462, 467, 474, 478]
+4 @ 461 => 1 @ 521
+4 @ 464 => 1 @ 524
+4 @ 464 => 3 @ 524
+4 @ 473 => 3 @ 533
+4 @ 474 => 1 @ 534
+4 @ 474 => 5 @ 534
+4 @ 477 => 2 @ 537
+4 @ 478 => 2 @ 538
+4 @ 479 => 1 @ 539
+Available bicycle is 22 at the end 480
+
+*** Station 5 between [420 - 480]
+Available bicycle is 0 at start 420
+2 New riders arrived to station 5 at [425, 434]
+4 Cyclists completed travel to station 5 at [422, 426, 438, 451]
+5 @ 425 => 4 @ 485
+5 @ 434 => 4 @ 494
+Available bicycle is 2 at the end 480
+
+========================================================
+
+*** Station 1 between [480 - 540]
+Available bicycle is 3 at start 480
+3 New riders arrived to station 1 at [501, 503, 540]
+6 Cyclists completed travel to station 1 at [494, 518, 521, 524, 534, 539]
+1 @ 501 => 4 @ 561
+1 @ 503 => 1 @ 563
+1 @ 540 => 5 @ 600
+Available bicycle is 6 at the end 540
+
+*** Station 2 between [480 - 540]
+Available bicycle is 14 at start 480
+5 New riders arrived to station 2 at [490, 496, 500, 505, 524]
+2 Cyclists completed travel to station 2 at [537, 538]
+2 @ 490 => 4 @ 550
+2 @ 496 => 3 @ 556
+2 @ 500 => 1 @ 560
+2 @ 505 => 4 @ 565
+2 @ 524 => 3 @ 584
+Available bicycle is 11 at the end 540
+
+*** Station 3 between [480 - 540]
+Available bicycle is 7 at start 480
+5 New riders arrived to station 3 at [493, 502, 503, 519, 531]
+6 Cyclists completed travel to station 3 at [495, 504, 516, 517, 524, 533]
+3 @ 493 => 1 @ 553
+3 @ 502 => 2 @ 562
+3 @ 503 => 1 @ 563
+3 @ 519 => 5 @ 579
+3 @ 531 => 2 @ 591
+Available bicycle is 8 at the end 540
+
+*** Station 4 between [480 - 540]
+Available bicycle is 22 at start 480
+8 New riders arrived to station 4 at [488, 488, 496, 498, 502, 513, 536, 537]
+8 Cyclists completed travel to station 4 at [483, 485, 494, 502, 511, 512, 535, 537]
+4 @ 488 => 2 @ 548
+4 @ 488 => 3 @ 548
+4 @ 496 => 3 @ 556
+4 @ 498 => 1 @ 558
+4 @ 502 => 5 @ 562
+4 @ 513 => 1 @ 573
+4 @ 536 => 1 @ 596
+4 @ 537 => 3 @ 597
+Available bicycle is 22 at the end 540
+
+*** Station 5 between [480 - 540]
+Available bicycle is 2 at start 480
+5 New riders arrived to station 5 at [493, 511, 524, 528, 540]
+5 Cyclists completed travel to station 5 at [505, 516, 524, 534, 535]
+5 @ 493 => 3 @ 553
+5 @ 511 => 4 @ 571
+5 @ 524 => 2 @ 584
+5 @ 528 => 2 @ 588
+5 @ 540 => 3 @ 600
+Available bicycle is 2 at the end 540
+
+========================================================
+
+*** Station 1 between [540 - 600]
+Available bicycle is 6 at start 540
+1 New riders arrived to station 1 at [596]
+7 Cyclists completed travel to station 1 at [553, 558, 560, 563, 563, 573, 596]
+1 @ 596 => 4 @ 656
+Available bicycle is 12 at the end 600
+
+*** Station 2 between [540 - 600]
+Available bicycle is 11 at start 540
+8 New riders arrived to station 2 at [555, 560, 562, 564, 573, 574, 584, 594]
+5 Cyclists completed travel to station 2 at [548, 562, 584, 588, 591]
+2 @ 555 => 5 @ 615
+2 @ 560 => 2 @ 620
+2 @ 562 => 4 @ 622
+2 @ 564 => 3 @ 624
+2 @ 573 => 3 @ 633
+2 @ 574 => 3 @ 634
+2 @ 584 => 4 @ 644
+2 @ 594 => 4 @ 654
+Available bicycle is 8 at the end 600
+
+*** Station 3 between [540 - 600]
+Available bicycle is 8 at start 540
+5 New riders arrived to station 3 at [549, 557, 579, 584, 591]
+7 Cyclists completed travel to station 3 at [548, 553, 556, 556, 584, 597, 600]
+3 @ 549 => 4 @ 609
+3 @ 557 => 4 @ 617
+3 @ 579 => 1 @ 639
+3 @ 584 => 5 @ 644
+3 @ 591 => 2 @ 651
+Available bicycle is 10 at the end 600
+
+*** Station 4 between [540 - 600]
+Available bicycle is 22 at start 540
+3 New riders arrived to station 4 at [547, 562, 598]
+4 Cyclists completed travel to station 4 at [550, 561, 565, 571]
+4 @ 547 => 5 @ 607
+4 @ 562 => 5 @ 622
+4 @ 598 => 5 @ 658
+Available bicycle is 23 at the end 600
+
+*** Station 5 between [540 - 600]
+Available bicycle is 2 at start 540
+4 New riders arrived to station 5 at [549, 567, 589, 599]
+3 Cyclists completed travel to station 5 at [562, 579, 600]
+5 @ 549 => 2 @ 609
+5 @ 567 => 4 @ 627
+5 @ 589 => 3 @ 649
+5 @ 599 => 4 @ 659
+Available bicycle is 1 at the end 600
+
+========================================================
+
+*** Station 1 between [600 - 660]
+Available bicycle is 12 at start 600
+7 New riders arrived to station 1 at [601, 605, 609, 645, 646, 652, 653]
+1 Cyclists completed travel to station 1 at [639]
+1 @ 601 => 3 @ 661
+1 @ 605 => 2 @ 665
+1 @ 609 => 4 @ 669
+1 @ 645 => 2 @ 705
+1 @ 646 => 4 @ 706
+1 @ 652 => 3 @ 712
+1 @ 653 => 3 @ 713
+Available bicycle is 6 at the end 660
+
+*** Station 2 between [600 - 660]
+Available bicycle is 8 at start 600
+1 New riders arrived to station 2 at [625]
+3 Cyclists completed travel to station 2 at [609, 620, 651]
+2 @ 625 => 5 @ 685
+Available bicycle is 10 at the end 660
+
+*** Station 3 between [600 - 660]
+Available bicycle is 10 at start 600
+6 New riders arrived to station 3 at [605, 612, 617, 633, 644, 655]
+4 Cyclists completed travel to station 3 at [624, 633, 634, 649]
+3 @ 605 => 4 @ 665
+3 @ 612 => 2 @ 672
+3 @ 617 => 5 @ 677
+3 @ 633 => 5 @ 693
+3 @ 644 => 5 @ 704
+3 @ 655 => 2 @ 715
+Available bicycle is 8 at the end 660
+
+*** Station 4 between [600 - 660]
+Available bicycle is 23 at start 600
+3 New riders arrived to station 4 at [610, 631, 636]
+8 Cyclists completed travel to station 4 at [609, 617, 622, 627, 644, 654, 656, 659]
+4 @ 610 => 3 @ 670
+4 @ 631 => 5 @ 691
+4 @ 636 => 2 @ 696
+Available bicycle is 28 at the end 660
+
+*** Station 5 between [600 - 660]
+Available bicycle is 1 at start 600
+6 New riders arrived to station 5 at [609, 618, 625, 636, 654, 655]
+5 Cyclists completed travel to station 5 at [607, 615, 622, 644, 658]
+5 @ 609 => 5 @ 669
+5 @ 618 => 2 @ 678
+5 @ 625 => 4 @ 685
+5 @ 636 => 3 @ 696
+5 @ 654 => 5 @ 714
+!!!!!! No bicycle available at station 5 at time 655
+Available bicycle is 1 at the end 660
+
+========================================================
+
+*** Station 1 between [660 - 720]
+Available bicycle is 6 at start 660
+3 New riders arrived to station 1 at [697, 712, 716]
+0 Cyclists completed travel to station 1 at []
+1 @ 697 => 2 @ 757
+1 @ 712 => 1 @ 772
+1 @ 716 => 2 @ 776
+Available bicycle is 3 at the end 720
+
+*** Station 2 between [660 - 720]
+Available bicycle is 10 at start 660
+5 New riders arrived to station 2 at [684, 688, 692, 701, 717]
+6 Cyclists completed travel to station 2 at [665, 672, 678, 696, 705, 715]
+2 @ 684 => 5 @ 744
+2 @ 688 => 1 @ 748
+2 @ 692 => 3 @ 752
+2 @ 701 => 3 @ 761
+2 @ 717 => 2 @ 777
+Available bicycle is 11 at the end 720
+
+*** Station 3 between [660 - 720]
+Available bicycle is 8 at start 660
+1 New riders arrived to station 3 at [708]
+5 Cyclists completed travel to station 3 at [661, 670, 696, 712, 713]
+3 @ 708 => 2 @ 768
+Available bicycle is 12 at the end 720
+
+*** Station 4 between [660 - 720]
+Available bicycle is 28 at start 660
+4 New riders arrived to station 4 at [662, 673, 710, 718]
+4 Cyclists completed travel to station 4 at [665, 669, 685, 706]
+4 @ 662 => 5 @ 722
+4 @ 673 => 1 @ 733
+4 @ 710 => 5 @ 770
+4 @ 718 => 3 @ 778
+Available bicycle is 28 at the end 720
+
+*** Station 5 between [660 - 720]
+Available bicycle is 1 at start 660
+3 New riders arrived to station 5 at [681, 694, 714]
+7 Cyclists completed travel to station 5 at [669, 677, 685, 691, 693, 704, 714]
+5 @ 681 => 4 @ 741
+5 @ 694 => 4 @ 754
+5 @ 714 => 5 @ 774
+Available bicycle is 5 at the end 720
+
+========================================================
+
+*** Station 1 between [720 - 780]
+Available bicycle is 3 at start 720
+5 New riders arrived to station 1 at [731, 734, 763, 768, 769]
+3 Cyclists completed travel to station 1 at [733, 748, 772]
+1 @ 731 => 3 @ 791
+1 @ 734 => 4 @ 794
+1 @ 763 => 3 @ 823
+1 @ 768 => 1 @ 828
+1 @ 769 => 3 @ 829
+Available bicycle is 1 at the end 780
+
+*** Station 2 between [720 - 780]
+Available bicycle is 11 at start 720
+3 New riders arrived to station 2 at [738, 752, 770]
+4 Cyclists completed travel to station 2 at [757, 768, 776, 777]
+2 @ 738 => 3 @ 798
+2 @ 752 => 1 @ 812
+2 @ 770 => 2 @ 830
+Available bicycle is 12 at the end 780
+
+*** Station 3 between [720 - 780]
+Available bicycle is 12 at start 720
+3 New riders arrived to station 3 at [747, 759, 761]
+3 Cyclists completed travel to station 3 at [752, 761, 778]
+3 @ 747 => 2 @ 807
+3 @ 759 => 4 @ 819
+3 @ 761 => 2 @ 821
+Available bicycle is 12 at the end 780
+
+*** Station 4 between [720 - 780]
+Available bicycle is 28 at start 720
+4 New riders arrived to station 4 at [758, 775, 779, 779]
+2 Cyclists completed travel to station 4 at [741, 754]
+4 @ 758 => 3 @ 818
+4 @ 775 => 1 @ 835
+4 @ 779 => 5 @ 839
+4 @ 779 => 1 @ 839
+Available bicycle is 26 at the end 780
+
+*** Station 5 between [720 - 780]
+Available bicycle is 5 at start 720
+4 New riders arrived to station 5 at [722, 744, 747, 750]
+4 Cyclists completed travel to station 5 at [722, 744, 770, 774]
+5 @ 722 => 4 @ 782
+5 @ 744 => 1 @ 804
+5 @ 747 => 3 @ 807
+5 @ 750 => 2 @ 810
+Available bicycle is 5 at the end 780
+
+========================================================
+
+*** Station 1 between [780 - 840]
+Available bicycle is 1 at start 780
+2 New riders arrived to station 1 at [809, 814]
+5 Cyclists completed travel to station 1 at [804, 812, 828, 835, 839]
+1 @ 809 => 3 @ 869
+1 @ 814 => 3 @ 874
+Available bicycle is 4 at the end 840
+
+*** Station 2 between [780 - 840]
+Available bicycle is 12 at start 780
+2 New riders arrived to station 2 at [830, 835]
+4 Cyclists completed travel to station 2 at [807, 810, 821, 830]
+2 @ 830 => 3 @ 890
+2 @ 835 => 2 @ 895
+Available bicycle is 14 at the end 840
+
+*** Station 3 between [780 - 840]
+Available bicycle is 12 at start 780
+7 New riders arrived to station 3 at [803, 803, 804, 815, 816, 822, 837]
+6 Cyclists completed travel to station 3 at [791, 798, 807, 818, 823, 829]
+3 @ 803 => 5 @ 863
+3 @ 803 => 5 @ 863
+3 @ 804 => 4 @ 864
+3 @ 815 => 2 @ 875
+3 @ 816 => 5 @ 876
+3 @ 822 => 2 @ 882
+3 @ 837 => 2 @ 897
+Available bicycle is 11 at the end 840
+
+*** Station 4 between [780 - 840]
+Available bicycle is 26 at start 780
+6 New riders arrived to station 4 at [785, 790, 824, 826, 838, 839]
+3 Cyclists completed travel to station 4 at [782, 794, 819]
+4 @ 785 => 1 @ 845
+4 @ 790 => 5 @ 850
+4 @ 824 => 1 @ 884
+4 @ 826 => 1 @ 886
+4 @ 838 => 5 @ 898
+4 @ 839 => 2 @ 899
+Available bicycle is 23 at the end 840
+
+*** Station 5 between [780 - 840]
+Available bicycle is 5 at start 780
+6 New riders arrived to station 5 at [781, 800, 815, 815, 820, 827]
+1 Cyclists completed travel to station 5 at [839]
+5 @ 781 => 4 @ 841
+5 @ 800 => 4 @ 860
+5 @ 815 => 4 @ 875
+5 @ 815 => 3 @ 875
+5 @ 820 => 3 @ 880
+!!!!!! No bicycle available at station 5 at time 827
+Available bicycle is 1 at the end 840
+
+========================================================
+
+*** Station 1 between [840 - 900]
+Available bicycle is 4 at start 840
+2 New riders arrived to station 1 at [860, 866]
+3 Cyclists completed travel to station 1 at [845, 884, 886]
+1 @ 860 => 5 @ 920
+1 @ 866 => 3 @ 926
+Available bicycle is 5 at the end 900
+
+*** Station 2 between [840 - 900]
+Available bicycle is 14 at start 840
+4 New riders arrived to station 2 at [850, 863, 869, 874]
+5 Cyclists completed travel to station 2 at [875, 882, 895, 897, 899]
+2 @ 850 => 1 @ 910
+2 @ 863 => 4 @ 923
+2 @ 869 => 4 @ 929
+2 @ 874 => 3 @ 934
+Available bicycle is 15 at the end 900
+
+*** Station 3 between [840 - 900]
+Available bicycle is 11 at start 840
+7 New riders arrived to station 3 at [853, 854, 860, 866, 866, 881, 882]
+5 Cyclists completed travel to station 3 at [869, 874, 875, 880, 890]
+3 @ 853 => 2 @ 913
+3 @ 854 => 5 @ 914
+3 @ 860 => 1 @ 920
+3 @ 866 => 4 @ 926
+3 @ 866 => 5 @ 926
+3 @ 881 => 4 @ 941
+3 @ 882 => 1 @ 942
+Available bicycle is 9 at the end 900
+
+*** Station 4 between [840 - 900]
+Available bicycle is 23 at start 840
+6 New riders arrived to station 4 at [845, 859, 861, 866, 873, 876]
+4 Cyclists completed travel to station 4 at [841, 860, 864, 875]
+4 @ 845 => 3 @ 905
+4 @ 859 => 5 @ 919
+4 @ 861 => 5 @ 921
+4 @ 866 => 5 @ 926
+4 @ 873 => 3 @ 933
+4 @ 876 => 3 @ 936
+Available bicycle is 21 at the end 900
+
+*** Station 5 between [840 - 900]
+Available bicycle is 1 at start 840
+2 New riders arrived to station 5 at [871, 898]
+5 Cyclists completed travel to station 5 at [850, 863, 863, 876, 898]
+5 @ 871 => 3 @ 931
+5 @ 898 => 3 @ 958
+Available bicycle is 4 at the end 900
+
+========================================================
+
+*** Station 1 between [900 - 960]
+Available bicycle is 5 at start 900
+4 New riders arrived to station 1 at [902, 903, 925, 956]
+3 Cyclists completed travel to station 1 at [910, 920, 942]
+1 @ 902 => 3 @ 962
+1 @ 903 => 5 @ 963
+1 @ 925 => 4 @ 985
+1 @ 956 => 4 @ 1016
+Available bicycle is 4 at the end 960
+
+*** Station 2 between [900 - 960]
+Available bicycle is 15 at start 900
+9 New riders arrived to station 2 at [901, 909, 917, 918, 937, 947, 948, 950, 957]
+1 Cyclists completed travel to station 2 at [913]
+2 @ 901 => 5 @ 961
+2 @ 909 => 4 @ 969
+2 @ 917 => 4 @ 977
+2 @ 918 => 3 @ 978
+2 @ 937 => 2 @ 997
+2 @ 947 => 3 @ 1007
+2 @ 948 => 4 @ 1008
+2 @ 950 => 5 @ 1010
+2 @ 957 => 3 @ 1017
+Available bicycle is 7 at the end 960
+
+*** Station 3 between [900 - 960]
+Available bicycle is 9 at start 900
+4 New riders arrived to station 3 at [917, 932, 947, 949]
+7 Cyclists completed travel to station 3 at [905, 926, 931, 933, 934, 936, 958]
+3 @ 917 => 1 @ 977
+3 @ 932 => 1 @ 992
+3 @ 947 => 2 @ 1007
+3 @ 949 => 4 @ 1009
+Available bicycle is 12 at the end 960
+
+*** Station 4 between [900 - 960]
+Available bicycle is 21 at start 900
+3 New riders arrived to station 4 at [909, 912, 925]
+4 Cyclists completed travel to station 4 at [923, 926, 929, 941]
+4 @ 909 => 1 @ 969
+4 @ 912 => 1 @ 972
+4 @ 925 => 1 @ 985
+Available bicycle is 22 at the end 960
+
+*** Station 5 between [900 - 960]
+Available bicycle is 4 at start 900
+4 New riders arrived to station 5 at [914, 932, 946, 959]
+6 Cyclists completed travel to station 5 at [914, 919, 920, 921, 926, 926]
+5 @ 914 => 1 @ 974
+5 @ 932 => 3 @ 992
+5 @ 946 => 4 @ 1006
+5 @ 959 => 2 @ 1019
+Available bicycle is 6 at the end 960
+
+========================================================
+
+Arrival rate lambda is 5 riders per hour
+Simulation duration is 16 hour
+Result tables:
+  Station 1
+    [18, 15, 10, 7, 8, 4, 4, 0, 3, 6, 12, 6, 3, 1, 4, 5]
+    [3, 8, 5, 2, 7, 3, 7, 4, 3, 1, 7, 3, 5, 2, 2, 4]
+    [0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+  Station 2
+    [15, 14, 12, 9, 11, 10, 13, 18, 14, 11, 8, 10, 11, 12, 14, 15]
+    [1, 4, 5, 8, 4, 4, 2, 9, 5, 8, 1, 5, 3, 2, 4, 9]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Station 3
+    [13, 11, 15, 15, 16, 15, 13, 10, 7, 8, 10, 8, 12, 12, 11, 9]
+    [2, 3, 7, 3, 5, 7, 7, 6, 5, 5, 6, 1, 3, 7, 7, 4]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Station 4
+    [13, 7, 7, 12, 13, 11, 18, 21, 22, 22, 23, 28, 28, 26, 23, 21]
+    [6, 5, 5, 4, 6, 3, 5, 9, 8, 3, 3, 4, 4, 6, 6, 3]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Station 5
+    [16, 9, 6, 6, 9, 7, 1, 0, 2, 2, 1, 1, 5, 5, 1, 4]
+    [7, 5, 4, 1, 6, 9, 7, 2, 5, 4, 6, 3, 4, 6, 2, 4]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
+SQDS = [0.9242, 1.0, 1.0, 1.0, 0.9733]
+OSQBSS = 0.9812
+
+Process finished with exit code 0
