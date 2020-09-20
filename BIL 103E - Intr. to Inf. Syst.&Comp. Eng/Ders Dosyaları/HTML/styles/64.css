@@ -1,0 +1,36 @@
+#tex1 h1
+{
+	letter-spacing:2px;
+}
+
+#tex1 h2
+{
+	letter-spacing:-3px;
+}
+
+
+#tex2 p.small {line-height:70%;}
+#tex2 p.big {line-height:200%;}
+
+#tex3 .direction{direction:rtl;}
+
+#fex1 p.normal {font-style:normal;}
+#fex1 p.italic {font-style:italic;}
+#fex1 p.oblique {font-style:oblique;}
+
+#fex2 h1 {font-size:2.5em;} /* 40px/16=2.5em */
+#fex2 h2 {font-size:1.875em;} /* 30px/16=1.875em */
+#fex2 p {font-size:0.875em;} /* 14px/16=0.875em */
+
+#fex3 p.normal {font-variant:normal;}
+#fex3 p.small {font-variant:small-caps;}
+
+#fex4 p.ex1
+{
+font:15px arial,sans-serif;
+}
+
+#fex4 p.ex2
+{
+font:italic bold 12px/30px Georgia,serif;
+}

@@ -1,0 +1,5 @@
+a:link {color: #009900; text-decoration:underline;}
+a:visited {color: #999999; text-decoration:line-through;}
+a:hover {color: #333333;}
+a:focus {color: #333333;}
+a:active {color: #009900;}

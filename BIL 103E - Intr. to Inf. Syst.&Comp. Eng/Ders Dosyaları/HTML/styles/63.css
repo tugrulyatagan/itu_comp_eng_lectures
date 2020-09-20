@@ -1,0 +1,40 @@
+.redish{
+	background-color:red;
+	}
+	
+#important
+{
+text-align:center;
+color:red;
+} 
+
+.center
+{
+text-align:center;
+}
+
+
+p.center
+{
+text-align:center;
+color:blue;
+}
+
+#divEx p
+{
+background-color:yellow;
+}
+
+#divEx .boldText
+{
+font-weight:bold;
+background-color:aqua;
+}
+
+#divEx p.padding
+{
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-right:50px;
+	padding-left:50px;
+}

@@ -1,0 +1,15 @@
+#tex1 h1
+{
+	letter-spacing:2px;
+}
+
+#tex1 h2
+{
+	letter-spacing:-3px;
+}
+
+
+#tex2 p.small {line-height:70%;}
+#tex2 p.big {line-height:200%;}
+
+#tex3 .direction{direction:rtl;}

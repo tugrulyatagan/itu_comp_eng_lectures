@@ -1,0 +1,4 @@
+function show_alert()
+{
+document.getElementById("demo").innerHTML=Date();
+}
