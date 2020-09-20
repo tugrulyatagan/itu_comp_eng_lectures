@@ -1,0 +1,89 @@
+	MÝKBÝL 2005 - DÝZGE EKLENTÝSÝ
+		YARDIM DOSYASI
+
+Dizge eklentisi mikbil benzetim programýnýn içinde
+ayrý bir süreç olarak çalýþýr. Windows'un süreç yönetimi
+bu noktada devreye girdiði için dizge eklentisinin çok
+yavaþ çalýþmasý veya beklenen hýzda çalýþmasý olasýdýr.
+
+Çamaþýr makinesi ekraný iki kýsma ayrýlýr:
+
+1) Panel:-----------------------------------------------
+
+Panel kullanýcý etkileþimini amaçlar. 
+Panelin kýsýmlarý:
+a)Dönüþ yönü: motorun o andadi durumunu gösterir. sol
+taraftaki animasyon üzeridende takip edilebilir.
+
+b)Su sýcaklýðý: içerideki suyun o andaki sýcaklýðýný
+gösterir. 
+
+c)Su seviyesi: içerideki suyun anlýk miktarýný gösterir.
+Soldaki animasyon üzerinde de takip edilebilir.Su sevi-
+yesi ÖrnekMÝB'e PÝA üzerinden gönderilir. 2 bit bu iþ-
+lev için kullanýlmýþtýr.
+
+		SuSeviyesi1	SuSeviyesi1
+%00		0		0
+%0 - %50	0		1
+%50 - %100	1		0
+%100		1		1
+
+d)Su Alýcý: Su alýcý musluðun durumu: açýk yada kapalý
+
+e)Su Verici: Su boþaltýcý musluðun durumu: açýk yada ka-
+palý
+
+f)Su Isýtýcý: Su ýsýtýcý devrenin durumu: açýk yada ka-
+palý 
+
+g) Program: Kullanýcýnýn yýkamada kullanacaðý program,
+programýn evreleri mikroiþlemci dilinde yazýlan progra-
+ma baðlýdýr.
+
+h)Ýstenen sýcaklýk: Kullanýcýnýn istediði su sýcaklýðý.
+Dikkat edilmesi gereken bir nokta, sýcaklýðý
+örnekMÝB $7FFF adresinden öðrenir. Ýstenen sýcaklýðýn
+bu þekilde öðrenilmesi uygun görülmüþtür.
+
+1) Baðýntýlar: -----------------------------------------
+
+ÖrnekMÝB ve Çamaþýr makinesi arasýndaki baðlantýlarý gös
+terir. Çamaþýr Makinesinin ilk 10 giriþ/çýkýþý pialara 
+tek tek baðlanmalýdýr. Su sýcaklýðý çýkýþý ise tek bir
+piaya toplu þekilde baðlanmalýdýr. Bunun için "Su Sýcak-
+lýðý" yazýsýný týklayýn ve baðlamak istediðiniz pianýn
+kendisini týklayýn ("PÝA1", "PÝA2" gibi).
+
+çamaþýr makinesinin G/Ç larý:
+
+a)Motor1 ve Motor2: motorun durumunu belirtir
+	M1	M2
+DUR	0	0
+SAÐ	0	1
+SAG	1	0
+
+b)Su Boþaltýcý: su boþaltýcý musluðu kontrol eden giriþ
+1 açýk 0 kapalý
+
+c)Su Alýcý: su alýcý musluðu kontrol eden giriþ 1 açýk
+0 kapalý
+
+d)Isýtýcý: su ýsýtýcý devreyi konrol eden giriþ 1 açýk
+0 kapalý
+
+e)Su Seviyesi1 ve Su Seviyesi2: gerekli açýklama Panel'
+de verilmiþtir.
+
+f)Çalýþtýrma Tuþu: kullanýcýn makineyi çalýþtýrmasýyla
+bu kapý lojik 1 duruna geçer, durdurmasý ile 0'a iner,
+yani Paneldeki "ÇALIÞTIR" tuþu ile iliþkilidir.
+
+g)Prg1 ve Prg2: kullanýcýnýn istediði program buradan
+okunabilir. Bu iþlev için 2 bit ayrýlmýþtýr.
+	Prg1	Prg2
+A	0	0
+B	0	1
+C	1	0
+D	1	1
+

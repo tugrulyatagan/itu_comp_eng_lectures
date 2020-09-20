@@ -1,0 +1,125 @@
+SORU 1:
+
+BAÞLA	YÜK	YG, $FFFF
+	YÜK 	A, $1A
+	YAZ	A,<DENETÝM>
+	YÜK	A, $41  /* A karakterinin ASCII karþýlýðý*/
+	ALT	GONDER  /* A ekrana yazdýrýldý*/
+	YÜK	A, $3D  /* = ASCII karþýlýðý*/
+	ALT	GONDER  /* = ekrana yazdýrýldý*/
+	ALT	ALMA    /*ilk sayýnýn onlar basamaðý okundu*/
+	ALT	GONDER  /*ilk sayýnýn onlar basamaðý ekrana yazdýrýldý*/
+	YAZ	A, $1002 /*ilk sayýnýn onlar basamaðý saklandý*/
+	ALT	ALMA     /*ilk sayýnýn birler basamaðý okundu*/
+	ALT	GONDER   /*ilk sayýnýn birler basamaðý ekrana yazdýrýldý*/
+	YAZ	A, $1003 /*ilk sayýnýn birler basamaðý saklandý*/
+	ALT	SATBAS  /*alt satýrda satýr baþý yapýldý*/
+	YÜK	A, $42  /* B ASCII karþýlýðý*/
+	ALT	GONDER  /* B ekrana yazdýrýldý*/
+	YÜK	A, $3D  /* = ASCII karþýlýðý*/
+	ALT	GONDER  /* = ekrana yazdýrýldý*/
+	ALT	ALMA   /*ikinci sayýnýn onlar basamaðý okundu*/
+	ALT	GONDER  /*ikinci sayýnýn onlar basamaðý ekrana yazdýrýldý*/
+	YAZ	A, $1000 /*ikinci sayýnýn onlar basamaðý saklandý*/
+	ALT	ALMA  /*ikinci sayýnýn birler basamaðý okundu*/
+	ALT	GONDER  /*ikinci sayýnýn birler basamaðý ekrana yazdýrýldý*/
+	YAZ	A, $1001 /*ikinci sayýnýn birler basamaðý saklandý*/
+	ALT	SATBAS  /*alt satýrda satýr baþý yapýldý*/
+	YÜK	A, $53  /* S ASCII karþýlýðý*/
+	ALT	GONDER  /* S ekrana yazdýrýldý*/
+	YÜK	A, $3D  /* = ASCII karþýlýðý*/
+	ALT	GONDER  /* = ekrana yazdýrýldý*/
+	
+GONDER	YÜK	B,<DURUM>
+	VE	B,$02
+	DEE 	GONDER
+	YAZ	A,<VERÝCÝ>
+	DÖN
+
+SATBAS	YÜK	A, $0D
+	ALT	GONDER
+	YÜK	A, $0A
+	ALT	GONDER
+	DÖN
+
+ALMA	YÜK	B,<DURUM>
+	VE	B,$01
+	DEE 	ALMA
+	YÜK	A,<ALICI>
+	DÖN
+	
+/*Bundan sonraki program parçasýný, bellek gözlerine çýkarma iþlemý yapýlacak sayýlarýn */ 
+/* ASCII karþýlýklarýný yükleyerek simulasyon programýnda çalýþtýrabilirsiniz. */ 
+	
+	YÜK	A, <$1000>
+	VE	A, $0F
+	ÇAR	A, $0A
+	AKT	C, B
+	YÜK	A, <$1001>
+	VE	A, $0F
+	TOP	A, C   
+	AKT	D, A   /*D yardýmcý kütüðü: ikinci sayýnýn ikilik tabanda karþýlýðý*/
+	YÜK	A, <$1002>
+	VE	A, $0F
+	ÇAR	A, $0A
+	AKT	C, B
+	YÜK	A, <$1003>
+	VE	A, $0F
+	TOP	A, C  /*A akümülatörü: ikinci sayýnýn ikilik tabanda karþýlýðý*/
+	ÇIK	A, D  /*A akümülatörü: çýkarma iþlemi sonucu*/
+	ONA	A
+	AKT	C, A
+	SAÐ	A
+	SAÐ	A
+	SAÐ	A
+	SAÐ	A
+	VEYA	A, $30  /*A akümülatörü: sonucun onlar basamaðýnýn ASCII karþýlýðý*/
+	ALT 	GONDER  /* simulasyon programýnda çalýþtýrýrken bu satýrý silin */
+	AKT	A, C
+	VE	A, $0F
+	VEYA	A, $30  /*A akümülatörü: sonucun birler basamaðýnýn ASCII karþýlýðý*/
+	ALT	GONDER  /* simulasyon programýnda çalýþtýrýrken bu satýrý silin */
+	KES
+--------------------------
+
+SORU 2: 
+BAÞLA	YÜK	YG, $FFFF
+GERÝ	YÜK	C, $08
+	YÜK	B, $02
+	SÝL	E
+	YÜK	A, $FF
+YAK	SOL	A
+	YAZ	A, <$8080>
+	ALT	GECÝK
+	AZT	C
+	DED  	YAK
+SOND	YÜK	A, $FF
+	YAZ	A, <$8080>
+	ALT	GECÝK
+	SÝL	A
+	YAZ	A, <$8080>
+	ALT	GECÝK
+	AZT	B
+	DED 	SOND
+	DAL	GERÝ
+
+GECÝK	YÜK  	SK, $F424  /* 2 mikrosaniye */
+	AZT	SK         /* 6 mikrosaniye */
+	DED 	GECÝK      /* 2 mikrosaniye */
+	DÖN	
+	
+KOSUL 	YÜK	A, $FF
+	YAZ	A, $8081
+	DÖN
+	
+Toplam gecikme süresi: 0.5 ms = 500000 mikrosaniye
+YÜK  	SK = 2 mikrosaniye => Çevrimde kalmasý gereken süre: 500000-2= 499998
+Bir çevrimde geçirdiði süre toplamý= 8 mikrosaniye (AZT SK ve DED GECÝK komutlarý için gerekli süre)
+499998/8 = 62500 çevrim olmasý gerekir. Bu sayý SK'ya yüklenerek 0.5 ms'lik gecikme saðlanýr. 
+
+
+
+	
+
+
+
