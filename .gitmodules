@@ -1,0 +1,4 @@
+[submodule "BLG 492E - Graduation Project/RISC-processor"]
+	path = BLG 492E - Graduation Project/RISC-processor
+	url = https://github.com/tugrulyatagan/RISC-processor
+	branch = master
