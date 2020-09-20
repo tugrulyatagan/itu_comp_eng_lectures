@@ -1,0 +1,23 @@
+Dear Students,
+
+You are expected to generate random graphs with 50 nodes
+
+with p=0.20, 0.40, 0.60, 0.80 by simulation and study these graphs according to four parameters that are listed below (select four out of the six parameters listed below) by drawing the figures with 95% confidence interval using 5 different random graphs
+
+- edge distribution 
+
+- degree distribution
+
+- size of giant component 
+
+- S, fraction of components in the giant component 
+
+- size of small components
+
+- diameter.
+
+Compare the simulation values with the analytical values and comment.
+
+Good luck,
+
+SFO  
