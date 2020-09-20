@@ -1,0 +1,15 @@
+ 
+Assignment 2: Parallel Merge Sort
+
+Prepare a parallelized version of the merge sort where (optionally each split) and sorted merge operation is performed by a different thread. Use barriers to provide synchronization between (splitting) merging threads. At each level of (splitting) merging operations you are expected to set a barrier for all (splitters) mergers to synchronize after finisihng the (split) merge.
+
+Implement the following versions of the algorithm and compare the performance of your implementations on a sufficiently large array with various numbers (1,2,4,8,16,32,64,128,…) of threads operating on it.
+
+Sequential version
+ Parallel version with barriers
+Merge sort explanation: https://www.geeksforgeeks.org/merge-sort/
+
+Plagiarism or cheating is not allowed. This is an individual homework.
+Deadline: 08.04.2018 23:59
+
+ 

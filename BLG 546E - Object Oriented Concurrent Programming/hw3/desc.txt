@@ -1,0 +1,67 @@
+Assignment 3: Parallel Primality Test
+
+In this homework you are asked to compare the performance difference between regular threads, Java ExecutorService and Java ForkJoinPools. You are asked to perform the following:
+
+1) Compose a necessarily large array of ordered odd numbers. 
+    a) We build the array ordered since we want unbalanced task running times.
+     b) In my system I've used around ~100k sized array to performance test threads, ~1M sized array to performance test thread pools.
+
+Use the following primality test method for items (2) (3) and (4)
+
+    public boolean testPrime(){
+    
+        for(int i=3; i<Math.sqrt(num); i+=2){
+            if(number % i == 0)
+                return true;
+        }
+        
+        return false;
+    }
+
+
+2) Test the performance of running each array cell's primality test in a separate thread.
+
+3) Test the performance of running each array cell's primality test in a separate task submitted to a CachedThreadPool Executor.
+
+4) Test the performance of running each array cell's primality test in a separate task submitted to a ForkJoinPool. You should prepare a collection of tasks and submit them to ForkJoinPool using invokeAll() method.
+
+5) Modify and use the following recursive primality test method to propoerly use a ForkJoinPool
+
+boolean isPrime(int n) {
+   return ((n > 1) && !factorInRange(2, n));
+}
+
+boolean factorInRange(int k, int n) {
+   if (k >= n)                         
+      return false;                  
+                                       
+   else if ((n % k) == 0)              
+      return true;                     
+   else                               
+      return factorInRange(k+1, n);    
+                                       
+                                       
+}
+
+*:https://www.cse.wustl.edu/~cytron/101Pages/f08/Notes/Recursion/recursion.html
+
+
+Plagiarism or cheating is not allowed. This is an individual homework.
+
+Deadline: 29.04.2018 23:59
+
+
+
+
+
+
+
+Dear All,
+
+In HW3, it is asked to compare the performance difference between Regular Thread (=RT), ExecutorService(=ES) and ForkJoinPools(=FJP). I am a little bit confused here.
+
+1) Do we need to compare perfromance of each thread within its category or compare the categories and general performances? In the former case we need to measure every thread's performance, on the other hand, in the latter comparison is made between RT, ES, FJP in terms of total requiring time. 
+
+2) Is it enough to compare only required amount of running time? I mean thread creation, joining, invoking, etc. all takes time and don't know whether it is fair or not to not account them for performance comparison.
+
+Thanks and regards.

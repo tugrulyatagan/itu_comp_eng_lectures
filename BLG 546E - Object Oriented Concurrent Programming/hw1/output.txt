@@ -1,0 +1,550 @@
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12522 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       7058 ms    1.77
+   4       3820 ms    3.28
+   8       3502 ms    3.58
+  16       3476 ms    3.60
+  32       3748 ms    3.34
+  64       3643 ms    3.44
+ 128       3574 ms    3.50
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       6592 ms    1.90
+   4       4314 ms    2.90
+   8       3690 ms    3.39
+  16       4225 ms    2.96
+  32       3998 ms    3.13
+  64       4057 ms    3.09
+ 128       4052 ms    3.09
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       6647 ms    1.88
+   4       3432 ms    3.65
+   8       3876 ms    3.23
+  16       4013 ms    3.12
+  32       4028 ms    3.11
+  64       3996 ms    3.13
+ 128       4036 ms    3.10
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12550 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       6315 ms    1.99
+   4       5569 ms    2.25
+   8       3976 ms    3.16
+  16       4089 ms    3.07
+  32       4547 ms    2.76
+  64       4481 ms    2.80
+ 128       4514 ms    2.78
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       6648 ms    1.89
+   4       5789 ms    2.17
+   8       4608 ms    2.72
+  16       5727 ms    2.19
+  32       4245 ms    2.96
+  64       4620 ms    2.72
+ 128       4707 ms    2.67
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7361 ms    1.70
+   4       6924 ms    1.81
+   8       4493 ms    2.79
+  16       4350 ms    2.89
+  32       4506 ms    2.79
+  64       4455 ms    2.82
+ 128       7727 ms    1.62
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 13007 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       6631 ms    1.96
+   4       5581 ms    2.33
+   8       4088 ms    3.18
+  16       4944 ms    2.63
+  32       3661 ms    3.55
+  64       3657 ms    3.56
+ 128       5549 ms    2.34
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2      10296 ms    1.26
+   4       4415 ms    2.95
+   8       3426 ms    3.80
+  16       4627 ms    2.81
+  32       4506 ms    2.89
+  64       3587 ms    3.63
+ 128       3795 ms    3.43
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7268 ms    1.79
+   4       3722 ms    3.49
+   8       3612 ms    3.60
+  16       5020 ms    2.59
+  32       6236 ms    2.09
+  64       4336 ms    3.00
+ 128       5065 ms    2.57
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12304 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       6754 ms    1.82
+   4       4222 ms    2.91
+   8       5331 ms    2.31
+  16       3883 ms    3.17
+  32       3492 ms    3.52
+  64       3826 ms    3.22
+ 128       6689 ms    1.84
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       9245 ms    1.33
+   4       5904 ms    2.08
+   8       3583 ms    3.43
+  16       4815 ms    2.56
+  32       6449 ms    1.91
+  64       4200 ms    2.93
+ 128       5225 ms    2.35
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7290 ms    1.69
+   4       3756 ms    3.28
+   8       3561 ms    3.46
+  16       4586 ms    2.68
+  32       6661 ms    1.85
+  64       4054 ms    3.04
+ 128       5407 ms    2.28
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12405 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       8842 ms    1.40
+   4       7934 ms    1.56
+   8       4017 ms    3.09
+  16       4485 ms    2.77
+  32       5766 ms    2.15
+  64       4147 ms    2.99
+ 128       4374 ms    2.84
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       6813 ms    1.82
+   4       3412 ms    3.64
+   8       5805 ms    2.14
+  16       5197 ms    2.39
+  32       5784 ms    2.14
+  64       6167 ms    2.01
+ 128       5495 ms    2.26
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       9290 ms    1.34
+   4       3399 ms    3.65
+   8       4117 ms    3.01
+  16       6082 ms    2.04
+  32       5904 ms    2.10
+  64       4839 ms    2.56
+ 128       5914 ms    2.10
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12776 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       6565 ms    1.95
+   4       7067 ms    1.81
+   8       5693 ms    2.24
+  16       4665 ms    2.74
+  32       4032 ms    3.17
+  64       5170 ms    2.47
+ 128       7259 ms    1.76
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       7323 ms    1.74
+   4       4121 ms    3.10
+   8       4275 ms    2.99
+  16       4192 ms    3.05
+  32       6946 ms    1.84
+  64       5648 ms    2.26
+ 128       6143 ms    2.08
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7230 ms    1.77
+   4       7680 ms    1.66
+   8       3960 ms    3.23
+  16       3995 ms    3.20
+  32       6115 ms    2.09
+  64       6325 ms    2.02
+ 128       5383 ms    2.37
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 13920 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       7472 ms    1.86
+   4       6770 ms    2.06
+   8       3698 ms    3.76
+  16       3432 ms    4.06
+  32       3642 ms    3.82
+  64       5603 ms    2.48
+ 128       4724 ms    2.95
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       8634 ms    1.61
+   4       4364 ms    3.19
+   8       6452 ms    2.16
+  16       5002 ms    2.78
+  32       5600 ms    2.49
+  64       4110 ms    3.39
+ 128       5544 ms    2.51
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7428 ms    1.87
+   4       7007 ms    1.99
+   8       5583 ms    2.49
+  16       5446 ms    2.56
+  32       4154 ms    3.35
+  64       5683 ms    2.45
+ 128       5176 ms    2.69
+8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 12906 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       6818 ms    1.89
+   4       6892 ms    1.87
+   8       5700 ms    2.26
+  16       4568 ms    2.83
+  32       4959 ms    2.60
+  64       5562 ms    2.32
+ 128       4073 ms    3.17
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2      10009 ms    1.29
+   4       8115 ms    1.59
+   8       5617 ms    2.30
+  16       4255 ms    3.03
+  32       3721 ms    3.47
+  64       4341 ms    2.97
+ 128       7311 ms    1.77
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7546 ms    1.71
+   4       4608 ms    2.80
+   8       3588 ms    3.60
+  16       5671 ms    2.28
+  32       7594 ms    1.70
+  64       5604 ms    2.30
+ 128       4792 ms    2.69
+9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 14686 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       8743 ms    1.68
+   4       3678 ms    3.99
+   8       5660 ms    2.59
+  16       5938 ms    2.47
+  32       5265 ms    2.79
+  64       4343 ms    3.38
+ 128       5927 ms    2.48
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       7292 ms    2.01
+   4       8746 ms    1.68
+   8       5328 ms    2.76
+  16       6257 ms    2.35
+  32       4784 ms    3.07
+  64       4716 ms    3.11
+ 128       5640 ms    2.60
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7429 ms    1.98
+   4       6110 ms    2.40
+   8       6717 ms    2.19
+  16       5206 ms    2.82
+  32       4664 ms    3.15
+  64       5728 ms    2.56
+ 128       4939 ms    2.97
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input matrix size is 10000x10000, kernel matrix size is 7x7
+
+Sequential execution duration is 14958 ms
+
+Synchronized section method execution:
+#Threads   Duration   Speedup
+   2       7570 ms    1.98
+   4       4236 ms    3.53
+   8       4173 ms    3.58
+  16       7092 ms    2.11
+  32       4809 ms    3.11
+  64       5813 ms    2.57
+ 128       5043 ms    2.97
+
+ReentrantLock method execution:
+#Threads   Duration   Speedup
+   2       9508 ms    1.57
+   4       4134 ms    3.62
+   8       3646 ms    4.10
+  16       4065 ms    3.68
+  32       7531 ms    1.99
+  64       4298 ms    3.48
+ 128       5797 ms    2.58
+
+AtomicInteger method execution:
+#Threads   Duration   Speedup
+   2       7357 ms    2.03
+   4       6212 ms    2.41
+   8       6220 ms    2.40
+  16       6395 ms    2.34
+  32       6239 ms    2.40
+  64       5131 ms    2.92
+ 128       5937 ms    2.52

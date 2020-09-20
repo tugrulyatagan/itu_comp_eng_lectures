@@ -1,0 +1,34 @@
+BLG546E – Object Oriented Concurrent Programming
+
+Assignment 1: Parallel 2D Convolution
+
+In this Assignment you are asked to implement a parallel matrix object, keeping a 2d private of integer values, which applies 2D convolution in separate threads. Your implementation should operate directly on the private array (no copies should be held in threads).
+
+Implement the following versions of the object and compare the performance of your implementations on a sufficiently large matrix with various numbers (1,2,4,8,16,32,64,128,…) of 2D filters(threads) operating on it.
+
+         I.            Sequential version
+
+       II.            Parallel version with
+
+a.       Synchronized methods/sections
+
+b.       Fine grained locking
+
+c.       AtomicInteger variables
+
+
+
+Please be aware that the filters should be applied in the order of their thread creation.
+A nice explanation of parallel scan: http://www.songho.ca/dsp/convolution/convolution2d_example.html
+ A sample analysis on a different problem can be found in: http://www.cse.buffalo.edu/faculty/miller/Courses/CSE633/Laurie-Dening-Fall-2011.pdf
+Plagiarism or cheating is not allowed. This is an individual homework.
+
+
+
+Dear students,
+
+I've thought over and decided that the claim in the homework stating:
+
+"Please be aware that the filters should be applied in the order of their thread creation." 
+
+is not the subject for this homework. Even though it is not a correct practice in real world, you can relax the application order of the filters for this homework and focus on implementing the synchronized/locked/atomic elements.
