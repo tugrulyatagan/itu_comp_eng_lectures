@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>MovieDB - Movie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav wicket:id="mainNavigation">
+        navigation links
+      </nav>
+    </header>
+
+    <h2 wicket:id="title">The Matrix</h2>
+    <table>
+        <tr>
+            <th>Year:</th>
+            <td wicket:id="year">1999</td>
+        </tr>
+    </table>
+
+    <p><a href="#" wicket:id="edit_link">Edit</a></p>
+
+    <footer>
+      <div id="datetime" wicket:id="datetime">
+         Wed Sep 4 15:32:40 EEST 2013
+      </div>
+    </footer>
+  </body>
+</html>

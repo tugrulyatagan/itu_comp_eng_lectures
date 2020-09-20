@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+  color: #6F6F6F;
+  font-family: 'Droid Sans', 'Helvetica', 'sans';
+  font-size: 12pt;
+  margin: 2ex 2em;
+}
+
+h1, h2, h3, h4 {
+  color: #E9601A;
+}
+
+a {
+  color: #6F6F6F;
+  text-decoration: underline;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1em;
+  font-size: 80%;
+}
+
+div#datetime {
+  font-size: 80%;
+  text-align: right;
+}

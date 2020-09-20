@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>MovieDB - Movie Edit Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav wicket:id="mainNavigation">
+        navigation links
+      </nav>
+    </header>
+
+    <form action="#" wicket:id="movie_edit">
+      <table>
+        <tr>
+          <th>Title:</th>
+          <td>
+            <input wicket:id="title" type="text" placeholder="The Matrix"
+                   required autofocus />
+          </td>
+        </tr>
+        <tr>
+          <th>Year:</th>
+          <td>
+            <input wicket:id="year" type="text" size="4" placeholder="1999" />
+          </td>
+        </tr>
+      </table>
+      <input value="Save" name="save" type="submit" />
+    </form>
+
+    <footer>
+      <div id="datetime" wicket:id="datetime">
+         Wed Sep 4 15:32:40 EEST 2013
+      </div>
+    </footer>
+  </body>
+</html>
