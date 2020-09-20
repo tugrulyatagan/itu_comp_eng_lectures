@@ -1,0 +1,31 @@
+0000000000000
+Hi everybody, our group nama is umansia
+I am Tuğrul they are Emre and Fatih
+we developed simple heart rate sensor gadget and heart rate monitor application for smart phones
+1111111111111
+we mainly focus on measuring heart rates
+users can see their instant heart rate,
+also calorie calculation can be done by heart rate so
+they can track total burning calories while physical activities or after the activities or sportive acitivites
+They can track and schedule (skecul) their sportive activites on their smart phones
+So we offer users to simple and cheap solution
+2222222222222
+on the hardware side
+Sensor is integrated on earphones this enhence ease of use
+users can use this product as an earphone, actualy its an earphone
+Most peaple carries smart phones and listen music via smart phones 
+so we combined them
+33333333333333
+one heart pulse on earlobe blood vessels effects light transmittance through earlobe so
+An integrated light sensor on one of the earphones take analog heart pulse signal.
+one LED illuminates eralobe and one photransistor senses these pulses
+and then small amplifier circuits aplifes the pulse signal
+44444444444444
+these raw analog signals are transfered to microphone input of the smart phone on earphone cable
+And the analog to digital converter of the smart phone reads analogs singnals and converts them into digital data
+lastly smart phone proccess these data to find heart rate and calorie consumption
+our major advantages are these two items. if we use another circuit to do these jobs 
+(I mean not on the smart phone but microprocessor adc) it will probably more complicated and expensive
+
+Now Fatih will continue
+

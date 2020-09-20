@@ -1,0 +1,14 @@
+merhabalar, umansia grubu olarak akýllý telefon üzerinden kalp ritmi ölçme projemizden bahsedeðiz.
+öncelikle kendimizi tanýtýrsak istanbul teknik univ. bilgisayar müh 3. sýnýf öðrencileriyiz ben tuðrul yataðan ve 
+arkadaþým emre gökrem.
+
+projemiz iki aþamadan oluþmaktadýr. 
+1- kalp ritim verilerin toplanmasý ve telefona aktarýlmasý. daha sonra ise
+2- toplanan verilerin android uygulama tarafýndan iþlenmesi ve kullanýya bildirilmesi
+
+kalp atýþlarý esnasýnda daralýp geniþleyen damarlar, kulak memesi üzerindeki ýþýk geçirgenliðini deðiþtir. kullanacaðýmýz
+fotosensor yardýmý ile bu deðiþim ölçülerek sensör üzerinde bulunan kuvvetlendirme devresinin yardýmý ile kuvvetkendiriltikten sonra akýllý 
+telefonlardaki mikrofon giriþine verilir. akýllý telefon üzerindeki anolog-dijital çevirici yardýmý ile analog kalp ritim sinyalleri
+dijital veriye dönüþtürülür ve geliþtireceðimiz android uygulamasýna aktarýlýr. 
+
+bu sesnör kulaklýk ile entegre bir þekildetasarlancaktýr. böylece kullanýcýlar. kulaklýk takma basitliðinde kalp ritimlerini takip etme imkaný bulacaklardýr.
