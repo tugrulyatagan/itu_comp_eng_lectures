@@ -1,0 +1,39 @@
+#include <hidef.h> /* common defines and macros */
+#include <mc9s12c32.h> /* derivative information */
+#pragma LINK_INFO DERIVATIVE "mc9s12c32"
+unsigned char text[20];
+static int count=0;
+unsigned char temp;
+
+void sci_init(void){
+SCIBDL = 0x34; /*Configure baud rate 9600 bps*/
+SCIBDH = 0x00; /*an SCI clock modulo of 8MHz*/
+SCICR1 = 0x00; /*8 data bits, no parity*/
+SCICR2 = 0x0C; /*Enable Tx, Rx Bits*/
+}
+
+void send_char(unsigned char value){
+  while(!(SCISR1 & 0x40));
+  SCIDRL = value;
+}
+
+void print_string(unsigned char * ptr){
+  int i;
+  for(i=0;i<count;i++){
+      send_char(ptr[i]);
+    }
+
+  count = 0;
+}
+
+void main(void) {
+  sci_init();
+  
+  for (;;){
+    if(SCISR1 & 0x20){
+      if(SCIDRL == 0x0D) print_string(text);
+      else text[count++] = SCIDRL;
+      }
+    
+  }
+}

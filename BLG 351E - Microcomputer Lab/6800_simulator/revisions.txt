@@ -1,0 +1,7 @@
+Releast date	Ver.	Description
+----------------------------------------		
+5/4/2009	C1.04	Fixed a problem with extended addressing mode
+27/4/2009	C1.05	Fixed a bug introduced with the previous fix
+1/4/2010	V1.06	Fixed a casting problem that prohibited the BSR instruction from working correctly. 
+28/4/2010	V1.07	Fixed RTI and problems with indexed STX and JMP ad extended LDX. 
+12/6/2010	c1.08	Fixed a problem with direct LDX and removed a limit of using 256 program symbols

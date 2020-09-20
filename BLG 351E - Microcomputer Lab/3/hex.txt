@@ -1,0 +1,37 @@
+-1-
+****************************************************************
+0000: 8E 5F 00 BD 00 07 3F BD 00 0B 39 39 00 00 00 00
+
+-2-
+****************************************************************
+0000: 8E 00 5F 86 23 36 BD 00 0B 32 3F 30 E6 02 39 00
+
+-3-
+****************************************************************
+n	.equ	6		;n'i ata
+	ldab	#n		;b registeri n
+	decb			;n--
+
+	cmpb	#0		;n==0 ise
+	blt		son		;bitir
+
+	lds		#$ae	;stack pointer
+	ldaa	#$1		;a=1
+	psha			;a'yi stack'e at
+
+	cmpb	#1		;n==1 ise
+	blt		son		;bitir
+
+d	tsx				;stack pointer'i x'e at
+	adca	1,x		;a ile bir onceki elemani topla
+	psha			;a'yi stack'e at
+	decb			;n--
+	tstb			;if not n==0
+	bne		d		;d'ye git
+
+son	staa	$0100	;sonucu kaydet
+	.end			;bitir
+
+
+0000: C6 06 5A C1 00 2D 12 8E 00 AE 86 01 36 C1 01 2D
+0010: 08 30 A9 01 36 5A 5D 26 F8 B7 01 00 00 00 00 00
