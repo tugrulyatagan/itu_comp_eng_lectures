@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Thanks and Other Resources</title>
+</head>
+
+<body>
+<h1>Thanks</h1>
+<p>Several sharp-eyed readers of this tutorial have noticed bugs, and
+in some cases supplied patches.  Thanks!</p>
+<table>
+  <tr><td>Neeraj Rawat</td><td>The code wasn't portable to FreeBSD.
+    It's thanks to Neeraj that I switched to GNU autotools, and made
+    several changes for compatibility with FreeBSD</td></tr>
+  <tr><td>David&nbsp;Terret:</td><td><code>bb_readlink()</code> was returning number of
+    bytes read instead of 0</td></tr>
+  <tr><td>Patrick&nbsp;Ulam:</td><td>bb_release() wasn't closing the
+    file</td></tr>
+  <tr><td>Patrick&nbsp;Ulam and Bernardo&nbsp;F&nbsp;Costa:</td><td><code>bb_readlink()</code>
+    wasn't null-terminating the string.  Patrick and Bernardo also
+    supplied patches!  The current <code><code>bb_readlink()</code></code> code is
+    Bernardo's</td></tr>
+    <tr><td>Bernardo&nbsp;F&nbsp;Costa:</td><td>Command-line argument parsing
+      wasn't handling <code>-o</code> correctly</td></tr>
+    <tr><td>Bernardo&nbsp;F&nbsp;Costa:</td><td>Got me thinking about security implications</td></tr>
+      <tr><td>Diogo&nbsp;Molo and Sivan&nbsp;Tal:</td><td>Makefile order
+    of arguments was wrong and caused link errors for some (but not
+      all!) users</td></tr>
+      <tr><td>Skippy&nbsp;VonDrake</td><td>Pointed out the code I used to
+	use for command line parsing was confusing, so I wound up
+	rewriting it</td></tr>
+</table>
+<h1>Other Resources</h1>
+<p><a href="http://fuse.sourceforge.net/" >FUSE Filesystem home
+page</a></p>
+<p><a href="http://www.ibm.com/developerworks/linux/library/l-fuse/"
+>Singh, Sumit, </em>Develop your own filesystem with FUSE</em> on IBM
+Developerworks</a></p>
+<p><a href="http://hub.opensolaris.org/bin/view/Project+fuse/Documentation" >Documentation of FUSE on OpenSolaris</a></p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:49:24 MDT 2014 <!-- hhmts end -->
+</body> </html>

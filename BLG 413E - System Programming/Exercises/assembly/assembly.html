@@ -1,0 +1,185 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title> Assembly Exercise </title>
+
+  </head>
+
+  <body>
+<h3><a name="hello-world">Hello world</a></h3>
+<dl class="docutils">
+<dt>how to assemble / link</dt>
+<dd><p class="first">Assembling <em>hello.asm</em> using <em>nasm</em>:</p>
+<pre class="literal-block">
+nasm -f elf hello.asm
+</pre>
+<p>This will produce the file <em>hello.o</em>. To change the output file name
+use the <tt class="docutils literal"><span class="pre">-o</span></tt> command line switch:</p>
+<pre class="literal-block">
+nasm -f elf hello.asm -o merhaba.o
+</pre>
+<p>The <tt class="docutils literal"><span class="pre">-f</span> <span class="pre">elf</span></tt> option tells nasm to output the object code in the
+Executable and Linking Format (ELF) used in Linux systems. This creates an
+object file called <em>merhaba.o</em>. The output file is still not executable.
+To create an executable file, we have to link it using a linker.
+We can use the <em>ld</em> linker to link our object file:</p>
+<pre class="literal-block">
+ld hello.o -o hello
+</pre>
+<p>However, this will result in the following error:</p>
+<pre class="literal-block">
+ld: warning: cannot find entry symbol _start; defaulting to 08048080
+</pre>
+<p>This error occurs because the <em>ld</em> searches for a <tt class="docutils literal"><span class="pre">_start</span></tt> label to use
+as the entry point of the linked program. Since our entry point is not
+<tt class="docutils literal"><span class="pre">main</span></tt> instead of <tt class="docutils literal"><span class="pre">_start</span></tt>, we have to tell <em>ld</em> to use the label
+<tt class="docutils literal"><span class="pre">main</span></tt> as the entry point. This can be done by using the <tt class="docutils literal"><span class="pre">-e</span></tt> option:</p>
+<pre class="literal-block">
+ld hello.o -o hello -e main
+</pre>
+<p>This will produce the executable <em>hello</em> and executing <em>hello</em> will
+(unsurprisingly) produce:</p>
+<pre class="last literal-block">
+Hello, world!
+</pre>
+</dd>
+<dt>examine listing file (little endianness)</dt>
+<dd><p class="first">A listing file can be created by <em>nasm</em> for the assembled code by using the
+<tt class="docutils literal"><span class="pre">-l</span></tt> option:</p>
+<pre class="literal-block">
+nasm -f elf hello.asm -l hello.lis
+</pre>
+<p>This will produce the listing file <em>hello.lis</em>.</p>
+<p>The listing file contains both the source listing of the assembly language
+program and the machine code for each assembly language operation. The
+original source is displayed on the right hand side and the generated code is
+shown in hex on the left. This file is very helpful to understand what our
+code will look like in machine language. It also provides some hints about
+our system. For example line 10 of the file is:</p>
+<pre class="literal-block">
+10 00000000 B804000000                  mov  eax,4
+</pre>
+<p class="last">Here we can see that the machine code for the <tt class="docutils literal"><span class="pre">mov</span> <span class="pre">eax</span></tt> instruction is
+<tt class="docutils literal"><span class="pre">B8</span></tt>. The value <tt class="docutils literal"><span class="pre">04000000</span></tt> next to it correspond to the immediate
+addressed parameter 4, but as we can see it is stored in 32 bits and stored
+as little endian. This is because our system is a 32 bit little endian system
+(Intel).</p>
+</dd>
+<dt>differences between ld and gcc: entry points, size</dt>
+<dd><p class="first">We can also use the GNU C compiler <em>gcc</em> to link the object file:</p>
+<pre class="literal-block">
+gcc hello.o -o hello
+</pre>
+<p>Since <em>gcc</em> is not a linker but a compiler, it will not link the object file
+itself. Yet, <em>gcc</em> is able to the determine the type of its input files and
+take appropriate actions to produce the executable; i.e. if we use an object
+file as the input to <em>gcc</em> it will try to invoke the linker <em>ld</em> in the
+background to generate the executable. Therefore, the above command also
+calls the <em>ld</em> command transparently. However, this time we do not encounter
+the previous error and also the generated executable files' sizes are
+different.</p>
+<p class="last">These are two differences of calling <em>ld</em> directly or via <em>gcc</em>. Both of
+these are because the <em>gcc</em> links the object files to the standard C runtime
+library by default. Linking to the standard C runtime library results in an
+increase in the size of the executable. Also since there is a label
+<tt class="docutils literal"><span class="pre">_start</span></tt> in one of the standard C runtime library oject files <em>ld</em> does not
+complain about the entry point. (The <tt class="docutils literal"><span class="pre">_start</span></tt> function in the standard C
+runtime library is responsible for initializing the <tt class="docutils literal"><span class="pre">argc</span></tt> and <tt class="docutils literal"><span class="pre">argv</span></tt>
+variables for the <tt class="docutils literal"><span class="pre">main</span></tt> function of the C programs.)</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="russian-peasant-method-of-multiplication">
+<h3><a name="russian-peasant-method-of-multiplication">Russian peasant method of multiplication</a></h3>
+<p>This method is based on the binary system. It proceeds as follows: Write the
+operands on top of two columns. At each step, divide the number on the first
+column by two and multiply the number on the second column by two. Ignore the
+remainders of division operations. Each time you obtain an odd number on the
+first column, add the number on the second column to the result. Stop when the
+number on the first column becomes 0.</p>
+<p>Example: Multiply 92 by 37.</p>
+<table border="1" class="docutils">
+
+
+
+
+
+<tbody valign="top">
+<tr><td>92</td>
+<td>37</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>46</td>
+<td>74</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>23</td>
+<td>148</td>
+<td>148</td>
+</tr>
+<tr><td>11</td>
+<td>296</td>
+<td>148+296=444</td>
+</tr>
+<tr><td>5</td>
+<td>592</td>
+<td>444+592=1036</td>
+</tr>
+<tr><td>2</td>
+<td>1184</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>1</td>
+<td>2368</td>
+<td>1036+2368=3404</td>
+</tr>
+<tr><td>0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Write a function in Intel assembly that multiplies its two operands using the
+algorithm described above and returns the result (Hint: Use shift instead of
+multiplication). Your function should conform to the C calling convention for
+interfacing with other subprograms.</li>
+<li>Write a program in C that uses the Assembly function you have written above.
+The main function should read the values from the keyboard, multiply them
+using the assembly function and display the result on the screen.</li>
+<li>In the C program you have written above, replace the call to the assembler
+function by appropriate inline assembly instructions that implement the
+described multiplication algorithm.</li>
+</ul>
+<dl class="docutils">
+<dt>how to assemble / link</dt>
+<dd><ul class="first last">
+<li><p class="first">assembling <em>russian.asm</em>:</p>
+<pre class="literal-block">
+nasm -f elf russian.asm -o russian.o
+</pre>
+</li>
+<li><p class="first">compiling <em>rusmain.c</em>:</p>
+<pre class="literal-block">
+gcc -c rusmain.c -o rusmain.o
+</pre>
+</li>
+<li><p class="first">linking the object files <em>russian.o</em> and <em>rusmain.o</em> to produce the 
+executable file <em>russian</em>:</p>
+<pre class="literal-block">
+gcc russian.o rusmain.o -o russian
+</pre>
+</li>
+</ul>
+</dd>
+<dt>using gdb</dt>
+<dd>breakpoints, registers, memory</dd>
+</dl>
+
+</body>
+</html>
+
+

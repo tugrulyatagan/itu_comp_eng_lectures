@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Parsing the Command Line and Initializing FUSE</title>
+</head>
+
+<body>
+<h1>Parsing the Command Line and Initializing FUSE</h1>
+<p>
+You actually have to do very little command-line parsing:  FUSE
+understands a large number of command-line arguments, and parses
+them itself.  Most importantly, FUSE expects the mountpoint to be one
+of the members of the <code>argv[]</code> array.
+</p>
+<p>
+I'm simplifying things for myself by assuming that the root directory
+and mount point will be the last two arguments on the command line,
+with the root directory preceding the mount point.  So, my command
+line parsing happens in two short sections.  First, I do some sanity
+checking:  I make sure I've got enough arguments on the command line,
+and that the last two arguments aren't options.
+</p>
+<blockquote><code>
+<pre>
+if ((argc < 3) || (argv[argc-2][0] == '-') || (argv[argc-1][0] == '-'))
+    bb_usage();
+</pre>
+</code></blockquote>
+<p>
+A few lines later, I pull the root directory out of the argument list,
+use the C library <code>realpath()</code> function to translate it to
+a canonicalized absolute pathname, and save it in my private data
+(I'll be describing private data in the next section)</p>
+<blockquote><code>
+<pre>
+bb_data->rootdir = realpath(argv[argc-2], NULL);
+argv[argc-2] = argv[argc-1];
+argv[argc-1] = NULL;
+argc--;
+</pre>
+</code></blockquote>
+<p>
+The last thing I do before turning control over to the FUSE library is
+to open the log file, and save its stream pointer in my private data
+as well.
+</p>
+<p>
+Once I'm ready to start the filesystem, I call
+<code>fuse_main()</code>.  Its parameters are <code>argc</code> and
+<code>argv</code> (as modified by my <code>main()</code> function),
+the <code>bb_oper</code> struct containing pointers to my
+re-implementations of the POSIX file operations, and a
+<code>struct&nbsp;bb_data</code>, used for storing private data.
+</p>
+<p><code>fuse_main()</code> parses the rest of the command line,
+mounts the directory specified on the command line, and performs other
+initializations.  Then, it calls an initialization function to
+perform any initialization defined by my code.  <code>bb_oper->init</code>
+points to my <code>bb_init()</code> function, so it is what gets called.
+My <code>bb_init()</code> function is really small; all it does is
+log the fact that it has been called.
+</p>
+<hr />
+<p>
+<a href="private.html" >Next: Private Data</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:13:36 MDT 2014 <!-- hhmts end -->
+</body> </html>

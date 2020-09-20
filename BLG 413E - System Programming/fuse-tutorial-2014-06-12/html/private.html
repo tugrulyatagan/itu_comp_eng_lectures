@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Private Data</h1>
+<p>
+One more piece of information on using FUSE that's very helpful is
+how it lets you store and access data that you've defined.
+</p>
+<p>
+FUSE has a <code>struct&nbsp;fuse_context</code> which contains a
+little bit of extra information about a filesystem.  One very useful
+field in this <code>struct</code> is
+<code>void*&nbsp;private_data</code>, a pointer to arbitrary data
+stored by your filesystem.
+</p>
+<p>
+From inside any FUSE operation, it's possible to obtain the context by
+calling <code>fuse_get_context()</code>; this means we can use
+<code>fuse_get_context()->private_data</code> to get the private data.
+</p>
+<p>
+We can see how to use this by looking at my <code>log_msg()</code>
+function.  Here it is:
+</p>
+<blockquote><code><pre>
+void log_msg(const char *format, ...)
+{
+    va_list ap;
+    va_start(ap, format);
+
+    vfprintf(BB_DATA->logfile, format, ap);
+}
+</pre></code></blockquote>
+<p>
+It uses a macro I defined:</p>
+<blockquote><code>
+<pre>
+#define BB_DATA ((struct bb_state *) fuse_get_context()->private_data)
+</pre>
+</code></blockquote>
+<p>
+to obtain the private data field and cast it to a
+<code>struct&nbsp;bb_state *</code>.
+</p>
+<p>
+You can see how I created the <code>struct&nbsp;bb_struct</code> by
+looking at <code>params.h</code> where I defined the
+<code>struct</code>:
+</p>
+<blockquote><code><pre>
+struct bb_state {
+    FILE *logfile;
+    char *rootdir;
+};
+</pre></code></blockquote>
+<p>It has two fields:  the <code>FILE*</code> for the log file, and
+the path to the directory we're accessing through BBFS.
+</p>
+<p>
+I <code>malloc()</code> the structure and set the values of the
+fields in my <code>main()</code> function (see last section) so
+they'll be available to me later.
+</p>
+<hr />
+<p>
+<a href="unclear.html" >Next:  Extra Information About Unclear Functions</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:14:08 MDT 2014 <!-- hhmts end -->
+</body> </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Writing a FUSE Filesystem: a Tutorial</title>
+</head>
+
+<body>
+<h1>Writing a FUSE Filesystem:  a Tutorial</h1>
+<h3>Joseph J. Pfeiffer, Jr., Ph.D.<br />
+Emeritus Professor<br />
+Department of Computer Science<br />
+New Mexico State University<br />
+<a href="pfeiffer@cs.nmsu.edu" >pfeiffer@cs.nmsu.edu</a></h3>
+<p>Version of 2012-11-15</p>
+<p>One of the real contributions of Unix has been the view that
+"everything is a file".  A tremendous number of radically
+different sorts of objects, from data storage to file format
+conversions to internal operating system data structures, have been
+mapped to the file abstraction.
+</p>
+
+<p>
+One of the more recent directions this view has taken has been
+Filesystems in User Space, or FUSE (no, the acronym really doesn't
+work.  Oh well).  The idea here is that if you can envision
+your interaction with an object in terms of a directory structure
+and filesystem operations, you can write a FUSE file system to
+provide that interaction.  You just write code that implements
+file operations like <code>open()</code>, <code>read()</code>, and
+<code>write()</code>; when your filesystem is mounted, programs
+are able to access the data using the standard file operation
+system calls, which call your code.
+</p>
+
+<p>
+There are many documents on the web describing how FUSE works and
+how to install and use a FUSE filesystem, but I haven't come across
+any that try to describe how to go about actually writing one.  The
+goal of this tutorial is to meet what I see as a need for such a
+document.
+</p>
+
+<p>
+This tutorial introduces FUSE using a filesystem I call the "Big Brother
+File System" (the reason for the name is that "Big Brother is watching."
+The filesystem simply passes every operation down to an underlying
+directory, but logs the operation.
+</p>
+
+<p>
+This tutorial, together with its associated example filesystem, is
+available as a tarball at
+<a href="http://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial.tgz">
+<code>http://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial.tgz</code></a>.
+</p>
+
+<p>
+<b>Audience:</b>  This tutorial is aimed at developers who have some
+familiarity with general programming in Linux (and Unix-like operating
+systems in general), so you know how to untar a tarball, how Makefiles
+work, and so forth.  I won't be going through the details of how to
+perform those tasks; I'll be focussing on what you need to know that's
+specific to using FUSE filesystems.
+</p>
+
+<p>
+I am not affiliated with the FUSE project in any way, except as a
+user.  My descriptions of the interface to fuse, and of techniques to
+work with it, are a distillation of my reading of the existing
+documentation, and my experience working with it.  Consequently, any
+errors are mine (and corrections are welcome!).
+</p>
+
+<h2>Organization</h2>
+<p>
+You will find three subdirectories under this one:
+</p>
+<ul>
+  <li>
+  <code>html</code></a> contains the tutorial itself, in html format.
+  I suggest you <a href="html/index.html" >click here</a> to start
+  reading the tutorial.
+  </li>
+  
+  <li>
+  <code>src</code> contains the code for the BBFS filesystem itself.
+  </li>
+
+  <li>
+  <code>example</code> contains a couple of directories for use in
+  exploring BBFS.
+  </li>
+</ul>
+
+<h2>Consulting</h2>
+<p>
+I'm happy to answer any questions you may have regarding BBFS or FUSE
+in general.  Also, I am available for consulting on FUSE or other
+Linux system development.  If you're interested, send me an email at
+  <a href="mailto:joseph@pfeifferfamily.net"><code>joseph@pfeifferfamily.net</code></a>
+</p>
+<h2>License</h2>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Writing a FUSE Filesystem: a Tutorial</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/" property="cc:attributionName" rel="cc:attributionURL">Joseph J. Pfeiffer, Jr., PhD</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+<p>
+The code found in <code>src/bbfs.c</code> is derived from the
+function prototypes found in <code>/usr/include/fuse/fuse.h</code>,
+which is licensed under the LGPLv2.  My code is being released under
+the GPLv3.  See the file
+<a href="src/COPYING"><code>src/COPYING</code>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:43:42 MDT 2014 <!-- hhmts end -->
+</body> </html>

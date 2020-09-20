@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Files and Naming Conventions</title>
+</head>
+
+<body>
+<h1>Files and Naming Conventions</h1>
+<p>Before we get into the details of using FUSE, and of the Big
+  Brother File System, let's see how the files are organized.
+</p>
+<p>The code for the BBFS running example is in subdirectory <code>../src</code></p>
+
+<dl><p>
+  <dt><a href="../src/Makefile" ><code>Makefile</code></a>
+  <dd>As usual, a <code>Makefile</code> is used to direct the
+  compilation of the code.  The code is so simple that I just
+  hard-coded a Makefile rather than using automake; it requires
+  <code>pkg-config</code> (and of course FUSE!), but everything else
+  ought to be available in any Linux system used for development.
+    </p>
+    <p>
+  <dt><a href="../src/bbfs.c" ><code>bbfs.c</code></a>
+  <dd>The code re-implementing the Linux file operations is in
+    this file.  Every function defined in this file starts with
+    <code>bb_</code>, so it's easy to tell my code from system
+    code.
+    </p>
+    <p>
+    The file also contains a
+  <code>struct&nbsp;fuse_operations&nbsp;</code> named
+  <code>bb_oper</code>, containing pointers to the functions (we'll
+  discuss this <code>struct</code> in the next section)
+    </p>
+    <p>
+    The functions that are pointed to by fields in the
+    <code>struct&nbsp;fuse</code> data structure all have names
+    derived from their field names by prepending the standard
+    <code>bb_</code> prefix.  So, for instance, the
+    <code>open()</code> function is <code>bb_open()</code>.
+    </p>
+    <p>
+  <dt><a href="../src/log.c" ><code>log.c</code></a> and <a href="../src/log.h" ><code>log.h</code></a>
+  <dd>The logging code, reporting all the operations that are
+    performed, is in <code>log.c</code>.  Their names all start with
+    <code>log_</code>, again to help identify the logging code.
+    <code>log.h</code> contains prototypes for the functions that
+    are called from elsewhere (and, of course, the only "elsewhere"
+    in this project is <code>bbfs.c</code>).
+    </p>
+    <p>
+  <dt><a href="../src/params.h" ><code>params.h</code></a>
+  <dd>This defines which version of the FUSE API is being used,
+    defines a symbol that give me access to the <code>pread()</code>
+    system call, and defines a <code>struct&nbsp;bb_state</code>
+    that stores filesystem state.
+    </p>
+</dl>
+
+<p>
+I should also mention that nearly all of the documentation on FUSE
+itself is in the <code>#include</code> file
+<code>/usr/include/fuse/fuse.h</code>.  This is where prototypes are
+given for all functions, and comments describe their use.  My
+<code>bbfs.c</code> file started as a copy of that file, with my code
+inserted.
+</p>
+<p>
+<a href="running.html" >Next:  Compiling and Running BBFS</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 17:33:14 MDT 2014 <!-- hhmts end -->
+</body> </html>

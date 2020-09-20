@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Unclear FUSE Functions</title>
+</head>
+
+<body>
+<h1>Extra Information on Unclear FUSE Functions</h1>
+<p>
+The intent of this page is to give a little bit of extra information
+on calls that seem a little obscure in the FUSE documentation.  Two
+cases requiring extra explanation have come up so far:
+<code>readdir()</code>, and FUSE's handling of the file creation flags
+in <code>open()</code>.
+</p>
+<h2>Directories and <code>readdir()</code></h2>
+<p>
+FUSE provides a mechanism to place entries in a
+directory structure.  The directory structure itself is opaque, so the
+basic mechanism is to create the data and call a FUSE-supplied
+function to put it in the structure.
+</p>
+    
+<p>
+When your <code>readdir()</code> callback is invoked, one of
+the parameters is a function called <code>filler()</code>.  The
+purpose of this function is to insert directory entries into the
+directory structure, which is also passed to your callback as
+<code>buf</code>.
+</p>
+
+<p>
+<code>filler()</code>'s prototype looks like this:
+</p>
+<blockquote>
+<code><pre>
+int fuse_fill_dir_t(void *buf, const char *name,
+				const struct stat *stbuf, off_t off);
+</pre></code>
+</blockquote>
+
+<p>
+You insert an entry into <code>buf</code> (the same buffer that
+is passed to <code>readdir()</code>) by calling
+<code>filler()</code> with the filename and optionally a
+pointer to a
+<code>struct stat</code> containing the file type.
+</p>
+
+<p>
+<code>bb_readdir()</code> uses <code>filler()</code> in as
+simple a way as possible to just copy the underlying directory's
+filenames into the mounted directory.  Notice that the offset passed
+to <code>bb_readdir()</code> is ignored, and an offset of 0 is
+passed to <code>filler()</code>.  This tells <code>filler()</code>
+to manage the offsets into the directory structure for itself.  Here's
+the code:
+</p>
+<blockquote><code><pre>
+int bb_readdir(const char *path, void *buf, fuse_fill_dir_t filler, off_t offset,
+               struct fuse_file_info *fi)
+{
+    int retstat = 0;
+    DIR *dp;
+    struct dirent *de;
+    
+    log_msg("bb_readdir(path=\"%s\", buf=0x%08x, filler=0x%08x, offset=%lld, fi=0x%08x)\n",
+            path, (int) buf, (int) filler,  offset, (int) fi);
+    
+    dp = (DIR *) (uintptr_t) fi->fh;
+
+    // Every directory contains at least two entries: . and ..  If my
+    // first call to the system readdir() returns NULL I've got an
+    // error; near as I can tell, that's the only condition under
+    // which I can get an error from readdir()
+    de = readdir(dp);
+    if (de == 0)
+        return -errno;
+
+    // This will copy the entire directory into the buffer.  The loop exits
+    // when either the system readdir() returns NULL, or filler()
+    // returns something non-zero.  The first case just means I've
+    // read the whole directory; the second means the buffer is full.
+    do {
+        log_msg("calling filler with name %s\n", de->d_name);
+        if (filler(buf, de->d_name, NULL, 0) != 0)
+            return -ENOMEM;
+    } while ((de = readdir(dp)) != NULL);
+    
+    log_fi(fi);
+    
+    return retstat;
+}
+</pre></code></blockquote>
+
+<h2>File Creation Flags</h2>
+<p>The <code>open()</code> system call is documented as taking both file
+access mode and file creation flags (the file creation flags are
+<code>O_CREAT</code>, <code>O_EXCL</code>, <code>O_NOCTTY</code>, and
+<code>O_TRUNC</code>).  <code>fuse.h</code> documents that
+<code>O_CREAT</code> and <code>O_EXCL</code> are not passed to your
+<code>open()</code> function, and further that <code>O_TRUNC</code> is
+not passed by default.
+</p>
+<p>The reason for this turns out to be that FUSE handles these flags
+internally, and modifies which of your functions are called depending
+on their status, and on the results of a call to your
+<code>getattr()</code> (your <code>getattr()</code> is always called
+before the file is opened).  If those flags are set, the call is handled
+as follows:
+</p>
+<dl>
+  
+  <p>
+  <dt><code>O_CREAT</code>
+  <dd>If the file didn't previously exist, your <code>create()</code>
+    function is called instead of your <code>open()</code> function
+    (if it did exist, then your <code>open()</code> is called).  After
+    the call to your <code>create()</code> function, your
+    <code>fgetattr()</code> function is called, though I haven't been
+    able to determine why.  One possible use is that you could use
+    this to modify the semantics of creating a file that you yourself
+    don't have access to (note that the standard semantics will only
+    apply the file access mode you specify to <em>subsequent</em>
+    <code>open()</code>s).
+    </p>
+    <p>
+    If the file did not exist, and the flag is not set, FUSE only
+  calls your <code>getattr()</code> function (so neither your
+  <code>create()</code> nor your <code>open()</code> function is
+  called in this case).
+    </p>
+    
+    <p>
+  <dt><code>O_EXCL</code>
+  <dd>The behavior of this flag is only defined when
+    <code>O_CREAT</code> is also specified.  If the file did not
+    previously exist your <code>create()</code> and
+    <code>fgetatter()</code>functions are called; if it did, FUSE returns
+    failure after the <code>getattr()</code> call (so neither your
+    <code>open()</code> nor your <code>create()</code> is called in this
+    case).
+    </p>
+    
+    <p>
+  <dt><code>O_NOCTTY</code>
+  <dd>So far as I've been able to determine, this flag is simply
+  discarded.
+    </p>
+    
+    <p>
+  <dt><code>O_TRUNC</code>
+  <dd>Handling of this flag is determined by whether or not the
+  filesystem is mounted with the <code>-o&nbsp;atomic_o_trunc</code>
+  flag.  If not, then FUSE will call your <code>truncate()</code>
+  function before calling your <code>open()</code>.  If the
+  <code>atomic_o_trunc</code> option was set, the flag is passed to
+  your <code>open()</code> function instead (note that this means I
+  don't have any code that explicitly handles the flag:  if it gets
+  passed to <code>bb_open()</code>, I just pass it along to
+  <code>open()</code>.
+    </p>
+</dl>
+<p>
+<a href="security.html" >Security Considerations and Race Conditions</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Sat Jan  1 21:45:06 MST 2011 <!-- hhmts end -->
+</body> </html>

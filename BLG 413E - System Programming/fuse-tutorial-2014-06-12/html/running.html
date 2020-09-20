@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Compiling and Running</title>
+</head>
+
+<body>
+<h1>Configuring, Compiling and Running</h1>
+<p>
+This page of the tutorial explains how to build the BBFS filesystem
+program and use it to mount a directory.
+</p>
+<h2>Configuring and Compiling</h2>
+<p>This tutorial uses the GNU autotools system for configuration.  As
+is the case with all autotools-based projects, you can configure and
+compile it by going to the top-level directory and typing
+<blockquote>
+<pre>
+./configure
+make
+</pre>
+</blockquote>
+and the code should be compiled and ready to go.</p>
+<p>
+Unlike most software, the code from this tutorial is not intended to
+be installed.  Consequently, I've tried to disable all the various
+installation targets; if I've missed one please let me know.
+</p>
+<h2>Mounting a BBFS Filesystem</h2>
+<p>
+You mount a BBFS filesystem by running the command <code>bbfs</code>
+(in general, a FUSE filesystem is implemented by a program, and you
+mount it by running that program).
+<code>bbfs</code> has two required arguments:  the root directory (which
+contains the actual directory data) and the mount directory.  The
+tutorial tarball includes an <code>example</code> directory, which
+contains two subdirectories named <code>rootdir</code> and
+<code>mountdir</code>.  You can verify that <code>rootdir</code>
+contains a single file named <code>bogus.txt</code>, while
+<code>mountdir</code> is empty
+</p>
+<p>Here's what it looks like when you try it:</p>
+<blockquote><pre><code>
+snowball:655$ <b>pwd</b>
+/home/joseph/fuse-tutorial/example
+snowball:656$ <b>ls -lR</b>
+.:
+total 12
+-rw-r--r-- 1 joseph users  185 Jun  9 15:56 Makefile
+drwxr-xr-x 2 joseph users 4096 Jun 12 17:16 mountdir/
+drwxr-xr-x 2 joseph users 4096 Jun 12 17:16 rootdir/
+
+./mountdir:
+total 0
+
+./rootdir:
+total 4
+-rw-r--r-- 1 joseph users 11 Jun 12 17:16 bogus.txt
+</code></pre></blockquote>
+<p>Now, if you go into the <code>example</code> directory and execute</p>
+<blockquote><code><pre>
+../src/bbfs rootdir mountdir
+</pre></code></blockquote>
+<p>all of the files that are really in <code>rootdir</code> appear to also
+be in <code>mountdir</code>"
+</p>
+<blockquote><pre><code>
+snowball:657$ <b>../src/bbfs rootdir/ mountdir/</b>
+about to call fuse_main
+snowball:658$ <b>ls -lR</b>
+.:
+total 40
+-rw-r--r-- 1 joseph users   185 Jun  9 15:56 Makefile
+-rw-r--r-- 1 joseph users 25632 Jun 12 17:51 bbfs.log
+drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 mountdir/
+drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 rootdir/
+
+./mountdir:
+total 4
+-rw-r--r-- 1 joseph users 11 Jun 12 17:16 bogus.txt
+
+./rootdir:
+total 4
+-rw-r--r-- 1 joseph users 11 Jun 12 17:16 bogus.txt
+
+</code></pre></blockquote>
+<p>
+But, every time you perform any file
+operation in <code>mountdir</code>, the operation (and a whole bunch
+of both relevant and irrelevant stuff) gets logged to a new file in the
+current working directory called <code>bbfs.log</code>  If you execute</p>
+<blockquote><code><pre>
+tail -F bbfslog
+</pre></code></blockquote>
+<p>in another terminal window, you can watch the operations get
+logged.</p>
+<p>Finally, you can see that the operating system sees
+<code>mountdir</code> as a filesystem:</p>
+<blockquote><pre><code>
+snowball:660$ <b>mount | grep mountdir</b>
+bbfs on /home/joseph/fuse-tutorial/example/mountdir type fuse.bbfs (rw,nosuid,nodev,relatime,user_id=1248,group_id=1005)
+</code></pre></blockquote>
+<h2>Unmounting</h2>
+<p>Finally, you can unmount the filesystem with</p>
+<blockquote><code><pre>
+snowball:661$ <b>fusermount -u mountdir</b>
+snowball:662$ <b>ls -lR</b>
+.:
+total 40
+-rw-r--r-- 1 joseph users   185 Jun  9 15:56 Makefile
+-rw-r--r-- 1 joseph users 27520 Jun 12 17:57 bbfs.log
+drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 mountdir/
+drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 rootdir/
+
+./mountdir:
+total 0
+
+./rootdir:
+total 4
+-rw-r--r-- 1 joseph users 11 Jun 12 17:16 bogus.txt
+</pre></code></blockquote>
+<p>(note that <code>fusermount</code> isn't part of this tutorial
+&mdash; it comes along with FUSE).</p>
+
+<h2><code>pkg-config</code></h2>
+<p>One thing to mention about configuring the software is the line
+<pre><code>PKG_CHECK_MODULES(FUSE, fuse)</code></pre>
+in <code>configure.ac</code>
+</p>
+<p>
+This translates to two invocations of <code>pkg-config</code> to
+obtain the C compilation flags and libraries needed to compile and
+link the code in the tutorial.
+</p>
+<blockquote><code><pre>
+`pkg-config fuse --cflags`
+</pre></code></blockquote>
+<p>says to use <code>pkg-config</code> to determine what C
+compiler flags are necessary to compile a source file that makes use
+of FUSE.  The back-quotes around the command are important &mdash;
+they take the output of the command and insert it into the
+command-line as command-line operations (note  &mdash; it's important
+those are back-quotes aka accent graves.  They can't be forward quotes,
+nor double quotes).  The other place it's used,
+<blockquote><code><pre>
+`pkg-config fuse --libs`
+</pre></code></blockquote>
+<p>
+gives the extra command-line arguments to link the program with
+<code>libfuse</code>.
+</p>
+<p>
+An earlier version of this tutorial used these invocations directly in
+the Makefile, like this:
+</p>
+<blockquote><pre><code>
+bbfs : bbfs.o log.o
+        gcc -g -o bbfs bbfs.o log.o `pkg-config fuse --libs`
+
+bbfs.o : bbfs.c log.h params.h
+        gcc -g -Wall `pkg-config fuse --cflags` -c bbfs.c
+
+log.o : log.c log.h params.h
+        gcc -g -Wall `pkg-config fuse --cflags` -c log.c
+</code></pre></blockquote>
+<hr>
+<p>
+<a href="callbacks.html" >Next:  Callbacks and
+<code>struct&nbsp;fuse_operations</code></a></p>
+<hr />
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:12:16 MDT 2014 <!-- hhmts end -->
+</body> </html>

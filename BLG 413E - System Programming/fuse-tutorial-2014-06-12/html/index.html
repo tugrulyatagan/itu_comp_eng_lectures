@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Writing a FUSE Filesystem: a Tutorial</title>
+</head>
+
+<body>
+<h1>Organization</h1>
+<p>
+The tutorial is divided into the following sections:
+</p>
+
+<dl>
+    <p>
+  <dt><a href="files.html" >Files and Naming Conventions in This Tutorial</a>
+  <dd>This section describes the files distributed as a part of this
+    tutorial, and the naming conventions for the functions in the
+    <code>BBFS</code> filesystem.  It's really there to provide an
+    overview of the whole tutorial and filesystem, not to directly
+    provide information on FUSE.
+    </p>
+    
+    <p>
+  <dt><a href="running.html" >Running BBFS</a>
+  <dd>A little bit of information on mounting a filesystem
+  with <code>bbfs</code>, watching the log, and unmounting it.
+    </p>
+    
+    <p>
+  <dt><a href="callbacks.html" >Callbacks and <code>struct&nbsp;fuse_operations</code></a>
+  <dd>This is the heart of a FUSE filesystem, and of this tutorial.
+  The central concepts are discussed here.
+</p>
+    
+    <p>
+  <dt><a href="init.html" >Parsing the Command Line and Initializing FUSE</a>
+  <dd>Getting your program started.
+    </p>
+    
+    <p>
+  <dt><a href="private.html" >Private Data and Related Topics</a>
+  <dd>Maintaining filesystem state.
+    </p>
+    
+    <p>
+  <dt><a href="unclear.html" >Extra Information on Unclear FUSE Functions</a>
+  <dd>The intent of this section is to give some extra information on
+  FUSE functions that seem a little unclear.  Write now, this section
+  covers <code>readdir()</code> and FUSE's handling of the file
+  creation flags to <code>open()</code>.
+    </p>
+    
+    <p>
+  <dt><a href="security.html" >Security Considerations and Race Conditions</a>
+  <dd>Running a FUSE filesystem may raise some security issues that
+  you should be aware of.  Also, since the FUSE server is multithreaded,
+  there may be some race conditions you need to think about.
+    </p>
+    
+    <p>
+  <dt><a href="thanks.html" >Thanks and Other Resources</a>
+  <dd>I'd like to acknowledge people who've helped by noticing bugs
+  (or in any other way).  Also, this is not the only resource on FUSE
+  on the web.
+    </p>
+</dl>
+<p>
+<a href="files.html" >Next:  Files and Naming Conventions in This Tutorial</a></p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:15:04 MDT 2014 <!-- hhmts end -->
+</body> </html>

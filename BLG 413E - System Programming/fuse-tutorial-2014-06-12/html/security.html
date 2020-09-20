@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Security Concerns</title>
+</head>
+
+<body>
+<h1>Security Concerns</h1>
+<p>Writing and using a FUSE filesystem can have some Metrodome-sized
+security concerns that may or may not be obvious, but deserve some
+mention.  In this section, I'll be talking about privilege escalation,
+giving some notes on checking access rights, and mentioning race
+conditions.
+</p>
+<h2>Privilege Escalation</h2>
+<p>
+The main point
+to make is that <em><b>the filesystem itself executes with the access
+privileges of the process running it</b></em>, not those of the
+process making use of the filesystem.  Here's how this plays
+out in some typical scenarios:</p>
+
+<h3>The Common Case:  a User Runs the Filesystem Without the
+<code>allow_other</code> Option</h3>
+<p>
+This is the normal case; the filesystem runs with the privileges of
+the user that ran it, and only that user can access the filesystem.
+FUSE doesn't open up any particular security issues in this case.
+</p>
+
+<h3>A User Runs the Filesystem With the <code>allow_other</code>
+Option</h3>
+<p>
+In this case, the filesystem runs with the privileges of the user
+that invoked it, <em>not</em> the privileges of any user who happens
+to make use of the filesystem.  It's the responsibility of the user who
+mounts the filesystem to ensure inappropriate access privileges aren't
+being granted to other users.  In general, users can only hurt
+themselves this way, since they can only grant privileges that they
+themselves already have.
+</p>
+<p>
+It should be noted that an option, <code>user_allow_other</code>, must
+be set in <code>/etc/fuse.conf</code> to enable this option.
+</p>
+<h3>Root Runs a Filesystem</h3>
+<p>
+This is really the same as the previous two cases (depending on
+whether the <code>allow_other</code> option is set), but root is a
+sufficiently special case that it deserves mention.  In this case, any
+user making use of the filesystem has root privileges on that
+filesystem!  If the process has access to the actual filesystem, this
+could easily be used to gain pretty much unlimited access.
+</p>
+<p>
+The next subsection will talk a little bit about checking access
+rights, but the simplest way out here is to not allow root to mount the
+filesystem.  Due to BBFS's intended role as a simple tutorial, that's
+what I do.  There's a little bit of code right at the start of
+<code>main()</code>:
+<code>
+<pre>
+if ((getuid() == 0) || (geteuid() == 0)) {
+    fprintf(stderr, "Running BBFS as root opens unnacceptable security holes\n");
+    return 1;
+}
+</pre>
+</code>
+</p>
+<p>
+Of course, this means that while I've got code for
+<code>bb_chown()</code>, it doesn't actually work since only root is
+able to change the ownership of a file in the underlying filesystem.
+</p>
+<h2>Checking Access Rights</h2>
+<p>
+In general, a filesystem that might be executed with the
+<code>allow_other</code> flag will need to take steps to ensure its
+own security.  <code>fuse.h</code> documents that several calls
+need to check that the requested access is permitted; in addition to
+those, there are several others that also require access checks (such
+as <code>chown()</code>.  It is strictly the programmer's
+responsibility to make sure these cautions are followed!
+</p>
+<p>
+The most important function for checking access rights is
+<code>fuse_get_context()</code> which (as the name implies) returns a
+pointer to a <code>struct fuse_context</code> object.  The UID and GID
+of the process performing the operation is in fields named
+<code>uid</code> and <code>gid</code>.
+</p>
+
+<h2>Simultaneous Access and Race Conditions</h2>
+<p>
+By default, FUSE runs multi-threaded:  this means (in brief) that a
+second request can be handled by the filesystem before an earlier
+request has completed; this in turn raises the possibility that
+different threads can be simultaneously modifying a single data
+structure, which will cause very difficult-to-debug bugs.
+</p>
+<p>There are a couple of things that can be done about the
+problem:</p>
+<ul>
+  <li>
+  If the filesystem is executed with the <code>-s</code> option,
+  it is run single-threaded.  this eliminates the problem, at a cost
+  in performance -- frankly, given the nature and intent of many fuse
+  filesystems, it seems to me like the default should be
+  single-threaded and multi-threaded should require an option.  But I
+  didn't write it, so it's not my call.
+  </li>
+  <li>
+  You can analyse your code for critical sections, and insert the
+  normal syncronization primitives (such as semaphores) to ensure no
+  dangerous races occur.  Of course, there are several places where
+  FUSE translates a single call into a sequence of calls to your
+  functions; I haven't investigated whether FUSE takes any steps to
+  ensure the atomicity of these calls.  If it doesn't (and I suspect
+  that's the case; trying to do so in any meaningful way in the absence
+  of knowledge of the data you're exposing through your filesystem
+  seems somewhere between difficult and impossible to me), then trying
+  to do it yourself seems really, really hard.
+  </li>
+</ul>
+<p>Note that even if you do make your filesystem single-threaded, that
+doesn't guard against access to the underlying data structures through
+some other means.  Taking BBFS as an example:</p>
+<ul>
+  <li>
+  You can have a single underlying directory mounted through two
+  different mountpoints by using two invocations of bbfs.
+  </li>
+  <li>
+  A directory that has a BBFS filesystem mounted on top of it is still
+  accessible to normal filesystem operations.
+  </li>
+</ul>
+<p>
+Either of these facts is sufficient to completely negate any efforts
+made in your filesystem to guard atomicity.
+</p>
+<p>
+I should note that the FUSE code itself is careful about locking its
+own code and data structures.  So far as I know, dangerous race
+conditions won't occur outside of your code.
+</p>
+<p>
+<a href="thanks.html" >Next:  Thanks and Other Resources</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Sat Jan  1 21:53:06 MST 2011 <!-- hhmts end -->
+</body> </html>

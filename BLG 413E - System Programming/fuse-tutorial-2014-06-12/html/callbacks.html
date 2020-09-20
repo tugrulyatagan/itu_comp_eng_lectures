@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Callbacks and struct fuse_operations</title>
+</head>
+
+<body>
+<h1>Callbacks and <code>struct&nbsp;fuse_operations</code></h1>
+<p>
+A FUSE filesystem is a program that listens on a socket for file
+operations to perform, and performs them. The FUSE library
+(<code>libfuse</code>) provides the communication with the socket, and
+passes the requests on to your code.  It accomplishes this by using a
+"callback" mechanism.
+</p>
+
+<p>
+The callbacks are a set of functions you write to implement the
+file operations, and a <code>struct&nbsp;fuse_operations</code>
+containing pointers to them.
+</p>
+    
+<p>
+In the case of BBFS, the callback struct is named
+<code>bb_oper</code>.  There are a total of 34 file operations
+defined in <code>bbfs.c</code> with pointers in <code>bb_oper</code>.
+The initialization uses a syntax that not everyone is familiar with;
+looking at a part of the initialization of the <code>struct</code> we
+see
+</p>
+
+<blockquote><code>
+<pre>
+struct fuse_operations bb_oper = {
+  .getattr = bb_getattr,
+  .readlink = bb_readlink,
+  .open = bb_open,
+  .read = bb_read
+};
+</pre>
+</code>
+</blockquote
+
+<p>
+(this isn't the complete struct, of course &mdash; just enough to get
+a sense of what's going on)
+</p>
+    
+<p>This indicates that <code>bb_oper.getattr</code> points to
+<code>bb_getattr()</code>, <code>bb_oper.readlink</code> points to
+<code>bb_readlink()</code>, <code>bb_oper.open</code> points to
+<code>bb_open()</code>, and <code>bb_oper.read</code> points to
+<code>bb_read()</code>.  Each of these functions is my
+re-implementation of the corresponding filesystem function:  when a
+user program calls <code>read()</code>, my <code>bb_read()</code>
+function ends up getting called.  In general, what all of my
+reimplementations do is to log some information about the call,
+and then call the original system implementation of the operation on
+the underlyng filesystem.
+</p>
+
+<p>
+Let's take a look at two of these in particular:
+<code>bb_open()</code> (my re-implementation of <code>open()</code>,
+and <code>bb_read()</code> (my re-implementation of
+<code>read()</code>.
+</p>
+<p>
+Here's <code>bb_open()</code>:
+</p>
+<blockquote><code><pre>
+int bb_open(const char *path, struct fuse_file_info *fi)
+{
+    int retstat = 0;
+    int fd;
+    char fpath[PATH_MAX];
+
+    bb_fullpath(fpath, path);
+    
+    log_msg("bb_open(fpath\"%s\", fi=0x%08x)\n",
+	    fpath,  (int) fi);
+    
+    fd = open(fpath, fi->flags);
+    if (fd < 0)
+	retstat = bb_error("bb_open open");
+    
+    fi->fh = fd;
+    log_fi(fi);
+    
+    return retstat;
+}
+</pre></code></blockquote>
+<p>
+When the function is called, it is passed two parameters:  a
+file path (which is relative to the root of the mounted file
+system), and a pointer to a
+<code>struct&nbsp;fuse_file_info</code> which is used to maintain 
+information about the file.
+</p>
+<p>
+<code>bb_open()</code> starts by translating the relative path it was given
+to a full path in the underlying filesystem using my
+<code>bb_fullpath()</code> function.  It then logs the full path, and
+the address of the <code>fi</code> pointer.  It passes the call on
+down to the underlying fileystem, and sees if it was successful.  If
+it was, it stores away the file descriptor returned by
+<code>open()</code> (so I'll be able to use it later), and returns 0.
+If it failed, it returns <code>-errno</code>.  About the return value:
+</p>
+
+<ol>
+  <li>
+  0 should be returned on success.  This is the normal behavior for
+  most of the calls in the libraries; exceptions are documented.
+  </li>
+  
+  <li>A negative return value denotes failure.  If I return a value of
+  <code>-i</code>, a -1 will be returned to the caller and
+  <code>errno</code> is set to <code>i</code>.  My
+  <code>bb_error()</code> function looks up <code>errno</code> as set
+  by the system  <code>open()</code> call, logs the error, and returns
+  <code>-errno</code> to this function so I can pass it to the user.</li>
+</ol>
+
+<p>
+Notice that FUSE performs some translations.  The
+<code>open()</code> system call is documented as returning a file
+descriptor (behavior I'm depending on), not 0 &mdash; so when my
+return is passed to the original caller, FUSE recognizes that I sent a
+0 and returns an appropriate file descriptor (not necessarily the same
+one I got from my call to <code>open()</code>!).  Meanwhile, I've got
+the underlying file open, and I've got its file descriptor in
+<code>fi</code>.  Future calls to my code will include this pointer, so
+I'll be able to get the file descriptor and work with it.  So...  the
+user program has an open file in the mounted filesystem, and a file
+descriptor that it is keeping track of.  Whenever that program tries
+to do anything with that file descriptor, the operation is intercepted
+by the kernel and sent to the <code>bbfs</code> program.  Within my
+program, I also have a file open in the underlying directory, and a
+file descriptor.  When the operation is sent to my program, I'll log
+it and then perform the same operation on my file.
+</p>
+
+<p>
+To make this concrete, let's take a look at <code>bb_read()</code>:
+</p>
+<blockquote><code><pre>
+int bb_read(const char *path, char *buf, size_t size, off_t offset, struct fuse_file_info *fi)
+{
+    int retstat = 0;
+    
+    log_msg("bb_read(path=\"%s\", buf=0x%08x, size=%d, offset=%lld, fi=0x%08x)\n",
+	    path,  (int) buf, size,  offset,  (int) fi);
+    
+    retstat = pread(fi->fh, buf, size, offset);
+    if (retstat < 0)
+	retstat = bb_error("bb_read read");
+    
+    return retstat;
+}
+
+</pre></code></blockquote>
+<p>
+This function allows us to read data from some specified offset from
+the beginning of a file (so it corresponds more directly to the
+<code>pread()</code> function than to <code>read()</code>).
+</p>
+<p>
+The main thing to point out about this function is that I use my file
+descriptor, which I put in <code>fi</code> when I opened the file, to
+read it.  Also, if I get a non-error return from <code>pread()</code>,
+I pass this value up to the caller.  In this case <code>FUSE</code>
+doesn't perform any translations, it just returns the value I gave
+it.  To return an error, I use the same technique as in
+<code>bb_open()</code>.
+</p>
+<hr />
+<p>
+<a href="init.html" >Next:  Parsing the Command Line and Initializing FUSE</a>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Thu Jun 12 18:12:31 MDT 2014 <!-- hhmts end -->
+</body> </html>
