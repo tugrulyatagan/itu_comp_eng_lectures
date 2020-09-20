@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e1abc431644149cfb9feff5b3dabcd00" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Answer" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Badge" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Comment" Width="1.5" PointX="9.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Question" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.QuestionTag" Width="1.5" PointX="7.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Reputation" Width="1.5" PointX="8.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tag" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserBadge" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserTag" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Answer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Answer_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Comment_Answer" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_UserBadge_Badge" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Comment_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Question_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_QuestionTag_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_QuestionTag_Tag" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_UserTag_Tag" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_UserBadge_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_UserTag_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Comment_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

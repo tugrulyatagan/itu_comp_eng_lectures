@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web Applications", "Web Applications", "{57B4D4E1-933A-4F56-8C4D-192E59E73401}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{E915A446-9D14-439C-AA79-B01C2638BF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLayer", "Libraries\DatabaseLayer\DatabaseLayer.csproj", "{80A20079-FB17-473C-9943-48D05907189E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QuestionsAnswers", "Web Applications\QuestionsAnswers", "{C707B79E-DB91-41E7-9B92-542BEA4F7527}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{80a20079-fb17-473c-9943-48d05907189e}|DatabaseLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/QuestionsAnswers"
+		Debug.AspNetCompiler.PhysicalPath = "Web Applications\QuestionsAnswers\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\QuestionsAnswers\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/QuestionsAnswers"
+		Release.AspNetCompiler.PhysicalPath = "Web Applications\QuestionsAnswers\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\QuestionsAnswers\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50845"
+		VWDVirtualPath = "/"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cloudadp.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Libraries\\DatabaseLayer\\DatabaseLayer.csproj
+		SccProjectTopLevelParentUniqueName1 = Solution.sln
+		SccProjectName1 = Libraries/DatabaseLayer
+		SccLocalPath1 = Libraries\\DatabaseLayer
+		SccWebProject2 = true
+		SccProjectUniqueName2 = Web\u0020Applications\\Admin
+		SccProjectTopLevelParentUniqueName2 = Solution.sln
+		SccProjectName2 = Web\u0020Applications/Admin
+		SccLocalPath2 = Web\u0020Applications\\Admin
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80A20079-FB17-473C-9943-48D05907189E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A20079-FB17-473C-9943-48D05907189E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A20079-FB17-473C-9943-48D05907189E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A20079-FB17-473C-9943-48D05907189E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C707B79E-DB91-41E7-9B92-542BEA4F7527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C707B79E-DB91-41E7-9B92-542BEA4F7527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C707B79E-DB91-41E7-9B92-542BEA4F7527}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C707B79E-DB91-41E7-9B92-542BEA4F7527}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C707B79E-DB91-41E7-9B92-542BEA4F7527} = {57B4D4E1-933A-4F56-8C4D-192E59E73401}
+		{80A20079-FB17-473C-9943-48D05907189E} = {E915A446-9D14-439C-AA79-B01C2638BF55}
+	EndGlobalSection
+EndGlobal

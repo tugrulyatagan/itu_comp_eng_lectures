@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+QueryString kullanımı
+queryString="application, catalog" gibi ya da
+queryString="application=GetApplicationId, catalog=CatalogId" gibi olabilir.
+İkinci durumda örneğin GetApplicationId fonksiyonu Base Class'da abstract olarak
+tanımlanmalı ve sayfanızda override edilmelidir.
+-->
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode key="QA" url="~/Default.aspx" title="Home Page" description="">
+    
+    <siteMapNode key="QA.Admin" url="~/Admin/Default.aspx" title="Admin Dashboard" description="">
+      <siteMapNode key="QA.Admin.Tag" url="~/Admin/Tag/Default.aspx" title="Tags" description="">
+        <siteMapNode key="QA.Admin.Tag.Add" url="~/Admin/Tag/Add.aspx" title="Add Tag" description="" />
+        <siteMapNode key="QA.Admin.Tag.Edit" url="~/Admin/Tag/Edit.aspx" title="Edit Tag" description="" />
+        <siteMapNode key="QA.Admin.Tag.Delete" url="~/Admin/Tag/Delete.aspx" title="Delete Tag" description="" />
+      </siteMapNode>
+      <siteMapNode key="QA.Admin.Badge" url="~/Admin/Badge/Default.aspx" title="Badges" description="">
+        <siteMapNode key="QA.Admin.Badge.Add" url="~/Admin/Badge/Add.aspx" title="Add Badge" description="" />
+        <siteMapNode key="QA.Admin.Badge.Edit" url="~/Admin/Badge/Edit.aspx" title="Edit Badge" description="" />
+        <siteMapNode key="QA.Admin.Badge.Delete" url="~/Admin/Badge/Delete.aspx" title="Delete Badge" description="" />
+      </siteMapNode>
+    </siteMapNode>
+    
+    <siteMapNode key="QA.User" url="~/User/Default.aspx" title="User Dashboard" description="">
+      <siteMapNode key="QA.User.FavoriteTag" url="~/User/FavoriteTag/Default.aspx" title="Favorite Tags" description="">
+        <siteMapNode key="QA.User.FavoriteTag.Add" url="~/User/FavoriteTag/Add.aspx" title="Add Favorite Tag" description="" />
+        <siteMapNode key="QA.User.FavoriteTag.Delete" url="~/User/FavoriteTag/Delete.aspx" title="Delete Favorite Tag" description="" />
+      </siteMapNode>
+      <siteMapNode key="QA.User.Profile" url="~/User/Profile/Default.aspx" title="Profile" description="" />
+      <siteMapNode key="QA.User.Profile.Add" url="~/User/Profile/Add.aspx" title="Sign up!" description="" />
+      <siteMapNode key="QA.User.Profile.Edit" url="~/User/Profile/Edit.aspx" title="Edit My Profile" description="" />
+      <siteMapNode key="QA.User.Question.Add" url="~/User/Question/Add.aspx" title="Add Question" description="" />
+    </siteMapNode>
+
+    <siteMapNode key="QA.Question" url="~/Question.aspx" title="Question View" description="" />
+    <siteMapNode key="QA.Login" url="~/Login.aspx" title="Login" description="" />
+    <siteMapNode key="QA.Logout" url="~/Logout.aspx" title="Logout" description="" />
+  </siteMapNode>
+</siteMap>

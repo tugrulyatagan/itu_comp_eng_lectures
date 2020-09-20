@@ -1,0 +1,8 @@
+Hocam Merhaba,
+
+Uygulama Libraries altýnda DatabaseLayer ve Web Applications altýnda QuestionsAnswers adlý 2 projeden oluþuyor.
+
+QuestionsAnswers projesindeki tüm kodlar bize ait.
+DatabaseLayer projesinde kodlarýn sadece Entity klasörü altýndakiler bize ait. Diðerleri ORM olarak kullandýðýmýz Entity Framework'ün oluþturduðu dosyalar.
+
+Bilginize.

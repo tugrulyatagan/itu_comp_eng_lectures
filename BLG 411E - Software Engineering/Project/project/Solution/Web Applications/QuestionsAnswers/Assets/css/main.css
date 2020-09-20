@@ -1,0 +1,47 @@
+﻿/* BOOTSTRAP ADDITIONS */
+.row [class *= "span"]:first-child
+{
+    margin-left: 0px;
+}
+
+/* ALIGNMENTS */
+.align-left 
+{
+    text-align: left;
+}
+
+.align-right
+{
+    text-align: right;
+}
+
+.align-center
+{
+    text-align: center;
+}
+
+/* MARGINS */
+.margin-zero
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.margin-top-zero
+{
+    margin-top: 0px;
+}
+
+.margin-right-zero
+{
+    margin-right: 0px;
+}
+
+.margin-bottom-zero
+{
+    margin-bottom: 0px;
+}
+
+.margin-left-zero
+{
+    margin-left: 0px;
+}

@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-- Begin / CSS --%>
+    <link href="Assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="Assets/css/main.css" rel="stylesheet" />
+    <link href="Assets/css/application.css" rel="stylesheet" />
+    <link href="Assets/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+    <%-- End / CSS --%>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script src="<%=ResolveUrl("~/Assets/lib/jquery/jquery-1.9.1.min.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Assets/lib/bootstrap/js/bootstrap.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Assets/lib/bootstrap/js/bootstrap-tab.js") %>" type="text/javascript"></script>
+    <form runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptCombine="false"  EnablePageMethods="true" />
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#">Q&A Web Page</a>
+                    <div class="nav-collapse collapse">
+                        <p class="navbar-text pull-right">
+                            <a href="User/Profile/Add.aspx">Sign Up</a>
+                            <a href="Login.aspx">Login/Logout</a>
+                        </p>
+                        <ul class="nav">
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <asp:Panel ID="pnLeft" runat="server">
+                <div class="span<%= LeftSpanLength %>">
+                    <asp:Panel ID="pnLeftNavigation" runat="server">
+                    <div class="row-fluid">
+                        <div class="well sidebar-nav">
+                            <%= (Page as BasePage).Navigation.Print() %>
+                        </div>
+                        <!--/.well -->
+                    </div>
+                    <!--/span-->
+                    </asp:Panel>
+                    <asp:Panel ID="pnLeftCPH" runat="server">
+                    <div class="row-fluid">
+                        <asp:ContentPlaceHolder ID="cphLeft" runat="server" />
+                    </div>
+                    </asp:Panel>
+                </div>
+                </asp:Panel>
+                <div class="span<%= 12 - LeftSpanLength %>">
+                    <div class="row-fluid">
+                        <asp:Repeater ID="rpBreadcrumb" runat="server">
+                            <HeaderTemplate>
+                                <ul class="breadcrumb">
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:PlaceHolder ID="phActiveBreadcrumb" Visible="false" runat="server">
+                                    <li class="active">
+                                        <%# Eval("title") %>
+                                    </li>
+                                </asp:PlaceHolder>
+                                <asp:PlaceHolder ID="phUnactiveBreadcrumb" Visible="true" runat="server">
+                                    <li>
+                                        <a href='<%# Eval("url") %>' title='<%# Eval("description") %>'><%# Eval("title") %></a>
+                                    </li>
+                                </asp:PlaceHolder>
+                            </ItemTemplate>
+                            <SeparatorTemplate>
+                                <li>
+                                    <span class="divider">/</span>
+                                </li>
+                            </SeparatorTemplate>
+                            <FooterTemplate>
+                                </ul>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </div>
+                    <div class="row-fluid">
+                    <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <footer>
+                <p>
+                    Software Engineering Course Project &copy; 2013-2014 Fall
+                </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
