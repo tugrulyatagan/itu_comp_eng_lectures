@@ -1,0 +1,158 @@
+Optimum KNN k is 3 with validation accuracy: 98.20%
+Optimum LDA component number is 2 with validation accuracy: 95.47%
+Optimum MLP layering is (100,) layer number is 1 with validation accuracy: 97.88%
+Optimum decision tree minimum impurity decrease is 0.00 with validation accuracy: 88.64%
+
+
+**** KNN ****
+KNN Training accuracy: 99.27
+KNN Test accuracy: 97.83
+
+KNN Training accuracy for each class:
+[1.0, 0.975, 0.997, 0.995, 0.992, 0.997, 0.995, 0.99, 0.995, 0.992]
+
+KNN Test accuracy for each class:
+[1.0, 0.923, 1.0, 0.968, 0.994, 0.994, 0.995, 0.994, 0.97, 0.951]
+
+KNN Training confusion matrix:
+[[374   0   0   0   1   0   1   0   0   0]
+ [  0 387   1   0   0   0   0   1   0   0]
+ [  0   0 380   0   0   0   0   0   0   0]
+ [  0   1   0 386   0   1   0   0   1   0]
+ [  0   0   0   0 385   0   1   1   0   0]
+ [  0   1   0   0   0 373   0   0   0   2]
+ [  0   2   0   0   0   0 375   0   0   0]
+ [  0   0   0   1   1   0   0 385   0   0]
+ [  0   6   0   0   0   0   0   0 373   1]
+ [  0   0   0   1   1   0   0   2   1 377]]
+
+KNN Test confusion matrix:
+[[178   0   0   0   0   0   0   0   0   0]
+ [  0 180   0   0   0   0   1   0   1   0]
+ [  0   4 173   0   0   0   0   0   0   0]
+ [  0   0   0 181   0   0   0   1   1   0]
+ [  0   2   0   0 178   0   0   0   1   0]
+ [  0   0   0   1   1 179   0   0   0   1]
+ [  0   0   0   0   0   0 181   0   0   0]
+ [  0   0   0   0   0   0   0 172   1   6]
+ [  0   9   0   1   0   0   0   0 162   2]
+ [  0   0   0   4   0   1   0   0   1 174]]
+
+KNN Training time: 1.424000
+KNN Test time: 0.764000
+
+
+**** LDA ****
+LDA Training accuracy: 96.26
+LDA Test accuracy: 93.88
+
+LDA Training accuracy for each class:
+[0.992, 0.936, 0.978, 0.967, 0.982, 0.983, 0.979, 0.992, 0.918, 0.905]
+
+LDA Test accuracy for each class:
+[1.0, 0.897, 0.966, 0.955, 0.983, 0.927, 1.0, 0.988, 0.882, 0.814]
+
+LDA Training confusion matrix:
+[[374   0   0   0   1   0   1   0   0   0]
+ [  0 364   6   0   0   0   0   1  13   5]
+ [  0   1 364   3   0   0   1   1   8   2]
+ [  0   1   1 376   0   2   0   0   2   7]
+ [  0   4   0   0 373   0   5   0   4   1]
+ [  1   0   0   1   0 356   0   0   0  18]
+ [  0   1   1   0   1   0 374   0   0   0]
+ [  0   1   0   4   0   0   0 379   0   3]
+ [  1  13   0   0   2   2   1   0 359   2]
+ [  1   4   0   5   3   2   0   1   5 361]]
+
+LDA Test confusion matrix:
+[[174   0   0   0   0   2   0   0   1   1]
+ [  0 166   5   0   0   0   0   0   5   6]
+ [  0   0 168   7   0   0   0   0   1   1]
+ [  0   0   1 171   0   3   0   0   5   3]
+ [  0   2   0   0 175   0   0   1   2   1]
+ [  0   0   0   0   0 179   0   0   0   3]
+ [  0   2   0   0   1   0 178   0   0   0]
+ [  0   0   0   0   1   3   0 163   2  10]
+ [  0  12   0   0   0   5   0   1 142  14]
+ [  0   3   0   1   1   1   0   0   3 171]]
+
+LDA Training time: 0.027000
+LDA Test time: 0.001000
+
+
+**** MLP ****
+MLP Training accuracy: 99.97
+MLP Test accuracy: 96.38
+
+MLP Training accuracy for each class:
+[1.0, 0.997, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+MLP Test accuracy for each class:
+[0.989, 0.947, 0.989, 0.994, 0.973, 0.923, 0.978, 0.982, 0.952, 0.921]
+
+MLP Training confusion matrix:
+[[376   0   0   0   0   0   0   0   0   0]
+ [  0 389   0   0   0   0   0   0   0   0]
+ [  0   0 380   0   0   0   0   0   0   0]
+ [  0   0   0 389   0   0   0   0   0   0]
+ [  0   0   0   0 387   0   0   0   0   0]
+ [  0   0   0   0   0 376   0   0   0   0]
+ [  0   0   0   0   0   0 377   0   0   0]
+ [  0   0   0   0   0   0   0 387   0   0]
+ [  0   1   0   0   0   0   0   0 379   0]
+ [  0   0   0   0   0   0   0   0   0 382]]
+
+MLP Test confusion matrix:
+[[176   0   0   0   0   2   0   0   0   0]
+ [  0 180   0   0   0   0   0   0   2   0]
+ [  0   1 172   0   0   0   2   2   0   0]
+ [  1   0   1 172   0   4   1   0   2   2]
+ [  0   1   0   0 179   0   0   0   1   0]
+ [  0   0   1   0   0 179   1   0   0   1]
+ [  1   1   0   0   2   0 176   0   1   0]
+ [  0   0   0   0   2   5   0 165   1   6]
+ [  0   7   0   0   1   2   0   1 157   6]
+ [  0   0   0   1   0   2   0   0   1 176]]
+
+MLP Training time: 2.174000
+MLP Test time: 0.004000
+
+
+**** Decision Tree ****
+Decision Tree Training accuracy: 100.00
+Decision Tree Test accuracy: 87.20
+
+Decision Tree Training accuracy for each class:
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+Decision Tree Test accuracy for each class:
+[0.96, 0.814, 0.902, 0.837, 0.818, 0.892, 0.934, 0.929, 0.818, 0.836]
+
+Decision Tree Training confusion matrix:
+[[376   0   0   0   0   0   0   0   0   0]
+ [  0 389   0   0   0   0   0   0   0   0]
+ [  0   0 380   0   0   0   0   0   0   0]
+ [  0   0   0 389   0   0   0   0   0   0]
+ [  0   0   0   0 387   0   0   0   0   0]
+ [  0   0   0   0   0 376   0   0   0   0]
+ [  0   0   0   0   0   0 377   0   0   0]
+ [  0   0   0   0   0   0   0 387   0   0]
+ [  0   0   0   0   0   0   0   0 380   0]
+ [  0   0   0   0   0   0   0   0   0 382]]
+
+Decision Tree Test confusion matrix:
+[[168   0   0   0   3   1   1   0   3   2]
+ [  0 158   6   2   6   0   1   0   7   2]
+ [  1   8 148   7   0   1   1   3   7   1]
+ [  4   4   2 154   1   2   0   7   3   6]
+ [  0   3   0   0 171   1   4   0   1   1]
+ [  0   2   0   3   0 166   5   1   1   4]
+ [  0   1   1   0   1   1 171   0   6   0]
+ [  0   0   1   0  19   2   0 144   3  10]
+ [  1  16   6   3   3   3   0   0 139   3]
+ [  1   2   0  15   5   9   0   0   0 148]]
+
+Decision Tree Training time: 0.046000
+Decision Tree Test time: 0.001000
+
+Process finished with exit code 0

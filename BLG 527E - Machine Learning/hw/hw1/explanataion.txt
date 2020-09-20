@@ -1,0 +1,9 @@
+Dear All,
+
+In the first part of the second question (2a), the derivation of the discriminant functions should be done on paper.  Other remaining parts can be implemented using R.
+
+Have a nice work...
+
+Hakan. 
+
+Hakan Gündüz 

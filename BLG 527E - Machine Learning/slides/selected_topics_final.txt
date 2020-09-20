@@ -1,0 +1,166 @@
+Selected Sections For the Final Exam of BLG527E Spring 2017
+Concentrate on Chapter 10-19 first. 
+Then go back and review Chapters 3-9
+
+
+3	Bayesian Decision Theory
+ 	    	3.2	Classification 
+ 	    	3.3	Losses and Risks
+ 	    	3.4	Discriminant Functions
+ 
+4	Parametric Methods	
+ 	    	4.2	Maximum Likelihood Estimation	
+ 	    	    	4.2.1	Bernoulli Density	 
+ 	    	    	4.2.2	Multinomial Density	
+ 	    	    	4.2.3	Gaussian (Normal) Density	
+ 	    	4.3	Evaluating an Estimator: Bias and Variance	
+ 	    	4.4	The Bayes' Estimator
+ 	    	4.5	Parametric Classification
+ 	    	4.6	Regression
+  	    	4.7	Tuning Model Complexity: Bias/Variance Dilemma
+  	    	4.8	Model Selection Procedures
+  
+5	Multivariate Methods
+ 	    	5.1	Multivariate Data
+ 	    	5.2	Parameter Estimation
+ 	    	5.3	Estimation of Missing Values
+ 	    	5.4	Multivariate Normal Distribution
+ 	    	5.5	Multivariate Classification
+ 	    	5.6	Tuning Complexity
+  
+6	Dimensionality Reduction	
+ 	    	6.2	Subset Selection	
+ 	    	6.3	Principal Components Analysis	
+ 	    	6.5	Multidimensional Scaling	 
+ 	    	6.6	Linear Discriminant Analysis	 
+ 	    	6.7	Isomap	
+ 	    	6.8	Locally Linear Embedding	
+ 
+7	Clustering
+ 	    	7.2	Mixture Densities
+ 	    	7.3	k-Means Clustering	
+ 	    	7.4	Expectation-Maximization Algorithm  	    
+		7.7	Hierarchical Clustering	 
+ 	    	7.8	Choosing the Number of Clusters	
+ 
+8	Nonparametric Methods
+ 	    	8.2	Nonparametric Density Estimation
+ 	    	    	8.2.1	Histogram Estimator
+ 	    	    	8.2.2	Kernel Estimator 
+ 	    	    	8.2.3	k-Nearest Neighbor Estimator 
+ 	    	8.3	Generalization to Multivariate Data
+ 	    	8.4	Nonparametric Classification
+ 	    	8.5	Condensed Nearest Neighbor
+ 
+9	Decision Trees	
+  	    	9.2	Univariate Trees
+ 	    	    	9.2.1	Classification Trees
+ 	    	    	9.2.2	Regression Trees
+ 	    	9.3	Pruning
+ 	    	9.4	Rule Extraction from Trees
+ 	    	9.6	Multivariate Trees
+ 
+10	Linear Discrimination
+ 	    	10.2	Generalizing the Linear Model	 
+ 	    	10.3	Geometry of the Linear Discriminant	
+ 	    	    	10.3.1	Two Classes	
+ 	    	    	10.3.2	Multiple Classes	 
+ 	    	10.4	Pairwise Separation	 
+ 	    	10.5	Parametric Discrimination Revisited	 
+ 	    	10.6	Gradient Descent	
+ 	    	10.7	Logistic Discrimination	 
+ 	    	    	10.7.1	Two Classes	 
+ 	    	    	10.7.2	Multiple Classes 
+ 
+11	Multilayer Perceptrons
+ 	    	11.2	The Perceptron	
+ 	    	11.3	Training a Perceptron
+  	    	11.4	Learning Boolean Functions
+  	    	11.5	Multilayer Perceptrons
+ 	    	11.6	MLP as a Universal Approximator
+ 	    	11.7	Backpropagation Algorithm	
+ 	    	    	11.7.1	Nonlinear Regression	
+  	    	    	11.7.2	Two-Class Discrimination	
+  	    	    	11.7.3	Multiclass Discrimination	
+ 	    	    	11.7.4	Multiple Hidden Layers	
+ 	    	11.8	Training Procedures	
+ 	    	    	11.8.1	Improving Convergence	
+ 	    	    	11.8.2	Overtraining	
+ 	    	    	11.8.3	Structuring the Network	
+  	    	    	11.8.4	Hints	 
+ 	    	11.9	Tuning the Network Size 
+ 	    	11.10	Bayesian View of Learning	 
+ 	    	11.11	Dimensionality Reduction	
+  	    	11.12	Learning Time	 
+ 	    	    	11.12.1	Time Delay Neural Networks	 
+ 	    	    	11.12.2	Recurrent Networks
+  
+13	Kernel Machines	309 
+ 	    	13.2	Optimal Separating Hyperplane	
+ 	    	13.3	The Nonseparable Case: Soft Margin Hyperplane	
+  	    	13.4	ν-SVM	 
+ 	    	13.5	Kernel Trick	 
+ 	    	13.6	Vectorial Kernels	
+  	    	13.7	Defining Kernels	
+  
+14	Bayesian Estimation	
+ 	    	14.2	Estimating the Parameter of a Distribution 
+ 	    	    	14.2.1	Discrete Variables 
+ 	    	    	14.2.2	Continuous Variables 
+ 	    	14.3	Bayesian Estimation of the Parameters of a Function
+  	    	    	14.3.1	Regression
+ 	    	    	14.3.2	The Use of Basis/Kernel Functions
+ 	    	    	14.3.3	Bayesian Classification 
+ 	    	14.4	Gaussian Processes (READING MATERIAL, not covered in the exam)
+
+ 
+15	Hidden Markov Models
+ 	    	15.2	Discrete Markov Processes
+ 	    	15.3	Hidden Markov Models
+ 	    	15.4	Three Basic Problems of HMMs 
+ 	    	15.5	Evaluation Problem 
+ 	    	15.6	Finding the State Sequence	
+ 	    	15.7	Learning Model Parameters	(READING MATERIAL, not covered in the exam)
+ 	    	15.8	Continuous Observations (READING MATERIAL, not covered in the exam) 
+ 	    	15.10	Model Selection in HMM	(READING MATERIAL, not covered in the exam)
+  
+16	Graphical Models 
+ 	    	16.2	Canonical Cases for Conditional Independence	
+  	    	16.3	Example Graphical Models	 
+ 	    	    	16.3.1	Naive Bayes' Classifier	 
+ 	    	    	16.3.2	Hidden Markov Model	
+ 	    	    	16.3.3	Linear Regression	
+ 	    	16.4	d-Separation	 
+ 	    	16.5	Belief Propagation	
+ 	    	    	16.5.1	Chains	
+ 	    	    	16.5.2	Trees	(READING MATERIAL, not covered in the exam)
+ 	    	16.6	Undirected Graphs: Markov Random Fields	
+17	Combining Multiple Learners
+ 	    	17.1	Rationale
+ 	    	17.2	Generating Diverse Learners
+ 	    	17.3	Model Combination Schemes 
+ 	    	17.4	Voting
+ 	    	17.5	Error-Correcting Output Codes	(READING MATERIAL, not covered in the exam)
+ 	    	17.6	Bagging	
+  	    	17.7	Boosting	
+ 	    	17.9	Stacked Generalization	
+ 
+ 
+19	Design and Analysis of Machine Learning Experiments	
+ 	    	19.2	Factors, Response, and Strategy of Experimentation
+ 	    	19.5	Guidelines for Machine Learning Experiments
+ 	    	19.6	Cross-Validation and Resampling Methods	
+ 	    	    	19.6.1	K-Fold Cross-Validation	 
+ 	    	    	19.6.2	5x2 Cross-Validation	 
+ 	    	    	19.6.3	Bootstrapping	
+ 	    	19.7	Measuring Classifier Performance
+ 	    	19.8	Interval Estimation 
+ 	    	19.9	Hypothesis Testing
+ 	    	19.10	Assessing a Classification Algorithm's Performance 
+ 	    	    	19.10.1	Binomial Test
+ 	    	    	19.10.2	Approximate Normal Test	
+  	    	    	19.10.3	t Test	
+ 	    	19.11	Comparing Two Classification Algorithms
+ 	    	    	19.11.1	McNemar's Test
+ 	    	    	19.11.2	K-Fold Cross-Validated Paired t Test
+  	    	19.12	Comparing Multiple Algorithms: Analysis of Variance
