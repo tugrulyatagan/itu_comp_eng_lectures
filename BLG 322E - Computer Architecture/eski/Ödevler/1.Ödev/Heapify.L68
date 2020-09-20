@@ -1,0 +1,125 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.14.01
+Created On: 15.4.2014 23:03:52
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Program    : Recursive Max-Heapify Function 
+00000000                             3  * Written by : Gökhan SEÇ?NT?
+00000000                             4  * Date       : 13.02.2012
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00000000                             7  
+00000000                             8  * Variables 
+00000400                             9          ORG     $0400
+00000400= 000B                      10  size    DC.W    $000B
+00000500                            11          ORG     $0500
+00000500= FF 11 13 12 14 15 ...     12  array   DC.B    $FF,$11,$13,$12,$14,$15,$16,$17,$18,$1A,$19,$20
+0000050C                            13          
+0000050C                            14          
+0000050C                            15          
+0000050C                            16  
+0000050C                            17  
+0000050C                            18  * Functions
+00000600                            19          ORG     $0600
+00000600                            20  
+00000600  48A7 F8E0                 21  HEAP:   MOVEM.W D0-D4/A0-A2,-(SP)
+00000604  362F 0014                 22          MOVE.W  $14(SP),D3              ;retrive function parameter
+00000608                            23          
+00000608  3403                      24          MOVE.W  D3,D2
+0000060A  E342                      25          ASL.W   #1,D2
+0000060C  3202                      26          MOVE.W  D2,D1                   ;left at D1
+0000060E  5242                      27          ADDQ    #1,D2                   ;right at D2
+00000610                            28  
+00000610  41F8 0500                 29          LEA     array,A0
+00000614  43F8 0500                 30          LEA     array,A1
+00000618                            31                  
+00000618  B278 0400                 32          CMP.W   (size),D1
+0000061C  6C00 0050                 33          BGE     eof
+00000620  D0C1                      34          ADD.W   D1,A0
+00000622  D2C3                      35          ADD.W   D3,A1
+00000624  B109                      36          CMPM.B  (A1)+,(A0)+             ;cmp  A[indice], A[left]
+00000626  6F00 0004                 37          BLE     next1
+0000062A  3601                      38          MOVE.W  D1,D3
+0000062C                            39  next1:  
+0000062C                            40  
+0000062C                            41          
+0000062C  41F8 0500                 42          LEA     array,A0
+00000630  43F8 0500                 43          LEA     array,A1        
+00000634                            44          
+00000634  B478 0400                 45          CMP.W   (size),D2
+00000638  6C00 000E                 46          BGE     next2
+0000063C  D0C2                      47          ADD.W   D2,A0
+0000063E  D2C3                      48          ADD.W   D3,A1
+00000640  B109                      49          CMPM.B  (A1)+,(A0)+             ;cmp  A[indice], A[right]
+00000642  6F00 0004                 50          BLE     next2
+00000646  3602                      51          MOVE.W  D2,D3
+00000648                            52  next2:  
+00000648                            53          
+00000648                            54          
+00000648                            55          
+00000648  B66F 0014                 56          CMP.W   $14(SP),D3              ;largest <> indice
+0000064C  6700 0020                 57          BEQ     eof
+00000650                            58          ;SWAP 
+00000650  41F8 0500                 59          LEA     array,A0
+00000654  43F8 0500                 60          LEA     array,A1
+00000658                            61          
+00000658  322F 0014                 62          MOVE.W  $14(SP),D1
+0000065C  D0C1                      63          ADD.W   D1,A0
+0000065E  1810                      64          MOVE.B  (A0),D4
+00000660                            65          
+00000660  D2C3                      66          ADD.W   D3,A1
+00000662  1091                      67          MOVE.B  (A1),(A0)
+00000664  1284                      68          MOVE.B  D4,(A1)
+00000666                            69          
+00000666                            70          
+00000666                            71          ;Function call
+00000666  3F03                      72          MOVE.W  D3,-(SP)        ;send parameter
+00000668  4EB8 0600                 73          JSR     HEAP            ;function call
+0000066C  544F                      74          ADDQ    #2,SP           ;remove parameter from stack
+0000066E                            75  
+0000066E                            76  
+0000066E                            77  
+0000066E  4C9F 071F                 78  eof:    MOVEM.W (SP)+,D0-D4/A0-A2
+00000672  4E75                      79          RTS     
+00000674                            80  
+00000674                            81          
+00000674                            82          
+00000674                            83          
+00000674                            84  * Main  
+00001000                            85          ORG     $1000
+00001000                            86          
+00001000  2E7C 00004000             87  START:  MOVEA.L     #$4000,SP                   ; SP <- $4000
+00001006  123C 0001                 88          MOVE.B  #1,D1
+0000100A                            89                  
+0000100A  3238 0400                 90          MOVE.W  (size),D1
+0000100E  E241                      91          ASR.W   #1,D1
+00001010                            92  loop:           
+00001010                            93                  
+00001010  3F01                      94          MOVE.W  D1,-(SP)        ;send parameter
+00001012  4EB8 0600                 95          JSR     HEAP            ;function call
+00001016  544F                      96          ADDQ    #2,SP           ;remove parameter from stack
+00001018                            97  
+00001018  5341                      98          SUBQ    #1,D1
+0000101A  B27C 0001                 99          CMP.W   #1,D1
+0000101E  6CF0                     100          BGE     loop
+00001020                           101  
+00001020  103C 0009                102          MOVE.B  #9,D0
+00001024  4E4F                     103          TRAP    #15             ; halt simulator
+00001026                           104  
+00001026                           105          END     START           ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+ARRAY               500
+EOF                 66E
+HEAP                600
+LOOP                1010
+NEXT1               62C
+NEXT2               648
+SIZE                400
+START               1000

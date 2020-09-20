@@ -1,0 +1,30 @@
+!	Alt program yardimiyla;
+!	bir diziyi alip ters cevirerek
+!	yeni bir bellek alanina yazan 
+!	program...
+
+	.data
+diziE:	.word	700	! Verilen dizinin baslangici
+diziY:	.word	800	! Yeni dizinin baslangici
+
+	.equ
+700:	.word	ff,ee,dd,cc,bb,aa,99,88,77,66,55,44,33,22,11,00 ! Tanimlanan dizi
+
+	.text
+start:	sethi	0	%r1		! Adres offseti
+	sethi	diziE	%r24
+	sethi	diziY	%r25
+	sethi	f	%r16		! sayac
+	umul	%r16	4	%r3	! dizi sonu hesabi
+	add	%r24	%r3	%r24	! dizi sonu hesabi
+geri:	call oku			! altprogram cagrisi
+	nop
+	sub	%r16	1	%r16	! sayac azaltma
+	bge	geri			! eleman kaldi mi kontrolu
+	nop
+end:	ta	0			! program sonu
+oku:	ld	[%r8]	%r16		! ilk diziden deger okuma
+	st	%r16	[%r9]%r1	! yeni diziye yazma
+	sub	%r8	4	%r8	! ilk dizi yeni eleman adres hesabi
+	jmpl	0	0
+	add	%r1	4	%r1	! yeni dizi eleman adres hesabi (nop yerine sona alinmis)

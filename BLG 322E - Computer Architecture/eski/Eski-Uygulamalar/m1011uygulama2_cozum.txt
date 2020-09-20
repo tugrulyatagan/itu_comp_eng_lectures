@@ -1,0 +1,52 @@
+
+METIN 		EQU $500
+BOY   		EQU 22
+
+BUL 		EQU 65 		
+DEGIS 		EQU 83  	
+
+; A harfi bulunacak (hex: 41)
+; S harfi ile degistirilecek (hex: 53)
+
+ORG $500
+DCCHR "KARAKTER DIZISI ALFABE"
+                                                         
+ORG $600
+START: 
+	
+	
+	ADD 	R0 , METIN , R10	; DIZI -> R10		
+	ADD	R0 , BOY , R11		; BOY  -> R11
+	XOR	R1 , R1 , R1		; R1 global saklayicisinda dizide kac eleman degistirildi tutulacak, sifirlandi
+
+	CALL	DEGISTIR (R0) , R12	; degistir altprogramýna dallanýlýyor
+					; PC -> R13 , degistir -> PC , CWP -1 -> CWP	
+	
+	NOP
+
+ORG $700
+DEGISTIR:
+	
+	LDBU (R26)R0, R16		; R26daki adrese git, içeriði lokal R16'ya koy
+	NOP
+    SUB R16 , BUL , R16	 	; R16 da bulunacak harf var mý diye bakýlýyor
+	JMP BNE , ILERLE(R0) 
+	NOP
+
+	
+BULDU:	ADD	R1 , 1 , R1
+        ADD R0, DEGIS, R17                      					
+        STB (R26)R0, R17      			; bulunan karakterin yerine yazilacak karakter yazildi 
+	    NOP              
+      
+ILERLE:	ADD R26, 1, R26				; R26 daki adres 1 ilerletiliyor (karakterler byte byte okunuyor)					
+						; BOY R11 e kopyalanmisti, alt programda R11~R27
+	SUB R27 , 1 , R27			; DIZI nin BOY u 1 eksiltiliyor
+	JMP BNE , DEGISTIR(R0) 
+	NOP
+
+	RET (R28)R0				; PC R12 ye kopyalanmisti, alt programda R12~R28
+
+
+
+	

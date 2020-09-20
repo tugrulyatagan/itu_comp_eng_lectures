@@ -1,0 +1,78 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;														;
+; 														;
+;                 DAVUT POLAT 040060243 Bilgisayar Mimarisi 2. Ödev 2009-2010 Bahar Yarıyılı			;
+;														;
+;														;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+DIZI EQU $500
+BOY  EQU $A
+
+ORG $500
+DCINT 3
+DCINT -98
+DCINT 5
+DCINT 678
+DCINT -832
+DCINT 4567
+DCINT -789
+DCINT 409
+DCINT -372
+DCINT 65
+
+
+ORG $600
+START:	ADD 	R0 , DIZI , R10		; DIZI -> R10 (Alt programda R26 ya karşılık düşer)
+	ADD	R0 , BOY , R11		; BOY  -> R11 (Alt programda R27 ye karşılık düşer)
+	CALL	deltaD (R0) , R15	; deltaD alt programina dallanir					
+					; PC -> R15 , topla -> PC , CWP -1 -> CWP
+	NOP
+
+
+
+negatif:                        	; Alt programda dizi içerisindeki negatif elemanlara yapılacak işlemler
+	SUB R0 , R16 , R16 		; Negatif bir sayının mutlak değeri alınıyor
+					; Burada hem branch komutu ile hemde veri bağımlılığından dolayı nop koymadan
+
+	JMP BR , ortak(R0)      	; 2 ile toplama işlemini geciktirebiliriz
+	ADD R16 , 2 , R16 		; ve 2 ile toplama işlemini gerçekliyoruz.
+					; negatif olması durumunda yapılan işlemler tamamlandıktan sonra
+					; altprogramda her durumda (pozitif ve negatifse) yapılması gereken işlemler için
+					; ortak adlı etiketin olduğu yere dönüyoruz....			
+
+ORG $700
+deltaD:
+					
+	LDL (R26)R0, R16		; DIZI R10 a kopyalanmisti, alt programda R10~R26
+	NOP				
+					; Veri bağımlılığı söz konusu	
+	SUB R16 , R0 , R16		; R26  daki adrese git, icerigi lokal R16'ya koy
+	NOP				
+					; R16 daki değere bağlı olarak koşullu bir dallanma	
+					; olduğundan R16 üzerindeki işlemin bitmesi gerekir
+	JMP BMI , negatif(R0)  
+	NOP  				
+					; Koşulun doğru olup olmadığı belirlenmeden komut alınmaz	
+
+	SLL R16 , 2 , R16
+	
+ortak: 	
+	NOP				
+					; negatif etiketli yerden dönüldüğünde R16 üzerindeki işlem tamamlanmamıştır.
+	STL (R0)R26 , R16 		; Yükleme işlemi gerçekleşiyor.	
+	ADD R26, 4, R26			; R26 daki adres 1 ilerletiliyor	
+					; BOY R11 e kopyalanmisti, alt programda R11~R27
+	SUB R27 , 1 , R27		; DIZI nin BOY u 1 eksiltiliyor
+	NOP				
+					; Koşullu dallanma yapılacak bu yüzden R27 üzerindeki işlemin bitmesi gerekir.
+
+	JMP BNE , deltaD(R0) 			
+	NOP				
+					; Koşullu dallanma sonucu beklenir.
+	
+	RET (R31)R0			; PC R15 ye kopyalanmisti, alt programda R15~R31
+	
+
+
+

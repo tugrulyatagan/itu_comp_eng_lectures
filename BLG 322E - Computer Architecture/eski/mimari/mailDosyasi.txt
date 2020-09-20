@@ -1,0 +1,55 @@
+2008-2009 Bilgisayar Mimarisi Vize-1 Sorularý
+
+Soru 1(30 puan) - uygulama2 sýkýþtýrýlmýþ arþiv dosyasýnda Ninova'da ders dosyalarýnda soru ve çözüm var
+
+Soru 2(35 puan) -
+
+a) k,i,j 32 bitlik iþaretsiz tamsayýlar olmak üzere k=AVG(i,j) iþlemini (fonksiyon çaðýrma) yapan deyimleri ve iki sayýnýn tamsayý ortalamasýný geri döndüren AVG fonksiyonunu 
+
+i)Berkeley RISC 1  ve   ii) MC68000 mikroiþlemcilerinin simgesel dillerinde yazýnýz
+
+Parametre aktarýmlarý RISC1'de kesiþimli saklayýcý pencereleri (overlapped register windows), MC68000'de ise yýðýn üzerinden yapýlacaktýr. i,j sayýlarý program çalýþmaya baþladýðýnda ana bellekte bulunmaktadýr. Ýþlem sonunda k sonucu da belleðe yazýlacaktýr. 
+
+RISC 1 iþlemcisi için program yazarken iþ hattýnda oluþabilecek sorunlarý dikkate almanýza gerek yoktur.
+Hatýrlatma: RISC 1 iþlemcisinde:  10 adet golabal saklayýcý, 8 adet saklayýcý penceresi, her pencerede 10 tanesi yerel olmak üzere toplam 32 adet saklayýcý bulunmaktadýr. Berkeley RISC1 iþlemcisinin komut tablosu arka sayfada verilmiþtir.
+
+b) Yukarýda yazdýðýnýz AVG fonksiyonunun yürütülmesinde fonksiyona gidiþ dönüþ iþlemlerini de göz önüne alarak komut alma çevrimleri dýþýnda kaç defa bellek eriþimi yapýldýðýný RISC1 ve MC68000 mikroiþlemcileri için kýsa açýklamalarla birlikte belirtiniz.
+
+Soru 3(30 puan) -
+
+Berkeley RISC1 mimarisinde I,A,E ile simgelenen 3 segmanlý bir komut iþleme hattý vardýr.
+
+a) Bu sistemde komut almanýn bellek eriþim çatýþmasýna neden olmamasýný saðlamanýn yollarý nelerdir?
+b) Komut almanýn bellek eriþim çatýþmasýna neden olmadýðý varsayýmý altýnda aþaðýda verilen program bölümünün yürütülmesi sýrasýnda komut iþleme hattýnýn saðlýklý çalýþmasýný bozacak veya verimini düþürecek ne gibi durumlarla karþýlaþýlabilir?(Soru 2. sayfadan devam ediyor)
+
+START:    ADD R0, 200,R18     ;Ývedi veri 10 tabanýnda
+	  ADD R0, 100,R17
+	  ADD R0, 136,R16
+	  JMP BR, LOOP2(R0)   ;Her zaman dallan
+
+LOOP1:    SUB R16,4,R16
+LOOP2:	  LDL (R16)0,R21
+	  LDL (R17)0,R22
+	  ADD R21,R22,R23
+	  STL (R18)0,R23
+	  ADD R18,4,R18
+	  ADD R17,4,R17
+	  SUB R17,R16,R19
+	  JMP BNE, LOOP1(R0)
+	  ADD R17,4,R17
+
+
+Bir tablo çizerek bu türden durumlarýn oluþtuðu komutlarý belirleyin ve bu durumlara neden girildiðini açýklayýn.
+
+i.   Gerektiði yerlerde komutlarýn arasýna NOP komutlarý ekleyerek komut iþleme hattýnýn saðlýklý çalýþmasýný saðlayýn.
+
+ii.  Yapýlan iþin sonucu ayný kalmak üzere verilen komut sýralamasýný deðiþtirerek NOP komutlarý eklemeye göre daha verimli  bir çalýþma saðlayabilir misiniz?
+
+
+
+<<Burada Berkeley RISC-1  komut tablosu var sýnav kaðýdýnda.>>
+Toplam 2 adet sýnav kaðýdý var.
+
+
+
+

@@ -1,0 +1,31 @@
+!	Tugrul YATAGAN 040100117
+!	BLG 322E COMPUTER ARCHITECTURE HOMEWORK 1-a 12/03/2014
+!	Bubble Sort considering pipeline hazards with rearrangement
+!	CRN:21703 Instructor: Feza Buzluca
+
+	.data
+diziB:	.word	1000			! starting adress of array
+
+	.equ
+1000:	.word	44,ee,55,cc,aa,bb,99,11,33,22,00	! content of array
+
+	.text
+start:	sethi	diziB	%r1		! initialization of i value in r1
+	sethi	diziB	%r2		! initialization of i value in r2
+lj:	ld	[%r2]	%r11		! load element#j to r11
+	add	%r2	4	%r2	! next element j++
+	ld	[%r2]	%r12		! load element#j+1 to r12
+	nop				! I cannot find any solution for this hazard
+	sub	%r12	%r11	%r0	! compare element #j and #j+1
+	bl	not			! branch if element #j < #j+1
+	sub	%r2	4	%r3	! calculate first element (#j) address
+	st	%r11	[%r2]		! store second element (#j+1) for swap
+	st	%r12	[%r3]		! store first element (#j+1) for swap
+not:	sub	%r11	%r0	%r0	! compare element #j with 0
+	bne	lj			! branch if not element#j == 0
+	ld	[%r1]	%r10		! load element#i to r10
+	add	%r1	4	%r1	! next element i++
+	sub	%r10	%r0	%r0	! compare element #i with 0
+	bne	lj			! branch if not finish
+	sethi	diziB	%r2		! initialization of i value for next loop
+end:	ta	0			! end program

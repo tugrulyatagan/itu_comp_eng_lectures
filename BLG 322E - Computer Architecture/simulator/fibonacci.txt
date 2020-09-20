@@ -1,0 +1,25 @@
+!	Verilen n sayisi kadar
+!	elemani olan fibonacci 
+!	dizisini olusturan program.
+
+	.data
+n:	.word	10	! Verilen eleman sayisi ($16)
+
+	.bss
+fibBas:	1000		! Dizinin baslangici
+
+	.text
+start:	sethi	0	%r1		! dizi offseti
+	sethi	0	%r2		! ilk sayi
+	sethi	1	%r3		! ikinci sayi
+	sethi	n	%r5		! verilen eleman sayisi
+	umul	%r5	4	%r6	! eleman sayisinin bellekte tutacagi yerin hesabi
+geri:	st	%r2	[fibBas]%r1	! eleman yaz
+	add	%r2	%r3	%r4	! sonrakini hesapla r4e yaz
+	add	%r3	%r0	%r2	! eleman kaydir (r3 -> r2)
+	add	%r4	%r0	%r3	! eleman kaydir (r4 -> r3)
+	add	%r1	4	%r1	! bellek offseti kaydir
+	sub	%r1	%r6	%r0	! n'e ulasildi mi bak
+	bne	geri
+	nop
+end:	ta	0			! program sonu

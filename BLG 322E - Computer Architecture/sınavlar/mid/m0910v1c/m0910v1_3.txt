@@ -1,0 +1,25 @@
+Bilgisayar Mimarisi 2009-2010 1. Yýliçi Sýnavý 3. Soru Çözümü 
+a) Kesiþimli Saklayýcý Pencereleri, alt program çaðrýlarýnda yýðýna (bellek eriþimine) gerek duymadan
+ 1. parametre aktarýmýný saðlamak ve
+ 2. yerel deðiþkenleri tutmak için kullanýlýr.
+
+ b) Verilen deðerlere göre bir pencerede 16 adet saklayýcý yer almaktadýr. 6 global, 2x3 ortak, 4 yerel. 
+Bir pencerede görünen saklayýcýlar R0-R15 arasýndadýr.
+Sistemde toplam 5 pencere vardýr. (41-6)/(4+3)=5. Buna göre bir ana program, iç içe 4 alt program çaðýrabilir.
+
+c-d)
+	
+	ORG $500
+START: 
+	LDSS	(R0)$100, R6       ; R6 alt pencerede R13 olur. Bellekten 16 bir iþaretli sayý okunuyor.
+	LDSS	(R0)$102, R7       ; R7 alt pencerede R14 olur.
+	CALL	Ort(R0), R5 	   ; Geri dönüþ adresi Global R5'te. Ortak saklayýcý da kullanýlabilirdi.         	
+	NOP
+	STL	(R0)$200, R8           ; Geri dönen sonuç R8'de. R8 alt pencerede R18 olur.
+	
+ORG $600
+
+Ort:
+	ADD  R13, R14, R15		; iki sayý toplandý. R8=R6+R7
+	SRA  R15,1,R15			; 1 bit aritmetik saða öteleme. Ýþaret korunarak 2'ye bölme
+	RET	(R5)0				; PC  <-- (R5) + 0. Geri dönüþ adresi global R5'teydi.

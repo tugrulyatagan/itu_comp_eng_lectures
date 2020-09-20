@@ -1,0 +1,56 @@
+;********************************************************
+;	Abdullah   AYDEÐER				*
+;	    040090533					*
+;	Bilgisayar Mimarisi - 2.Ödev			*
+;********************************************************
+
+
+SIFRE1 	EQU 	$100
+
+SIFRE2 	EQU 	$200
+
+ORG $100
+DCCHR "JKLGHIMAEFDBCQRSTNOVWZUXPY"
+
+ORG $200
+DCCHR "HLMKIJDEFABCGRSYNOPQWTUXZV"
+
+ORG $300
+DCCHR "SAMPLETEXT"
+
+ORG $600
+START:
+		ADD	R0, SIFRE1, R10			;R10 þifre1 in adresini saklayacak
+		ADD	R0, $300, R11			;R11 þifrelenmesi gereken karakter dizisinin adresini saklayacak
+		CALL	SIFRELE(R0), R15		;Altprogram çaðrýsý yapýlýyor ve PC R15'e atanýyor
+		ADD	R0, $400, R28			;CALL iþleminden sonra 'NOP' koymamak için bu satýr eklenmiþtir. R12(alt programda R28) þifreleneceklerin adresini saklayacak 
+							; Altprogramda R28 saklayýcýsýyla ulaþýlacaðý için R12 deðil de R28 yazýlmýþtýr.
+
+;Benzer iþlem ve çaðrýlar karakter dizilerinin adresleri deðiþtirilerek yapýlýyor..
+
+		ADD	R0, SIFRE2, R10			;R10 þifre2 nin adresi saklayacak
+		ADD	R0, $400, R11			;R11 þifrelenmesi gereken karakter dizisinin adresini saklayacak
+		CALL	SIFRELE(R0), R15		;Altprogram çaðrýsý yapýlýyor ve PC R15'e atanýyor
+		ADD	R0, $500, R28			;CALL iþleminden sonra 'NOP' koymamak için bu satýr eklenmiþtir. R12(alt programda R28) þifreleneceklerin adresini saklayacak 
+							; Altprogramda R28 saklayýcýsýyla ulaþýlacaðý için R12 deðil de R28 yazýlmýþtýr.
+
+ORG $700
+SIFRELE:
+		LDBU	(R27)$0, R15			;R15'e R27(anaprogramdaki R11) ile gelen þifrelenecek karakter dizisinin adresinin gösterdiði deðer atanýyor
+		SUB	R15, $41, R14			;R14'e R15'in alfabedeki kaçýncý harf olduðunu belirleyebilmek için R15 -$41 
+							;deðeri (ki bu $41 deðeri 'A' karakterine denk düþmektedir) atanýyor
+		JMP	BGE, ILERI(R0)			;Eðer gelen karakter 'A' karakterinden büyükse 'ILERI' etiketine dallanýlýyor
+		NOP					;JMP'den sonra herhangi bir komut almamasý gerektiði için NOP komutu eklenmiþtir
+		RET	(R31)$0				;Eðer ILERI dallanmaz ise ana programa geri dönülecek
+		NOP					;RET komutundan sonra herhangi bir komut almamasý(yürütmemesi) için NOP komutu eklenmiþtir
+
+ORG $800
+ILERI:							;Eðer ILERI dallanýrsa,
+		LDBU	(R26)R14, R15			;R26 (ana programdaki R10) deðerinden R14(alfabedeki indis deðeri gibi düþünülebilir) çýkartýlýp elde edilen
+							;deðerin gösterdiði adresin içeriði R15'e atanýyor
+		STB	(R28)R0, R15			;R15 R28(ki bu saklayýcýda anaprogramdan gönderilen þifrelenecek dizinin adresi yer almakta) yazýlmaktadýr.
+		ADD	R27, $01, R27			;R27 1 sonraki bellek gözünü göstermektedir (göstermelidir de)
+		JMP	BR, SIFRELE(R0)			;Koþulsuz olarak SIFRELE etiketine geri dallanýlacak ve döngü son karaktere kadar devam edecektir
+		ADD	R28, $01, R28			;R28 1 sonraki bellek gözünü göstermektedir (göstermelidir de). JMP'den sonra JMP iþlemi iþlenmeden(execute edilmeden) 
+							;bir komut daha yürütülebilir, bu yüzden bu ADD komutu 'NOP' kullanmamak için buraya konulmuþtur.
+		

@@ -1,0 +1,119 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.9.0
+Created On: 22.03.2012 17:42:26
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Program    : HeapSort
+00000000                             3  * Written by : 
+00000000                             4  *       Name  : Abdullah AYDEÐER 
+00000000                             5  *       Number: 040090533
+00000000                             6  * Date       : 23.02.2012
+00000000                             7  * Description: Build-Max-Heap fonksiyonunun algoritmasýnýnýn MC68000 üzerinde gerçeklenmesi.
+00000000                             8  *-----------------------------------------------------------
+00000000                             9          
+00000400                            10          ORG $0400
+00000400= 000B                      11  size    DC.W $000B
+00000402                            12  
+00000500                            13          ORG $0500
+00000500= FF 11 13 12 14 15 ...     14  array   DC.B $FF,$11,$13,$12,$14,$15,$16,$17,$18,$1A,$19        
+0000050B                            15  
+0000050B                            16  
+0000050B                            17  ;Functions
+00000900                            18          ORG     $0900
+00000900                            19  MxHp                            *Altprogram baþlangýcý
+00000900  48E7 3F80                 20          MOVEM.L D2-D7/A0, -(A7) *Altprogramda kullanýlan registerlarýn altprogramdan dönüþte içeriðinin deðiþmemesi için yýðýna atýldý.
+00000904                            21           
+00000904  2E2F 0020                 22          MOVE.L  $20(A7),D7      *Yýðýndan parametre olarak gelen indis deðeri okundu.($20 = 32 birim aþaðýda)
+00000908  3A07                      23          MOVE.W  D7, D5          *D5 = i(fonksiyona parametre olarak gelen deðiþken)'i göstermek için kullanýldý.
+0000090A                            24                                  
+0000090A  E347                      25          ASL     #1, D7
+0000090C  3C07                      26          MOVE.W  D7, D6          *D6 = l(2*i) deðiþkeni için
+0000090E  5247                      27          ADDQ    #1, D7          *D7 = r(2*i+1) deðiþkeni için
+00000910                            28          
+00000910  207C 00000500             29          MOVE.L  #array,A0       *A0 = Array'in baþlangýç adresi         
+00000916                            30  
+00000916  1630 5000                 31          MOVE.B  (A0,D5.W),D3    *D3 = A[i] verisini tutmak için kullanýldý.
+0000091A                            32                  
+0000091A  BC78 0400                 33          CMP     size, D6        *If l(D6)>size -- 
+0000091E  6C00 0010                 34          BGE     LEFT            *Ýleri dallanma olduðu için algoritmadaki koþulun tersi bir koþulla, yani l>=heap-size ise dallanma olacak LEFT etiketine
+00000922  B630 6000                 35          CMP.B   (A0,D6.W),D3    *Else if A[i]>=A[l]
+00000926  6C00 0008                 36          BGE     LEFT            *Yine ileri dallanma olduðu için algoritmanýn tersi olarak A[i]>=A[l] ise dallanma olacak LEFT etiketine
+0000092A  3806                      37          MOVE.W  D6, D4          *Else; largest(D4) <- l(D7) atamasý yapýlacak
+0000092C                            38          
+0000092C  6000 0004                 39          BRA     LEFTT           *Bu satýra inilmiþse koþulsuz olarak LEFTT etiketine dallanýlacak
+00000930                            40          
+00000930  3805                      41  LEFT    MOVE.W  D5, D4          *largest(D4) <- i(D5) atamasý yapýlýyor.
+00000932                            42  
+00000932                            43  LEFTT   
+00000932  1630 4000                 44          MOVE.B  (A0,D4.W),D3    *D3 = A[largest] yüklendi.
+00000936                            45          
+00000936  BE78 0400                 46          CMP     size, D7        *If heap-size>r         -- yukarýdakilere benzer þekilde koþullama ve dallanmalar...
+0000093A  6C00 000C                 47          BGE     RIGHT           *Branch RIGHT
+0000093E  B630 7000                 48          CMP.B   (A0, D7.W),D3   *Else if A[largest]>=A[r]
+00000942  6C00 0004                 49          BGE     RIGHT           *Branch RIGHT
+00000946  3807                      50          MOVE.W  D7, D4          *Else; largest(D4) <- r(D6) atamasý yapýldý
+00000948                            51          
+00000948                            52          
+00000948                            53  RIGHT   
+00000948  BA44                      54          CMP     D4, D5          *If largest = i Eðer birbirine eþitse doðrudan fonksiyon sonlanacak
+0000094A  6700 001A                 55          BEQ     BITIR           *Branch BITIR
+0000094E                            56          *Takas...               *Else, yani eþit deðilse takas iþlemini gerçekleþtirip, fonksiyonu largest deðeri için bir daha çaðýracak
+0000094E  1630 4000                 57          MOVE.B  (A0,D4.W),D3    *A[i]'yi D3 e atadýk
+00000952  1430 5000                 58          MOVE.B  (A0,D5.W),D2    *A[largest]'ý D2 e atadýk
+00000956  1182 4000                 59          MOVE.B  D2,(A0,D4.W)    *D2 A[i] ye yazýldý
+0000095A  1183 5000                 60          MOVE.B  D3,(A0,D5.W)    *D3 A[largest] a yazýldý
+0000095E                            61          
+0000095E  2F04                      62          MOVE.L  D4, -(A7)       *Fonksiyona largest parametresi yýðýn üzerinden hazýrlandý
+00000960  4EB8 0900                 63          JSR     MxHp            *Fonksiyon kendini çaðýrdý.
+00000964  281F                      64          MOVE.L  (A7)+, D4       *Yýðýnla yollanan parametre yýðýndan geri çekildi.
+00000966                            65  
+00000966                            66  BITIR
+00000966  4CDF 01FC                 67          MOVEM.L (A7)+, D2-D7/A0 *Fonksiyonun baþýnda yýðýna atýlan register'lar, fonksiyon bitiminde yýðýndan geri çekildi.
+0000096A                            68          
+0000096A  4E75                      69          RTS                     *Altprogramýn sonu...
+0000096C                            70  
+0000096C                            71  
+0000096C                            72  
+00001000                            73          ORG     $1000
+00001000                            74  START:                          ; first instruction of program
+00001000  709D                      75          MOVEQ   #-99, D0
+00001002  3200                      76          MOVE.W  D0, D1
+00001004  3038 0400                 77          MOVE.W  size, D0        *Size'ý rahatça kullanabilmek için D0 data register'ýna atýldý.(D0 <- size)
+00001008  E240                      78          ASR     #1, D0          *D0 = D0/2 yapýldý.
+0000100A                            79          
+0000100A  3200                      80          MOVE.W  D0, D1          *D0'dan bir geride saymasý için bir sayac gerekliydi, bunun için de D1 register'ý kullanýldý.(D1 <- D0)
+0000100C                            81          
+0000100C  5341                      82          SUBQ    #1, D1          *D1 D0'dan bir geride saymasý için D1 <- D1-1
+0000100E                            83          
+0000100E                            84  GERI    
+0000100E  2F00                      85          MOVE.L  D0, -(SP)       *Ýndis deðeri yýðýn üzerinden gönderiliyor.
+00001010  4EB8 0900                 86          JSR     MxHp            *Altprograma dallanýlýyor.
+00001014  5340                      87          SUBQ    #1, D0          *D0 elle bir azaltýlýyor.
+00001016  51C9 FFF6                 88          DBF     D1, GERI        *D1 '-1' den büyükse D1 <- D1-1 yapýlýp GERI etiketine dallanýlýyor.
+0000101A                            89          
+0000101A                            90  
+0000101A  103C 0009                 91          MOVE.B  #9,D0
+0000101E  4E4F                      92          TRAP    #15             ; halt simulator
+00001020                            93  
+00001020                            94  * Variables and Strings
+00001020                            95  
+00001020                            96  
+00001020                            97  
+00001020                            98          END     START           ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+ARRAY               500
+BITIR               966
+GERI                100E
+LEFT                930
+LEFTT               932
+MXHP                900
+RIGHT               948
+SIZE                400
+START               1000

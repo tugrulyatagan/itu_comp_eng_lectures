@@ -1,0 +1,16 @@
+	;Baþlangýç adresi
+	ORG $500
+START:	ADD R0,25,R2
+	ADD R0,-66,R11
+	ADD R0,R1,R1
+	ADD& R0,-66,R13
+	LDL& (R0)R17,R9
+	SRA R1,1,R1
+	SUB R3,R4,R2	;çýkarma iþlemi
+	ADD R0,66,R5
+	JMP BR,$528(R0)
+	ADD R1,-66,R5
+	LDL (R3)R6,R30	;açýklama
+	SUB R5,$2F2,R23
+	JMP BR,R5(R30)	;HER ZAMAN DALLAN
+	

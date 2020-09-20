@@ -1,0 +1,68 @@
+; Bilgisayar Mimarisi Uygulama II
+; Dizi elemanlarinin toplamini bulan RISC programi
+; R1 global saklayicisi dizinin toplamini tutar
+; R2 global saklayicisi dizinin en buyuk elemanini tutar
+; Aras.Gor. Selda Kuruoglu, Aras.Gor. Deniz Demiray
+
+DIZI EQU $500
+BOY  EQU $8
+
+ORG $500
+
+DCINT 5		
+DCINT 2
+DCINT 23
+DCINT 2
+DCINT 1
+DCINT 3
+DCINT 47
+DCINT 2
+; ( ivedi sayilar basinda herhangi bir karakter yok, ders slidelarinda # kullanilmisti )
+
+
+ORG $600
+
+START: 
+	XOR	R1 , R1 , R1		; R1 de toplam tutulacak, sifirlaniyor
+	XOR	R2 , R2 , R2		; R2 de en buyuk eleman tutulacak
+	LDL	(R0)DIZI , R2		; Dizinin ilk elemani en buyuk olsun..
+	ADD 	R0 , DIZI , R10		; DIZI -> R10
+	ADD	R0 , BOY , R11		; BOY  -> R11
+	CALL	topla (R0) , R12	; topla alt programina dallanir
+					; PC -> R12 , topla -> PC , CWP -1 -> CWP
+	NOP
+
+
+enBuyuk:
+	; yeni en buyuk deger olan R26 R2 ye kopyalanir
+	ADD R16 , R0, R2
+	NOP
+	JMP BR , topla(R0)
+	NOP	
+
+ORG $800
+topla:
+	; DIZI R10 a kopyalanmisti, alt programda R10~R26
+	LDL (R26)R0, R16		; R26daki adrese git, icerigi lokal R16'ya koy
+	NOP
+
+	SUB R16 , R2 , R17
+	NOP
+	JMP BGT , enBuyuk(R0)
+	NOP
+
+	ADD R26, 4, R26			; R26 daki adres 1 ilerletiliyor
+	ADD R1 , R16 , R1		; global R1 e siradaki deger ekleniyor
+
+	; BOY R11 e kopyalanmisti, alt programda R11~R27
+	SUB R27 , 1 , R27		; DIZI nin BOY u 1 eksiltiliyor
+
+	NOP
+	JMP BNE , topla(R0) 
+	NOP
+	
+	; PC R12 ye kopyalanmisti, alt programda R12~R28
+	RET (R28)R0
+
+
+
