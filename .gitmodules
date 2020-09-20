@@ -2,19 +2,19 @@
 	path = BLG 492E - Graduation Project/RISC-processor
 	url = https://github.com/tugrulyatagan/RISC-processor
 	branch = master
-[submodule "BLG 500 - Staj/Yenihayat/stream"]
-	path = BLG 500 - Staj/Yenihayat/stream
+[submodule "BLG 500 - Internship/Yenihayat/stream"]
+	path = BLG 500 - Internship/Yenihayat/stream
 	url = https://github.com/tugrulyatagan/stream
 	branch = master
-[submodule "BLG 500 - Staj/Yenihayat/harita"]
-	path = BLG 500 - Staj/Yenihayat/harita
+[submodule "BLG 500 - Internship/Yenihayat/harita"]
+	path = BLG 500 - Internship/Yenihayat/harita
 	url = https://github.com/tugrulyatagan/harita
 	branch = master
-[submodule "BLG YLT - Tez Çalışması/thesis"]
-	path = BLG YLT - Tez Çalışması/thesis
+[submodule "BLG YLT - Thesis/thesis"]
+	path = BLG YLT - Thesis/thesis
 	url = https://github.com/tugrulyatagan/thesis
 	branch = master
-[submodule "BLG YLT - Tez Çalışması/paper"]
-	path = BLG YLT - Tez Çalışması/paper
+[submodule "BLG YLT - Thesis/paper"]
+	path = BLG YLT - Thesis/paper
 	url = https://github.com/tugrulyatagan/paper
 	branch = master
