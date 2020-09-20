@@ -1,0 +1,26 @@
+Circuit: * D:\ÝTÜ Ders\EHB 322E - Digital Electronic Circuits\hw1\ehb322e_hw1.asc
+
+Model "t15dp": Oxide thickness thinner than recommended for a level 3 MOSFET.
+Model "t15dn": Oxide thickness thinner than recommended for a level 3 MOSFET.
+Limiting rise time of source v2 to 1e-006
+Limiting fall time of source v2 to 1e-006
+Instance "m2": Width narrower than recommended for a level 3 MOSFET.
+
+Date: Mon Mar 17 12:37:58 2014
+Total elapsed time: 0.144 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1068
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1: 250 bayt object code size  0.2/0.1/[0.0]
+Matrix Compiler2: off  [0.2]/0.2/0.2
+
+
