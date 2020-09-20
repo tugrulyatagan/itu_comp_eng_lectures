@@ -1,0 +1,11 @@
+0	1
+0	3
+1	4
+2	4
+3	5
+4	6
+Total savings: 50 AOALiras
+
+Total gain:( 39 / 89 ) 43.8202 %
+
+Running time: 11 ms

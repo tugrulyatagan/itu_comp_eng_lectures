@@ -1,0 +1,1397 @@
+{\rtf\ansi\deff0\ansicpg1252
+{\fonttbl
+{\f0\froman times new roman;}{\f1\fswiss helvetica;}}
+{\colortbl\red0\green0\blue0;}
+{\info{\author fs080298}}
+\jexpand\viewkind1\viewscale100
+
+{\shp{\*\shpinst\shpleft5520\shptop2240\shpright5533\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2028\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5520\shptop2240\shpright6626\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2029\shpz1\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1106}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1106,13);(1106,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6626\shptop2240\shpright6640\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2030\shpz2\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6640\shptop2240\shpright7706\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2031\shpz3\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7706\shptop2240\shpright7720\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2032\shpz4\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7720\shptop2240\shpright8786\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2033\shpz5\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8786\shptop2240\shpright8800\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2034\shpz6\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8800\shptop2240\shpright10053\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2035\shpz7\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1253}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1240,13);(1240,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10053\shptop2240\shpright10066\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2036\shpz8\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10066\shptop2240\shpright11853\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2037\shpz9\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1787}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1786,13);(1786,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop2240\shpright11866\shpbottom2266\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2038\shpz10\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 26}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop2240\shpright11866\shpbottom2253\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2039\shpz11\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5520\shptop2266\shpright5533\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2040\shpz12\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6626\shptop2266\shpright6640\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2041\shpz13\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7706\shptop2266\shpright7720\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2042\shpz14\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8786\shptop2266\shpright8800\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2043\shpz15\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10053\shptop2266\shpright10066\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2044\shpz16\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop2266\shpright11866\shpbottom2760\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2045\shpz17\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 494}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,493);(13,493);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5520\shptop2760\shpright5533\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2046\shpz18\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5533\shptop2760\shpright6626\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2047\shpz19\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1093}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1093,13);(1093,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6626\shptop2760\shpright6640\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2048\shpz20\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6640\shptop2760\shpright7706\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2049\shpz21\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7706\shptop2760\shpright7720\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2050\shpz22\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7720\shptop2760\shpright8786\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2051\shpz23\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8786\shptop2760\shpright8800\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2052\shpz24\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8800\shptop2760\shpright10053\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2053\shpz25\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1253}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1240,13);(1240,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10053\shptop2760\shpright10066\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2054\shpz26\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10066\shptop2760\shpright11853\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2055\shpz27\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1787}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1786,13);(1786,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop2760\shpright11866\shpbottom2773\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2056\shpz28\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5520\shptop2773\shpright5533\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2057\shpz29\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5520\shptop3280\shpright6626\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2058\shpz30\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1106}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1106,13);(1106,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6626\shptop2773\shpright6640\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2059\shpz31\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6640\shptop3280\shpright7706\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2060\shpz32\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7706\shptop2773\shpright7720\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2061\shpz33\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft7720\shptop3280\shpright8786\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2062\shpz34\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1066}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1066,13);(1066,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8786\shptop2773\shpright8800\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2063\shpz35\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft8800\shptop3280\shpright10053\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2064\shpz36\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1253}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1240,13);(1240,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10053\shptop2773\shpright10066\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2065\shpz37\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft10066\shptop3280\shpright11853\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2066\shpz38\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1787}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(1786,13);(1786,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop2773\shpright11866\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2067\shpz39\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 520}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,520);(13,520);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11853\shptop3280\shpright11866\shpbottom3293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2068\shpz40\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 13}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}\paperw11893\paperh16840\margl666\margr133\margt666\margb173
+\cols5\colno1\colw3440\colsr-0\colno2\colw4093\colsr-0\colno3\colw1160\colsr-0\colno4\colw1320\colsr-0\colno5\colw1080\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-466\slmult0 \fs24\cf0\f0\charscalex100\b {Name:}\b0 \par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100\b {Number:}\b0 \par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100\b {Department:}\b0 \par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100\b {Signature:}\b0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-386\slmult0 \fs24\cf0\f0\charscalex100\b {Analysis of Algorithms, Spring 2007}\b0 \par\pard\li760\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100\b {Midterm ANSWERS}\b0 \par\pard\li1920\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li1920\ri0\sl-346\slmult0 \*\tx3013\fs24\cf0\f0\charscalex100\b {1}\b0 \tab \fs24\cf0\f0\charscalex100\b {2}\b0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs24\cf0\f0\charscalex100\b {3}\b0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs24\cf0\f0\charscalex100\b {4}\b0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs24\cf0\f0\charscalex100\b {Total}\b0 \par\pard\sect\sectd\sbknone\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-400\slmult0 \fs24\cf0\f0\charscalex100\i {Write your answers in the }\i0 \fs24\cf0\f0\charscalex100\i {space provided for them.}\i0 \par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100\i {Write neatly.}\i0 \par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100\i {Write your name on each sheet.}\i0 \par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-346\slmult0 \fs22\cf0\f0\charscalex100\b {1)}\b0 { }\fs24\cf0\f0\charscalex100\b {(20 points)}\b0 { }\fs24\cf0\f0\charscalex100 {Order the following functions by growth}\fs24\cf0\f0\charscalex100 { rate. Explain in detail how you}\par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100 {decided on the ordering.}\par\pard\sect\sectd\sbknone\cols10\colno1\colw1626\colsr-0\colno2\colw1933\colsr-0\colno3\colw400\colsr-0\colno4\colw133\colsr-0\colno5\colw560\colsr-0\colno6\colw506\colsr-0\colno7\colw666\colsr-0\colno8\colw1240\colsr-0\colno9\colw426\colsr-0\colno10\colw3600\pard\li800\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li800\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 {\super \fs18\up6\cf0\f0\charscalex100 {log}}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100\i {e}\i0 {\super \fs18\up6\cf0\f0\charscalex100 {log}}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-466\slmult0 \fs32\cf0\f0\charscalex100 {+}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-306\slmult0 \fs18\cf0\f0\charscalex100 {2}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100 {)}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-306\slmult0 \fs18\cf0\f0\charscalex100 {5}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100 {2}{\super \fs18\up6\cf0\f0\charscalex100 {3}}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100 {3}{\super \fs18\up6\cf0\f0\charscalex100 {2}}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-306\slmult0 \fs18\cf0\f0\charscalex100 {1000}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-480\slmult0 \fs32\cf0\f0\charscalex100 {log}\par\pard\sect\sectd\sbknone\cols5\colno1\colw3346\colsr-0\colno2\colw1133\colsr-0\colno3\colw2426\colsr-0\colno4\colw1026\colsr-0\colno5\colw3160\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-413\slmult0 \fs28\cf0\f0\charscalex100\b {ANSWER:}\b0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx453\fs32\cf0\f0\charscalex100 {log(}\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f0\charscalex100 {First of all some general properties of growth rates:  }\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f0\charscalex100 {A) In terms of slower to faster grwoth rate:}\par\pard\li746\ri0\sl-280\slmult0 \fs22\cf0\f0\charscalex100 {Logarithms (logn)<polynomials(n}{\super \fs14\up4\cf0\f0\charscalex100 {a}}\fs22\cf0\f0\charscalex100 {)<exponentials with const base (a}{\super \fs14\up4\cf0\f0\charscalex100 {n}}\fs22\cf0\f0\charscalex100 {) <exponentials with base n (an}{\super \fs14\up4\cf0\f0\charscalex100 {bn}}\fs22\cf0\f0\charscalex100 {)}\par\pard\li746\ri0\sl-480\slmult0 \fs22\cf0\f0\charscalex100 {B) n}{\super \fs14\up4\cf0\f0\charscalex100 {a}}\fs22\cf0\f0\charscalex100 { grows slower than n}{\super \fs14\up4\cf0\f0\charscalex100 {b}}\fs22\cf0\f0\charscalex100 { if a<b}\par\pard\li746\ri0\sl-280\slmult0 \fs22\cf0\f0\charscalex100 {a}{\super \fs14\up4\cf0\f0\charscalex100 {n}}\fs22\cf0\f0\charscalex100 { grows slower than b}{\super \fs14\up4\cf0\f0\charscalex100 {n}}\fs22\cf0\f0\charscalex100 { if a < b}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100 {C) Some simplifications using the properties of log() and the  }\par\pard\li786\ri0\sl-373\slmult0 \fs28\cf0\f0\charscalex100\i {e}\i0 {\super \fs16\up5\cf0\f0\charscalex100 {log}}\fs16\cf0\f0\charscalex100\i {n}\i0 {\sub \fs28\cf0\f0\charscalex100 {=}}\fs28\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\cols6\colno1\colw1746\colsr-0\colno2\colw253\colsr-0\colno3\colw1000\colsr-0\colno4\colw266\colsr-0\colno5\colw1293\colsr-0\colno6\colw6533\pard\li1386\ri0\sl-360\slmult0 \fs28\cf0\f0\charscalex100 {+}\par\column\pard\li0\ri0\sl-200\slmult0 \fs16\cf0\f0\charscalex100 {2}\par\column\pard\li0\ri0\sl-360\slmult0 \fs28\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-200\slmult0 \fs16\cf0\f0\charscalex100 {2}\par\column\pard\li0\ri0\sl-360\slmult0 \fs28\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-360\slmult0 \fs28\cf0\f0\charscalex100 {=}\par\pard\sect\sectd\sbknone\cols4\colno1\colw2400\colsr-0\colno2\colw1253\colsr-0\colno3\colw1306\colsr-0\colno4\colw6133\pard\li786\ri0\sl-293\slmult0 \*\tx1586\*\tx1853\fs28\cf0\f0\charscalex100 {log(}\fs28\cf0\f0\charscalex100\i {n}\i0 \tab \fs28\cf0\f0\charscalex100\i {n}\i0 \tab \fs28\cf0\f0\charscalex100 {)}\par\column\pard\li453\ri0\sl-293\slmult0 \fs28\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-293\slmult0 \*\tx720\fs28\cf0\f0\charscalex100\i {O}\i0 \fs28\cf0\f0\charscalex100 {(log}\tab \fs28\cf0\f0\charscalex100 {)}\par\column\pard\li626\ri0\sl-293\slmult0 \fs28\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-293\slmult0 \*\tx760\fs28\cf0\f0\charscalex100\i {O}\i0 \fs28\cf0\f0\charscalex100 {(}\fs28\cf0\f0\charscalex100 {2}\fs28\cf0\f0\charscalex100 {log}\tab \fs28\cf0\f0\charscalex100 {)}\par\column\pard\li453\ri0\sl-293\slmult0 \fs28\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-293\slmult0 \*\tx586\fs28\cf0\f0\charscalex100\i {O}\i0 \fs28\cf0\f0\charscalex100 {(log}\tab \fs28\cf0\f0\charscalex100 {)}\par\pard\sect\sectd\sbknone\pard\li786\ri0\sl-400\slmult0 \fs28\cf0\f0\charscalex100\i {n}\i0 \fs16\cf0\f0\charscalex100 {1000}{\sub \fs28\cf0\f0\charscalex100 {log}}\fs28\cf0\f0\charscalex100\i {n}\i0 { }\fs28\cf0\f0\charscalex100 {=}{ }\fs28\cf0\f0\charscalex100\i {O}\i0 \fs28\cf0\f0\charscalex100 {(}\fs28\cf0\f0\charscalex100\i {n}\i0 \fs16\cf0\f0\charscalex100 {1001}\par\pard\li2800\ri0\sl-293\slmult0 \fs28\cf0\f0\charscalex100 {)}\par\pard\li746\ri0\sl-266\slmult0 \fs22\cf0\f0\charscalex100 {Therefore we can rewrite the functions we need to order as:}\par\pard\sect\sectd\sbknone\cols10\colno1\colw3186\colsr-0\colno2\colw400\colsr-0\colno3\colw120\colsr-0\colno4\colw560\colsr-0\colno5\colw506\colsr-0\colno6\colw840\colsr-0\colno7\colw560\colsr-0\colno8\colw693\colsr-0\colno9\colw986\colsr-0\colno10\colw3240\pard\li960\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100 {log}{ }\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-400\slmult0 \fs32\cf0\f0\charscalex100 {+}\par\column\pard\li0\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100 {2}\par\column\pard\li0\ri0\sl-413\slmult0 \fs32\cf0\f0\charscalex100 {)}\par\column\pard\li0\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100 {5}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-413\slmult0 \*\tx453\fs32\cf0\f0\charscalex100 {2}{\super \fs18\up6\cf0\f0\charscalex100 {3}}\fs18\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-400\slmult0 \*\tx306\fs18\cf0\f0\charscalex100 {2}\fs18\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-240\slmult0 \fs18\cf0\f0\charscalex100 {1000}\par\pard\sect\sectd\sbknone\cols8\colno1\colw1626\colsr-0\colno2\colw1346\colsr-0\colno3\colw1133\colsr-0\colno4\colw1346\colsr-0\colno5\colw1253\colsr-0\colno6\colw1000\colsr-0\colno7\colw573\colsr-0\colno8\colw2813\pard\li800\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx440\fs32\cf0\f0\charscalex100 {log(}\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx560\fs32\cf0\f0\charscalex100 {8}\tab \fs32\cf0\f0\charscalex100 {3}\par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100 {9}\par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100 {log}{ }\fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\cols9\colno1\colw3506\colsr-0\colno2\colw400\colsr-0\colno3\colw426\colsr-0\colno4\colw866\colsr-0\colno5\colw626\colsr-0\colno6\colw1240\colsr-0\colno7\colw400\colsr-0\colno8\colw800\colsr-0\colno9\colw2826\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-346\slmult0 \fs22\cf0\f0\charscalex100 {Using properties in A)}\par\pard\li1493\ri0\sl-413\slmult0 \*\tx1906\fs32\cf0\f0\charscalex100 {+}\tab \fs18\cf0\f0\charscalex100 {2}{\sub \fs32\cf0\f0\charscalex100 {)}}\fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-533\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs18\cf0\f0\charscalex100 {1000}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-546\slmult0 \fs32\cf0\f0\charscalex100 {log}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-533\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \*\tx600\fs18\cf0\f0\charscalex100 {log}{ }\fs18\cf0\f0\charscalex100\i {n}\i0 \tab \fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-533\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-373\slmult0 \fs18\cf0\f0\charscalex100 {5}\fs18\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\cols6\colno1\colw3293\colsr-0\colno2\colw1466\colsr-0\colno3\colw893\colsr-0\colno4\colw613\colsr-0\colno5\colw1840\colsr-0\colno6\colw2986\pard\li1280\ri0\sl-346\slmult0 \*\tx1733\fs32\cf0\f0\charscalex100 {log(}\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx453\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx626\fs32\cf0\f0\charscalex100 {,}\fs32\cf0\f0\charscalex100 {8}{ }\fs32\cf0\f0\charscalex100 {,}\tab \fs32\cf0\f0\charscalex100 {9}\par\column\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-360\slmult0 \fs20\cf0\f0\charscalex100 {Analysis of Algorithms, Spring 2006, Midterm, 1/7}\par\pard\sect\sectd\sbknone\pard\sect\sectd\sbkpage
+{\shp{\*\shpinst\shpleft1973\shptop3200\shpright3146\shpbottom3200\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2069\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1173}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(1173,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 8026}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3906\shptop3200\shpright4480\shpbottom3200\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2070\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 574}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(560,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 8026}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft5240\shptop3200\shpright6240\shpbottom3200\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2071\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 1000}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(1000,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 8026}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6560\shptop3200\shpright6813\shpbottom3200\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2072\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 253}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(253,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 8026}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\margtsxn666\margbsxn173\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-426\slmult0 \*\tx1066\fs22\cf0\f0\charscalex100 {D)}\tab \fs24\cf0\f0\charscalex100 {8}{\super \fs14\up5\cf0\f0\charscalex100\i {n}\i0 }\fs24\cf0\f0\charscalex100 {<}{ }\fs24\cf0\f0\charscalex100 {9}{\super \fs14\up5\cf0\f0\charscalex100\i {n}\i0 }\fs22\cf0\f0\charscalex100 {because the base 8 is smaller than base 9.  }\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-320\slmult0 \fs22\cf0\f0\charscalex100 {In order to compare some items we will use their limits:  }\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols9\colno1\colw1320\colsr-0\colno2\colw1240\colsr-0\colno3\colw226\colsr-0\colno4\colw493\colsr-0\colno5\colw613\colsr-0\colno6\colw240\colsr-0\colno7\colw866\colsr-0\colno8\colw653\colsr-0\colno9\colw5440\pard\li853\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li853\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li853\ri0\sl-426\slmult0 \fs32\cf0\f0\charscalex100 {lim}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-453\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {1000}{\sub \fs32\cf0\f0\charscalex100 {log}}\fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\li466\ri0\sl-266\slmult0 \fs18\cf0\f0\charscalex100 {log}{ }\fs18\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-440\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-426\slmult0 \fs32\cf0\f0\charscalex100 {lim}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-453\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {1001}\par\pard\li146\ri0\sl-266\slmult0 \fs18\cf0\f0\charscalex100 {log}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-440\slmult0 \fs32\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-426\slmult0 \fs32\cf0\f0\charscalex100 {lim}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-453\slmult0 \fs32\cf0\f0\charscalex100 {1}\par\pard\li13\ri0\sl-266\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {\uc1\u8722X}\par\column\pard\li293\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li293\ri0\sl-640\slmult0 \fs32\cf0\f0\charscalex100 {1}{\sub \fs32\cf0\f0\charscalex100 {0}}\par\pard\li0\ri0\sl-613\slmult0 \fs32\cf0\f0\charscalex100 {=}{ }\fs32\cf0\f0\charscalex100 {\uc1\u8734X}{\super \fs32\up8\cf0\f0\charscalex100 {=}}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols4\colno1\colw1626\colsr-0\colno2\colw560\colsr-0\colno3\colw1493\colsr-0\colno4\colw7413\pard\li853\ri0\sl-213\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {\uc1\u8594X}\fs18\cf0\f0\charscalex100 {\uc1\u8734X}\par\column\pard\li0\ri0\sl-333\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li613\ri0\sl-333\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {\uc1\u8594X}\fs18\cf0\f0\charscalex100 {\uc1\u8734X}{ }\fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-373\slmult0 \fs18\cf0\f0\charscalex100 {1000}{\sub \fs32\cf0\f0\charscalex100 {log}}\fs32\cf0\f0\charscalex100 {<}\par\column\pard\li0\ri0\sl-360\slmult0 \fs18\cf0\f0\charscalex100\i {n}\i0 {\sub \fs18\cf0\f0\charscalex100\i {n}\i0 }\fs18\cf0\f0\charscalex100 {\uc1\u8594X}\fs18\cf0\f0\charscalex100 {\uc1\u8734X}{ }\fs32\cf0\f0\charscalex100\i {n}\i0 {\super \fs18\up5\cf0\f0\charscalex100 {log}}\fs18\cf0\f0\charscalex100 {1001}\par\pard\li0\ri0\sl-200\slmult0 \fs18\cf0\f0\charscalex100 {log}{ }\fs18\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols2\colno1\colw3053\colsr-0\colno2\colw8040\pard\li746\ri0\sl-360\slmult0 \*\tx2040\fs22\cf0\f0\charscalex100 {E) Therefore:}\tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-346\slmult0 \*\tx466\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-333\slmult0 \fs22\cf0\f0\charscalex100 {In order to compare some other items we can use their logs:}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols5\colno1\colw1760\colsr-0\colno2\colw520\colsr-0\colno3\colw306\colsr-0\colno4\colw2613\colsr-0\colno5\colw5893\pard\li1306\ri0\sl-200\slmult0 \fs14\cf0\f0\charscalex100 {log}\par\column\pard\li0\ri0\sl-320\slmult0 \fs24\cf0\f0\charscalex100 {=}\par\column\pard\li0\ri0\sl-200\slmult0 \fs14\cf0\f0\charscalex100 {2}\par\column\pard\li0\ri0\sl-320\slmult0 \fs24\cf0\f0\charscalex100 {\uc1\u8658X}\par\column\pard\li0\ri0\sl-320\slmult0 \fs24\cf0\f0\charscalex100 {=}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols4\colno1\colw2413\colsr-0\colno2\colw480\colsr-0\colno3\colw2680\colsr-0\colno4\colw5520\pard\li786\ri0\sl-280\slmult0 \*\tx1960\fs24\cf0\f0\charscalex100 {log(}\fs24\cf0\f0\charscalex100\i {n}\i0 {\super \fs14\up4\cf0\f0\charscalex100\i {n}\i0 }\fs24\cf0\f0\charscalex100 {)}\tab \fs24\cf0\f0\charscalex100 {log}\par\column\pard\li0\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-266\slmult0 \*\tx2493\fs24\cf0\f0\charscalex100 {log(log}{\super \fs14\up4\cf0\f0\charscalex100 {2}}\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 {)}{ }\fs24\cf0\f0\charscalex100 {=}{ }\fs24\cf0\f0\charscalex100 {2}{ }\fs24\cf0\f0\charscalex100 {log}{ }\fs24\cf0\f0\charscalex100 {log}{ }\fs24\cf0\f0\charscalex100\i {n}\i0 \tab \fs24\cf0\f0\charscalex100\i {O}\i0 \par\column\pard\li760\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-266\slmult0 \*\tx880\fs24\cf0\f0\charscalex100 {(log}{ }\fs24\cf0\f0\charscalex100 {log}\tab \fs24\cf0\f0\charscalex100 {)}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols2\colno1\colw4173\colsr-0\colno2\colw6920\pard\li1160\ri0\sl-360\slmult0 \fs24\cf0\f0\charscalex100 {log(}\fs24\cf0\f0\charscalex100 {8}{\super \fs14\up4\cf0\f0\charscalex100\i {n}\i0 }\fs24\cf0\f0\charscalex100 {)}{ }\fs24\cf0\f0\charscalex100 {=}{ }\fs24\cf0\f0\charscalex100\i {n}\i0 { }\fs24\cf0\f0\charscalex100 {log}\fs24\cf0\f0\charscalex100 {8}{ }\fs24\cf0\f0\charscalex100 {\uc1\u8658X}{ }\fs24\cf0\f0\charscalex100 {log(}\fs24\cf0\f0\charscalex100\i {n}\i0 { }\fs24\cf0\f0\charscalex100 {log}{ }\fs24\cf0\f0\charscalex100 {8}\fs24\cf0\f0\charscalex100 {)}{ }\fs24\cf0\f0\charscalex100 {=}\par\pard\li746\ri0\sl-440\slmult0 \*\tx2026\*\tx2640\fs22\cf0\f0\charscalex100 {F) Therefore:}\tab \fs30\cf0\f0\charscalex100\i {n}\i0 {\super \fs18\up5\cf0\f0\charscalex100 {log}}\fs18\cf0\f0\charscalex100\i {n}\i0 \tab \fs30\cf0\f0\charscalex100 {<}{ }\fs30\cf0\f0\charscalex100 {8}{\super \fs18\up5\cf0\f0\charscalex100\i {n}\i0 }\par\column\pard\li413\ri0\sl-360\slmult0 \fs24\cf0\f0\charscalex100\i {n}\i0 \par\pard\li0\ri0\sl-266\slmult0 \*\tx546\fs24\cf0\f0\charscalex100\i {O}\i0 \fs24\cf0\f0\charscalex100 {(log}\tab \fs24\cf0\f0\charscalex100 {)}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols6\colno1\colw4986\colsr-0\colno2\colw466\colsr-0\colno3\colw1626\colsr-0\colno4\colw573\colsr-0\colno5\colw466\colsr-0\colno6\colw2973\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f0\charscalex100 {Using D, E, F we can complete the ordering:}\par\pard\li1493\ri0\sl-413\slmult0 \*\tx1906\*\tx2413\*\tx2866\*\tx3546\fs32\cf0\f0\charscalex100 {+}\tab \fs18\cf0\f0\charscalex100 {2}\tab \fs32\cf0\f0\charscalex100 {<}\tab \fs32\cf0\f0\charscalex100\i {n}\i0 { }\fs32\cf0\f0\charscalex100 {<}\tab \fs32\cf0\f0\charscalex100\i {n}\i0 \fs18\cf0\f0\charscalex100 {1000}\par\pard\li1280\ri0\sl-346\slmult0 \*\tx1733\*\tx2026\*\tx4120\fs32\cf0\f0\charscalex100 {log(}\fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100 {)}\tab \fs32\cf0\f0\charscalex100 {log}{ }\fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-493\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li160\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li160\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li160\ri0\sl-493\slmult0 \*\tx600\fs18\cf0\f0\charscalex100 {log}{ }\fs18\cf0\f0\charscalex100\i {n}\i0 \tab \fs32\cf0\f0\charscalex100 {<}{ }\fs32\cf0\f0\charscalex100 {8}{\super \fs18\up5\cf0\f0\charscalex100\i {n}\i0 }\fs32\cf0\f0\charscalex100 {<}\par\pard\li0\ri0\sl-346\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 \par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-493\slmult0 \fs32\cf0\f0\charscalex100 {9}{\super \fs18\up5\cf0\f0\charscalex100\i {n}\i0 }\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-493\slmult0 \fs32\cf0\f0\charscalex100 {<}\par\column\pard\li160\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li160\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li160\ri0\sl-333\slmult0 \fs18\cf0\f0\charscalex100 {5}\par\pard\li0\ri0\sl-360\slmult0 \fs32\cf0\f0\charscalex100\i {n}\i0 {\super \fs18\up5\cf0\f0\charscalex100\i {n}\i0 }\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-360\slmult0 \fs20\cf0\f0\charscalex100 {Analysis of Algorithms, Spring 2006, Midterm, 2/7}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\pard\sect\sectd\sbkpage
+{\shp{\*\shpinst\shpleft1306\shptop12560\shpright1320\shpbottom12573\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2073\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop12560\shpright4120\shpbottom12573\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2074\shpz1\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 2814}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(2813,13);(2813,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop12560\shpright4120\shpbottom12573\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2075\shpz2\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop12573\shpright1320\shpbottom12946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2076\shpz3\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1946\shptop12573\shpright1960\shpbottom12946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2077\shpz4\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft2666\shptop12573\shpright2680\shpbottom12946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2078\shpz5\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3386\shptop12573\shpright3400\shpbottom12946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2079\shpz6\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop12573\shpright4120\shpbottom12946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2080\shpz7\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop12946\shpright4120\shpbottom12960\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2081\shpz8\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 2814}}
+{\sp{\sn geoBottom}{\sv 14}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(2813,13);(2813,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop12960\shpright1320\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2082\shpz9\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1946\shptop12960\shpright1960\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2083\shpz10\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft2666\shptop12960\shpright2680\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2084\shpz11\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3386\shptop12960\shpright3400\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2085\shpz12\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop12960\shpright4120\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2086\shpz13\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop13333\shpright4120\shpbottom13333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2087\shpz14\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 2814}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(2813,13);(2813,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop13333\shpright1320\shpbottom13706\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2088\shpz15\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1946\shptop13333\shpright1960\shpbottom13706\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2089\shpz16\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft2666\shptop13333\shpright2680\shpbottom13706\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2090\shpz17\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3386\shptop13333\shpright3400\shpbottom13706\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2091\shpz18\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop13333\shpright4120\shpbottom13706\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2092\shpz19\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 373}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,373);(13,373);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop13706\shpright4120\shpbottom13720\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2093\shpz20\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 2814}}
+{\sp{\sn geoBottom}{\sv 14}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(2813,13);(2813,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop13720\shpright1320\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2094\shpz21\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 386}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,386);(13,386);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1306\shptop14093\shpright1946\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2095\shpz22\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 640}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(653,13);(653,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1946\shptop13720\shpright1960\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2096\shpz23\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 386}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,386);(13,386);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft1960\shptop14093\shpright2666\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2097\shpz24\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 706}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(706,13);(706,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft2666\shptop13720\shpright2680\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2098\shpz25\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 386}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,386);(13,386);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft2680\shptop14093\shpright3386\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2099\shpz26\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 706}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(706,13);(706,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3386\shptop13720\shpright3400\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2100\shpz27\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 386}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,386);(13,386);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft3400\shptop14093\shpright4106\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2101\shpz28\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 706}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(706,13);(706,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop13720\shpright4120\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2102\shpz29\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 386}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,386);(13,386);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft4106\shptop14093\shpright4120\shpbottom14106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2103\shpz30\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 14}}
+{\sp{\sn geoBottom}{\sv 13}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,13);(13,13);(13,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\margtsxn666\margbsxn173\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-453\slmult0 \fs22\cf0\f0\charscalex100\b {2)}\b0 { }\fs24\cf0\f0\charscalex100\b {(30 points)}\b0 \fs24\cf0\f0\charscalex100 { A problem on graph is to assign}\fs24\cf0\f0\charscalex100 { integers to the vertices of }\fs24\cf0\f0\charscalex100\i {G}\i0 { }\fs24\cf0\f0\charscalex100 {such that if there is}\par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100 {a directed edge from vertex}\fs24\cf0\f0\charscalex100 { i to vertex j, then i is less than }\fs24\cf0\f0\charscalex100 {j. One solution to the problem is to }\par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100 {search for a vertex with no incoming edge, assign }\fs24\cf0\f0\charscalex100 {this vertex the lowest number, and delete it}\par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100 {from the graph, along with all outgoing edges. Repeat this process on the resulting graph,}\par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100 {assigning the next lowest number, and so on.  }\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-346\slmult0 \fs24\cf0\f0\charscalex100\b {2a) [20points]}\b0 { }\fs24\cf0\f0\charscalex100 {Write the data structures and algorithm necessary to solve this problem. }\par\pard\li746\ri0\sl-360\slmult0 \fs22\cf0\f1\charscalex100 {A two dimensional integer array is necessary to represent the topology of the graph and}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {another single dimensional array can be used to keep values assigned to vertices:}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f0\charscalex100\b \i {Type}\b0 \i0 \par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\i {Topology: Array [1..n,1..n] of integer \{0/1\};}\i0 \fs22\cf0\f1\charscalex100 {  \{n represents the number of vertices\}}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\i {Values: Array [1..n] of integer;  }\i0 \par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 {Function AssignNumbers (graph: Topology):Numbers: Values;}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 {TempGraph: Topology   \{TempGraph is used not }\fs22\cf0\f1\charscalex100 {to lose the original graph structure \uc1\u8211X }\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {optional\}}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {k: integer;}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 { TempGraph <- Graph}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 { k <- 1  }\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 { while k< (n+1)}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {begin}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {  find a column having no \uc1\u8216X1\uc1\u8217Xs}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {  if no such column  }\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {  then return}{ }\fs22\cf0\f0\charscalex100\i {error}\i0 \par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {  else}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {   Numbers[j] <- k}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {   k++}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {   assign \uc1\u8216X0\uc1\u8217X to all entries in row i}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {end \{while\}}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {return Numbers}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-320\slmult0 \fs24\cf0\f0\charscalex100\b {2b) [5 points]}\b0 { }\fs24\cf0\f0\charscalex100 {What is the complexity of your algorithm }\fs24\cf0\f0\charscalex100 {in terms of the number of vertices n}\par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100 {and/or the number of edges m? }\par\pard\li746\ri0\sl-400\slmult0 \fs22\cf0\f0\charscalex100 {\uc1\u952X}\fs22\cf0\f1\charscalex100 {(n}{\super \fs14\up3\cf0\f1\charscalex100 {3}}\fs22\cf0\f1\charscalex100 {) , outher while loop is repeated n times. In the loop in order to locate a column having no}\par\pard\li746\ri0\sl-240\slmult0 \fs22\cf0\f1\charscalex100 {\uc1\u8216X0\uc1\u8217X entries one should check whole two dimensional array (worst case)}\par\pard\li746\ri0\sl-400\slmult0 \fs24\cf0\f0\charscalex100\b {2c) [5points]}\b0 { }\fs24\cf0\f0\charscalex100 {Draw an example graph and show the re}\fs24\cf0\f0\charscalex100 {lationship between your data structures}\par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100 {and the graph.}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols4\colno1\colw2120\colsr-0\colno2\colw720\colsr-0\colno3\colw2866\colsr-0\colno4\colw5386\pard\li1320\ri0\sl-373\slmult0 \fs22\cf0\f1\charscalex100 {[1]}\par\pard\li746\ri0\sl-386\slmult0 \*\tx1400\fs22\cf0\f1\charscalex100 {[1]}\tab \fs22\cf0\f1\charscalex100 {0}\par\pard\li746\ri0\sl-386\slmult0 \*\tx1400\fs22\cf0\f1\charscalex100 {[2]}\tab \fs22\cf0\f1\charscalex100 {0}\par\pard\li746\ri0\sl-373\slmult0 \*\tx1400\fs22\cf0\f1\charscalex100 {[3]}\tab \fs22\cf0\f1\charscalex100 {1}\par\column\pard\li0\ri0\sl-373\slmult0 \fs22\cf0\f1\charscalex100 {[2]}\par\pard\li0\ri0\sl-386\slmult0 \fs22\cf0\f1\charscalex100 {0}\par\pard\li0\ri0\sl-386\slmult0 \fs22\cf0\f1\charscalex100 {0}\par\pard\li0\ri0\sl-373\slmult0 \fs22\cf0\f1\charscalex100 {1}\par\column\pard\li0\ri0\sl-373\slmult0 \fs22\cf0\f1\charscalex100 {[3]}\par\pard\li0\ri0\sl-386\slmult0 \fs22\cf0\f1\charscalex100 {0}\par\pard\li0\ri0\sl-386\slmult0 \fs22\cf0\f1\charscalex100 {0}\par\pard\li0\ri0\sl-373\slmult0 \fs22\cf0\f1\charscalex100 {0}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100 {Analysis of Algorithms, Spring 2006, Midterm, 3/7}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\pard\sect\sectd\sbkpage{\shp
+{\*\shpinst
+\shpleft1413\shptop1413\shpright5426\shpbottom4586
+\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2104\shpz0\shpbxpage\shpbypage
+\absh16840\absw11893{\sp{\sn shapeType}{\sv 75}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn pibFlags}{\sv 2}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn fEditedWrap}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv {\pict
+\jpegblip
+FFD8FFE000104A46494600010100000100010000FFDB004300080606070605080707070909080A0C140D0C0B0B0C1912130F141D1A1F1E1D1A1C1C20242E2720222C231C1C2837292C30313434341F27393D38323C2E333432FFDB0043010909090C0B0C180D0D1832211C213232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232FFC000110800D3010B03012200021101031101FFC4001F0000010501010101010100000000000000000102030405060708090A0BFFC400B5100002010303020403050504040000017D01020300041105122131410613516107227114328191A1082342B1C11552D1F02433627282090A161718191A25262728292A3435363738393A434445464748494A535455565758595A636465666768696A737475767778797A838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F0100030101010101010101010000000000000102030405060708090A0BFFC400B51100020102040403040705040400010277000102031104052131061241510761711322328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728292A35363738393A434445464748494A535455565758595A636465666768696A737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00F7EA28A2800A28A2800A28A2800A28A2800A2B1EFB5877BC934BD253CFD44604923C4C60B50403BA461805802A4441B7B6E5FBAA4BAD7FF84474EBDFDEEBABFDB170FF00348B7659ED837AC76ECC638F03E5040DD8CE598962C0124FE33F0B5ADC4B6F71E25D1A19E272924725FC4AC8C0E0820B641078C56A58DFD9EA7671DE585DC1776B26764D0482446C120E187070411F85490410DADBC56F6F1470C112048E38D42AA28180001C000718ACBBEF0AE85A85E497B3699025FBE337D0030DC8C0038993120E06DE1B91C74E2803628AE7FCDBFF000E7FC7CB4FA8E903E58DE28249AEED8760FB4B34EBFC3B82EF5C296DF979177209E1BAB78AE2DE58E682540F1C91B0657523208238208E73401251451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400565EB3A94D6690DAD82C72EA776E1208DC121577289256008F92356DC795C9DA81833AD6A573F69FE9DE39D46E7EFC3A6DA45651374F2E690F9B3AE3BE505A1C9C81D01CEF1401A9A569B0E91A5DBD840D23A4298324A41795BAB3B9006E7662598F7249EF5728A2800A2ABDF5FD9E996725E5FDDC1696B1E37CD3C82345C900658F032481F8D1637F67A9D9C779617705DDAC99D934120911B0483861C1C1047E140162B9F4FF008A7F5C643F2E95AA4A640E785B6BA6D8A106380B29DCC3207EF3764B34AA074158FE2AB1B8D43C2FA843651F997EB119AC86E0317319F3213CF1C48A879E0E39E33401B14557B0BEB7D4F4EB6BFB393CCB5BA896685F691B91802A7079190475AB1400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400573FA07EEFC41E2A89FE591F508A7543C168CDA4081C0FEE968E4507A65187506BA0AE7EEBFE257E3283507F96D351B45B29A67FBA9347266DD47F777F9D38C9E0B08D410580600E828A28A00AF790F9910963B6827BA837496C263B42C9B4A8F9B04AE43152C013863C1E9587E0F33793AA25FC718D612F71A93C2E5A292630C4CA63C8042089A25008046D392C72EDB1A969906AB6EB05C497688AE1C1B5BB96DDB3823968D9491CF4CE3A7A0A92C6C6DF4EB38ED6D63F2E14C900B1624924B3331C9662492589249249249A00B151CF3C36B6F2DC5C4B1C304485E492460AA8A064924F0001CE6A4AE7FC5DFE9BA4368517CF71AB62D5A35FBE2DD9956E241D97646CC431E37141C960AC012783209AD7C0BE1EB7B88A48678B4CB64923914AB2308941041E41078C56E514500145145001451450014514500145145001451450014514500145145001451450014514500145145001451450014514500155EFAC6DF51B392D6EA3F3217C12031520820AB2B0C1560402181041008208AB1450061E95AA4D6CF6FA36B2F27F6A2A6C5B931158AF76AE77A301B03B00CC62CEE5DAF8050073B955EFAC6DF51B392D6EA3F3217C12031520820AB2B0C1560402181041008208AC7FB2F8934BF934FB8B1D4ED17E58A0BF79219917AE5AE0799E663EE80630C460B39209600E828AE4F49F186A3AAE8D63A8A78375929776F1CEBE5CF66570CA1B82D3A9239EEA0FA81D2AE7DAFC517DFF001EDA5D8E970BFDD96FEE0CF3478EBBA08BE439230313F0082790568035352D52D349B759AEDE401DC2469144F2C923609C22202CC7009200380A4F404D65DBE89FDABF6BBDD72DF335D6160819FE7B2846D2115D4FCB26F412174390DB4066112355CD37465B3B86BFBA9E4BCD4E442B25C396DAA0904AC51924449C2F0BC9D8A58BB0DD5A9401CFECD53C3FCA3CFAB69439712B6EBBB651C61005CCEA060E18F99F2B1CCACC146A69BAAD8EAF6ED3D85CC73A2398E40BC344E00251D4F28E3232AC011DC0AB9597A968CB7970B7F6B3C967A9C68163B842DB580248596304095396E1B91BD8A9463BA803528AC38359B9B2B88ACB5E82382595C241796C1DADE624ED1B891FB972D8C2312097555790E40DCA0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A002B9FF1C7CFE06D6AD9799AF2D1ECA05FEFCD30F2A35CF6CBBA8C9E0672481935D0573FE27FDFCFA069EDC4379AAC7E630FBC3C9492E571F578101FF64B74382003A0A28A2800A28A2800A28A280239E086EADE5B7B88A39A0950A491C8A195D48C1041E08238C561FF0063DFE8BCF875E06B5FE2D36F6593CB07A0F2641B8C0A07F00464C2A8554CB31E828A00CFD3358B7D53CD8D127B7BA831E7DADCC4639232738E0F0CB90C03A96462ADB58E0D68567EA7A269DAC794D7B6FBA6873E4DC46ED14D0E71BB64A843A64000ED2323839159FF006FD5342F93548A7D4ECFF86FACAD774918E804D0A12CEC78F9E25C125B291AAE480741454704F0DD5BC5716F2C73412A078E48D832BA9190411C104739A92800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800AE7EE7FD2FC7D6112FEF23B0D3E69E643D2392574485C03FC4563BA504720160701F9E82B9FD27FD2BC5FE22BDFBBE47D9B4DD9D77797199F7E7B67ED7B71FEC673F3600074145145001451450014514500145145001451450061CFE1F6B7B896EF41BA8F4BB899CC93C62DD64B7B97279792305497E4FCCAC849DBB8B0502A4B1D7BCCBC8F4FD4ACA7D3AFDF211241BE1988049F2A51F2B746214ED936A9628A2B62ABDF5859EA767259DFDA41776B2637C33C62446C104654F070403F850058A2B9FFB3EB3A17CD6B2CFAD580E05A4A53ED718E8364ACCAAEA300624F9CE598C8C4053A9A6EAB63ABDBB4F61731CE88E63902F0D1380094753CA38C8CAB0047702802E5159FA8EA7F60BED26DBC9F33FB42EDADB76EC7978865977631CFF00AAC638FBD9ED83A1400515873F8C34086E25B64D4A3BBBB85CA4B6B608D773C641C1DD1C419D403C124000900F24547FF09A6889F35CBDF59423EF5C5FE9B736B0A7A6E9658D517278192324803922803A0A2ABD8DFD9EA7671DE585DC1776B26764D0482446C120E187070411F8558A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A002B9FF06FEFB416D40FCDFDA377717A931FBD34324AC6063DFF00D4F94003CAA855C0DB81A1AEEA7FD89E1ED4F55F27CEFB0DA4B73E56EDBBF6216DB9C1C6718CE0D1A1699FD89E1ED334AF3BCEFB0DA456DE6EDDBBF6205DD8C9C6719C64D0068514514005145140051451400514514005145140051451400573FE238344B6F2F55BFD4E0D12F06208B54F3228A40393E56E9015753F31D8C08CFCC00650474145007985DF8E60BCF10786ACC3D8EA97506A1248AFA25E4570271F64B841FBBDDBE362CC09CE63404665EA475FFD8D2EBDFBFF001026EB47E5346708F0A8FE133707CC93A923263538C0628242687FF13ABCFF0084964E6092231E943A116AE2362EC3FBD23206E4F08B1F08C5C1E82802382086D6DE2B7B78A38608902471C6A155140C0000E00038C5494514018F7DE1AB0BABC9350B65FECED55F01B52B38E359D80006D62CAC1D7000DAE1870A40055482C756B84BC8F4DD5EDBECF76D9586E131E45E10093E5FCC595B68DC637C1E1B6990233D6C553D534D8756B06B499A4405D2449232034722387471904655955B0410718208C8A00B94565E85A94DA8593C77AB1A6A766E2DEFE3881D8B36C5625092728CAEACBCE70C01C30206A50014514500145145001451450014514500145155EFFED9FD9D73FD9FE47DBBCA6FB3FDA33E5F9983B77E39DB9C671CE28031FC63FBCD1A0B31F3B5DEA167018472668CCE8654DBFC4BE5090B0E9B03678CD7415C9B6A50F8875BF0A340B242812E7532B281BD1A3416ED03A83F2B86BA3BB93B4C4571CE4741A6EAB63AC5BB5CE9D731DD5B8728278BE68DC8009D8DD1C0CE095240208EA08001728A28A0028A28A0028A28A0028A28A0028A28A0028A28A002B0FC613CD0F852FD2DA5921BBBA45B2B69918A98E69D8431BE47200791492390012013C56E573FE34F93C34F72DC436777697B3B7F72186E239646C77C2231C0E4E3001381401B90410DADBC56F6F1470C112048E38D42AA28180001C000718A928A28029EA5AA5A6936EB35DBC803B848D2289E59246C1384440598E01240070149E809A92C6FADF51B38EEAD64F3217C804A952082432B29C1560410548041041008AAFAB5D59D94505C5CDBFDA275971670A20695E62AC008F3D18A97C9C80177162143115F41B5FB3B6A534D710497F757626BD8E07DC9049E546AB18CF3C46B19C900B677614305001B1451450073F0FF00A0F8FAE62E91EA7A7ACE889D3CC81F64AEC3FBCCB3DBA83C9223C1C055CF415CFCDFBFF88567E57CDF62D2A7FB476D9E7CB0F95F5DDF679BA671B39C6467A0A0028A28A0028A28A0028A28A0028A2ABDFDF5BE99A75CDFDE49E5DADAC4D34CFB49DA8A096381C9C007A50058AE7FFE12B4B9E748D1F55D5631C996DE158A320FDD6479DA35955B921A32C31CE402327F64DC6BFF00BCF10C301B03F345A43461D41EC6E1B256561D428011589FF58551C741401E692F843C4D3F8967D4A6B3D35AC25471FD94358658332153303FE89B8A48D144CC9900B09376E1232D757FF092DC5A71AAF87F55B551F299ADE21791BBFA2084B4BB4F2433469C0E76920574145004704F0DD5BC5716F2C73412A078E48D832BA9190411C104739A92B0E7D126B1B896F7C3DF64B49E67325D5B4919105DB1392C76E0A4A4F1E680DC1F995F6A6DD0D2F528756B05BB8564405DE378E4003472239474382465595972090719048C1A00B9451450014514500145145001451450014514500155EFEC6DF53D3AE6C2F23F32D6EA268664DC46E460430C8E46413D2AC514018FE1ABEB8BAD296DB5093CCD56C36DAEA0C1400D388D58B2E38DAC195C631C3804290546C563EA763710EA316B5A747E6DD4511867B50C17ED511218004E079884129B8EDF9DD4EDDE5D6E69BA943A9DBB491AC91491B98E7B79401241200094700919C10410482086525482400D4B49D3759B75B7D534FB4BE815C3AC7750ACAA1B0464060467048CFB9A34DD274DD1ADDADF4BD3ED2C60672ED1DAC2B1296C019214019C0033EC2AE514005145737348DE2D416D04322686CEAF2DDB95DB7C8181F2E25C92626208667003270A1D64DEA012786FFE2633DFF88BEF43A9F95F6163C37D8D1018F23B65DE69067E6DB2286C11B57A0A28A0028A28A0028A28A0028A28A002B9F9FF00E275E28FB0B7FC78E93E4DD49B7E659AE183ED8DFB0F2C04976F2773C2DF2ED1BBA0AE7FC27FBF8356D41B89AF355BAF3147DD1E4BFD9971F548109FF68B74180003A0A28AC7D7F5C97445B264D367BA8EE6EE0B67952445483CC95230CD93B8FDFE02AB74C1DA0E6803628A28A002B9FBDFF892F88EDAFE3E2D755952D2ED4FCA914811CC7367A6E6212139E5B308046D0ADD0573FE37FDDF82F54BC1FEB2C22FED0881E8D25B913A06FF0064B46A08183827041E6803A0A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800ACBD4B42B6D42E16F63792CB534411A6A16AA82754C925096560C8727E5604670C006008D4A28039FF0027C5963FEAAEB4AD5A31F22C7711BD9C98ECEF2A798ACDC721624049C8DA06D279DE2F9FF75F61D0EC777FCBC7DB26BBD9FF006CBCA8B767A7DF5C673CE307A0A28039FF00F846E5D47FE462D47FB5613CB587D9923B3DC3A1F2CEE76C0E70F23AEEF980042EDE828A2800A28A2800A28A2800A28A2800A28A2800AE7FC2BFE8FF00DB5A6FDEFB16AB3FEF3A6FF3F6DD74EDB7ED1B3A9CECCF19C0E82B9FD4FF00E24BAE0D78F3677114769A83B74B68E3F35E39B3FDD0D232BE4100307255636DC01D05737E3794C5A15B15B7BB9CFF0069D8B95B5B692760A9731C8E4AA2920054639F603A900F4945001451450015CFF8DBF79E10BEB2E9FDA3E5E9BBFF00E79FDA645837E3BEDF337638CE31919CD7415CF9FF0089EF88E0923FF8F0D1E53224E9C89AE8A4B13A03FDD8D5CE719CBB6320C6EA403A0A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A8E7821BAB796DEE228E6825429247228657523041078208E315251401CFF009B7FE1CFF8F969F51D207CB1BC504935DDB0EC1F69669D7F87705DEB852DBF2F22EE413C3756F15C5BCB1CD04A81E392360CAEA46410470411CE6A4AC39FC21A1CD712DC47692594F33979E4D3AE25B369D89CE6430B2990E4920B671938EA7201B94573FF00F08F6A9FF4396B9FF7E6CBFF0091E8FF008433469F9D4A29F5763CB0D4EE1EE632FDDC42E4C48DD7EE22E0120000E2800FED2BCF107C9A14DF66B11FEB35296DC9F301ED6E1B01B83B84A4347F77024CB6CD8B1B1B7D3ACE3B5B58FCB8532402C5892492CCCC725989249624924924926AC51400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451400514514005145140051451401FFD9}
+}}}}\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\margtsxn666\margbsxn173\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-306\slmult0 \fs20\cf0\f0\charscalex100 {Analysis of Algorithms, Spring 2006, Midterm, 4/7}\par\pard\sect\sectd\sbkpage\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\margtsxn666\margbsxn173\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-453\slmult0 \fs24\cf0\f0\charscalex100\b {3) (20 points)}\b0 { }\fs24\cf0\f0\charscalex100 {Let g(}\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 {) be the number of ways to write a string of}{ }\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 { zeros and ones so that}\par\pard\li746\ri0\sl-266\slmult0 \fs24\cf0\f0\charscalex100 {there are never two successive  zeros. For example, when}{ }\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 {=1 the possible strings are 0 and 1,}\par\pard\li746\ri0\sl-280\slmult0 \fs22\cf0\f0\charscalex100 {so g(1)=2; when}{ }\fs22\cf0\f0\charscalex100\i {n}\i0 \fs22\cf0\f0\charscalex100 {=2 the possible strings are 01,}\fs22\cf0\f0\charscalex100 { 11, and 10, so g(2)=3; when}{ }\fs22\cf0\f0\charscalex100\i {n}\i0 \fs22\cf0\f0\charscalex100 {=3 the possible}\par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100 {strings are 010, 011, 101, 110, and 111, g(3)=5. Show that g(}\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 {)=f}\fs16\cf0\f0\charscalex100\i {n}\i0 \fs16\cf0\f0\charscalex100 {+2}\fs24\cf0\f0\charscalex100 { where f}\fs16\cf0\f0\charscalex100\i {n}\i0 \fs16\cf0\f0\charscalex100 {+2}\fs24\cf0\f0\charscalex100 { is (}\fs24\cf0\f0\charscalex100\i {n}\i0 \fs24\cf0\f0\charscalex100 {+2)th}\par\pard\li746\ri0\sl-280\slmult0 \fs24\cf0\f0\charscalex100 {Fibonacci number (f}{\sub \fs16\cf0\f0\charscalex100 {0}}\fs24\cf0\f0\charscalex100 { = 0, f}{\sub \fs16\cf0\f0\charscalex100 {1}}\fs24\cf0\f0\charscalex100 { = 1, \uc1\u8230X.).}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-306\slmult0 \fs22\cf0\f1\charscalex100 {n = 1}{ }\fs22\cf0\f0\charscalex100 {\uc1\u61616X}{ }\fs22\cf0\f0\charscalex100\b {0, 1}\b0 \fs22\cf0\f1\charscalex100 {  ;g(1) = 2}\par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\cols2\colno1\colw2160\colsr-0\colno2\colw8933\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 {n = 2}{ }\fs22\cf0\f0\charscalex100 {\uc1\u61616X}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-400\slmult0 \fs22\cf0\f1\charscalex100 {n= 3}{ }\fs22\cf0\f0\charscalex100 {\uc1\u61616X}\par\column\pard\li13\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li13\ri0\sl-280\slmult0 \fs22\cf0\f1\charscalex100 {00  ; g(2) = 3}\par\pard\li0\ri0\sl-266\slmult0 \fs22\cf0\f0\charscalex100\b {01}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {10}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {11}\b0 \par\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-280\slmult0 \fs22\cf0\f1\charscalex100 {000  ; g(3) = 5}\par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {001}\par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {010}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {011}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {100}\par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {101}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {110}\b0 \par\pard\li0\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {111}\b0 \par\pard\sect\sectd\sbknone\pgwsxn11893\pghsxn16840\marglsxn666\margrsxn133\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 {Let\uc1\u8217Xs take  g(3)}\par\pard\li2160\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {1}\b0 \fs22\cf0\f1\charscalex100 {01  -- These are the ones generated by g(2), we can put a \uc1\u8216X1\uc1\u8217X in front of them}\par\pard\li2160\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li2160\ri0\sl-293\slmult0 \fs22\cf0\f0\charscalex100\b {1}\b0 \fs22\cf0\f1\charscalex100 {10  --}\par\pard\li2160\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {1}\b0 \fs22\cf0\f1\charscalex100 {11  --}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {                                 However we cannot put a zero in front of the ones generated by g(2)}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {since there can be double \uc1\u8216X0\uc1\u8217Xs. We can only put a zero in front the ones that start with a \uc1\u8216X1\uc1\u8217X.}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {However, those are the ones generated g(1) and to the front of which \uc1\u8216X1\uc1\u8217Xs are placed to}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {obtain the values in g(2). They are:}\par\pard\li2160\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {0}\b0 \fs22\cf0\f0\charscalex100\i {1}\i0 \fs22\cf0\f1\charscalex100 {0}\par\pard\li2160\ri0\sl-253\slmult0 \fs22\cf0\f0\charscalex100\b {0}\b0 \fs22\cf0\f0\charscalex100\i {1}\i0 \fs22\cf0\f1\charscalex100 {1}\par\pard\li746\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li746\ri0\sl-293\slmult0 \fs22\cf0\f1\charscalex100 {Recursively we can apply this to the other g(n)s and obtain:}\par\pard\li746\ri0\sl-253\slmult0 \fs22\cf0\f1\charscalex100 {g(n) = g(n-1) + g(n-2)}\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li5706\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {Analysis of Algorithms, Spring 2006, Midterm, 5/7}\par}

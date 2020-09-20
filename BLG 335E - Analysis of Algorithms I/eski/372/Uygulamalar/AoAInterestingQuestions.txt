@@ -1,0 +1,38 @@
+Analysis of Algorithms Interesting Questions (Feb 28, 2012)
+(I am writing these questions just because they seemed interesting. They are not here
+as a homework. Zehra)
+
+Chapter 1: 
+1) Gale-Shapley algorithm results in man-optimal solutions. Is there a (faster than exponential time) algoritm that guarantees fairness to both men and women and results in stable assignments? (Thanks to Melodi Ozturk)
+
+2) Women could do better by lying in Gale-Shapley algorithm. What is the optimal lying strategy? (Thanks to Melodi Ozturk)
+
+
+Chapter 2: Basics of Algorithm Analysis: 
+3) Consider the following algorithm for the independent set problem. Assume that n is a power of 2. 
+0   maxk = 0 ; 
+1   k=n/2
+2   for i=1..log2(n) 
+3      if there is an independent set of size k
+4         maxk = k 
+5         k = k + k/2
+6     else
+7         k = k - k/2
+
+(Reminder: 
+(***)independent set problem: Given a graph with n nodes, what is the maximum size of an independent set. 
+There is an O(n^2 * 2^n) algorithm in the slides. ^ means "to the power of".
+You can check if there is an independent set of size k in a graph of n nodes in O(k^2 * n^k / k!) = O(n^k) time. See the slides.) 
+
+Since the for loop in line 2 iterates at most log2n times, as in binary search, we can find an independent set 
+in at most log2n * n^k time. But this is much faster than the complexity given in (***) above.  
+What is wrong with this complexity calculation? (Hint: use Stirling's approximation to n!)
+
+(Thanks to Burak Topal)
+
+4) Given an undirected graph G=(V,E) with vertices V and edges E, |V|=n, |E|=m. 
+Consider the independent set problem given in (***).
+If you know that your graph is a sparse graph (m<< n^2) (or very dense graph  (m approximately O(n^2)))
+you could check large (or small) subsets S first. Would running the algorithm this way reduce the worst case
+running time? Would it reduce the average case running time? 
+(Thanks to Melis Kapotoglu and Mehmet Sarıoğlu)

@@ -1,0 +1,63 @@
+#callToMySort	ReadMS	SortMS)	Write(MS)
+mysort –i D1.txt –s i –r a	1	1	1
+mysort –i D1.txt –s i –r d	1	1	1
+mysort –i D1.txt –s m –r a	1	1	1
+mysort –i D1.txt –s m –r d	1	1	1
+mysort –i D1.txt –s h –r a	1	1	1
+mysort –i D1.txt –s h –r d	1	1	1
+
+mysort –i D2.txt –s i –r a	1	1	1
+mysort –i D2.txt –s i –r d	1	1	1
+mysort –i D2.txt –s m –r a	1	1	1
+mysort –i D2.txt –s m –r d	1	1	1
+mysort –i D2.txt –s h –r a	1	1	1
+mysort –i D2.txt –s h –r d	1	1	1
+
+mysort –i D3.txt –s i –r a	1	1	1
+mysort –i D3.txt –s i –r d	1	1	1
+mysort –i D3.txt –s m –r a	1	1	1
+mysort –i D3.txt –s m –r d	1	1	1
+mysort –i D3.txt –s h –r a	1	1	1
+mysort –i D3.txt –s h –r d	1	1	1
+
+mysort –i D4.txt –s i –r a	1	1	1
+mysort –i D4.txt –s i –r d	1	1	1
+mysort –i D4.txt –s m –r a	1	1	1
+mysort –i D4.txt –s m –r d	1	1	1
+mysort –i D4.txt –s h –r a	1	1	1
+mysort –i D4.txt –s h –r d	1	1	1
+
+mysort –i D5.txt –s i –r a	1	1	1
+mysort –i D5.txt –s i –r d	1	1	1
+mysort –i D5.txt –s m –r a	1	1	1
+mysort –i D5.txt –s m –r d	1	1	1
+mysort –i D5.txt –s h –r a	1	1	1
+mysort –i D5.txt –s h –r d	1	1	1
+
+mysort –i D6.txt –s i –r a	1	1	1
+mysort –i D6.txt –s i –r d	1	1	1
+mysort –i D6.txt –s m –r a	1	1	1
+mysort –i D6.txt –s m –r d	1	1	1
+mysort –i D6.txt –s h –r a	1	1	1
+mysort –i D6.txt –s h –r d	1	1	1
+
+mysort –i D7.txt –s i –r a	1	1	1
+mysort –i D7.txt –s i –r d	1	1	1
+mysort –i D7.txt –s m –r a	1	1	1
+mysort –i D7.txt –s m –r d	1	1	1
+mysort –i D7.txt –s h –r a	1	1	1
+mysort –i D7.txt –s h –r d	1	1	1
+
+mysort –i D8.txt –s i –r a	1	1	1
+mysort –i D8.txt –s i –r d	1	1	1
+mysort –i D8.txt –s m –r a	1	1	1
+mysort –i D8.txt –s m –r d	1	1	1
+mysort –i D8.txt –s h –r a	1	1	1
+mysort –i D8.txt –s h –r d	1	1	1
+
+mysort –i D9.txt –s i –r a	1	1	1
+mysort –i D9.txt –s i –r d	1	1	1
+mysort –i D9.txt –s m –r a	1	1	1
+mysort –i D9.txt –s m –r d	1	1	1
+mysort –i D9.txt –s h –r a	1	1	1
+mysort –i D9.txt –s h –r d	1	1	1
