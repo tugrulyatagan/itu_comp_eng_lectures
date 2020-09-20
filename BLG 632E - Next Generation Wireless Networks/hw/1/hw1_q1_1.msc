@@ -1,0 +1,12 @@
+# Fictional client-server protocol
+msc {
+ arcgradient = 8;
+
+ a [label="Client"],b [label="DHCP Server"];
+
+ a->* [label="DHCP Discover"];
+ a<=b [label="DHCP Offer"];
+ a->* [label="DHCP Request"];
+ a<=b [label="DHCP ACK"];
+ |||;
+}

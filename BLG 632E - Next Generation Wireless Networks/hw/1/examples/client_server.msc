@@ -1,0 +1,42 @@
+#!/cygdrive/c/mscgen_0.20/packaging/win32/buildstage/w32/../../binstage/w32/mscgen-0.20/bin/mscgen -Tpng
+#
+# client_server.msc : Sample msc input file utilising the colours
+#
+# This file is PUBLIC DOMAIN and may be freely reproduced,  distributed,
+# transmitted, used, modified, built upon, or otherwise exploited by
+# anyone for any purpose, commercial or non-commercial, and in any way,
+# including by methods that have not yet been invented or conceived.
+#
+# This file is provided "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+# EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+#
+
+// This sample uses the 'arcgradient' and 'arcskip' attributes to render a more
+// traditional network packet diagram for a fictional protcol between a client
+// and server.
+//
+// Run "mscgen -T png -i msg_types.msc -o msg_types.png"
+// to transform it into a png and use
+// "mscgen -T ismap -i msg_types.msc -o msg_types.ismap"
+// to create the ismap.
+//
+//
+
+
+msc {
+ arcgradient = 8;
+
+ a [label="Client"],b [label="Server"];
+
+ a=>b [label="data1"];
+ a-xb [label="data2"];
+ a=>b [label="data3"];
+ a<=b [label="ack1, nack2"];
+ a=>b [label="data2", arcskip="1"];
+ |||;
+ a<=b [label="ack3"];
+ |||;
+}
+
+

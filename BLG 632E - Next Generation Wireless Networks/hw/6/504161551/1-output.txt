@@ -1,0 +1,63 @@
+vagrant@coursera-sdn:/vagrant/hw6$ sudo python s1h3topo.py 
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 h3 
+*** Adding switches:
+s1 
+*** Adding links:
+(1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h1, s1) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h2, s1) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h3, s1) 
+*** Configuring hosts
+h1 h2 h3 
+*** Starting controller
+*** Starting 1 switches
+s1 (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) 
+Dumping host connections
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+h3 h3-eth0:s1-eth3
+*** Starting CLI:
+mininet> dump
+<CPULimitedHost h1: h1-eth0:10.0.0.1 pid=5936> 
+<CPULimitedHost h2: h2-eth0:10.0.0.2 pid=5943> 
+<CPULimitedHost h3: h3-eth0:10.0.0.3 pid=5946> 
+<OVSSwitch s1: lo:127.0.0.1,s1-eth1:None,s1-eth2:None,s1-eth3:None pid=5951> 
+<Controller c0: 127.0.0.1:6633 pid=5928> 
+mininet> net
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+h3 h3-eth0:s1-eth3
+s1 lo:  s1-eth1:h1-eth0 s1-eth2:h2-eth0 s1-eth3:h3-eth0
+c0
+mininet> nodes
+available nodes are: 
+c0 h1 h2 h3 s1
+mininet> sh ovs-ofctl dump-flows s1
+NXST_FLOW reply (xid=0x4):
+mininet> 
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 h3 
+h2 -> h1 h3 
+h3 -> h1 h2 
+*** Results: 0% dropped (6/6 received)
+mininet> 
+mininet> 
+mininet> sh ovs-ofctl dump-flows s1
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=2.637s, table=0, n_packets=1, n_bytes=42, idle_timeout=60, idle_age=2, priority=65535,arp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:01,arp_spa=10.0.0.2,arp_tpa=10.0.0.1,arp_op=2 actions=output:1
+ cookie=0x0, duration=2.414s, table=0, n_packets=1, n_bytes=42, idle_timeout=60, idle_age=2, priority=65535,arp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02,arp_spa=10.0.0.3,arp_tpa=10.0.0.2,arp_op=2 actions=output:2
+ cookie=0x0, duration=2.546s, table=0, n_packets=1, n_bytes=42, idle_timeout=60, idle_age=2, priority=65535,arp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:01,arp_spa=10.0.0.3,arp_tpa=10.0.0.1,arp_op=2 actions=output:1
+ cookie=0x0, duration=2.325s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.1,nw_dst=10.0.0.3,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:3
+ cookie=0x0, duration=2.346s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.3,nw_dst=10.0.0.1,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:1
+ cookie=0x0, duration=2.525s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.1,nw_dst=10.0.0.3,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:3
+ cookie=0x0, duration=2.480s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.2,nw_dst=10.0.0.1,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:1
+ cookie=0x0, duration=2.392s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.2,nw_dst=10.0.0.3,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:3
+ cookie=0x0, duration=2.301s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.3,nw_dst=10.0.0.2,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:2
+ cookie=0x0, duration=2.594s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.2,nw_dst=10.0.0.1,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:1
+ cookie=0x0, duration=2.459s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.1,nw_dst=10.0.0.2,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:2
+ cookie=0x0, duration=2.371s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.3,nw_dst=10.0.0.2,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:2
+ cookie=0x0, duration=2.280s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.2,nw_dst=10.0.0.3,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:3
+ cookie=0x0, duration=2.615s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.1,nw_dst=10.0.0.2,nw_tos=0,icmp_type=8,icmp_code=0 actions=output:2
+ cookie=0x0, duration=2.504s, table=0, n_packets=1, n_bytes=98, idle_timeout=60, idle_age=2, priority=65535,icmp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.3,nw_dst=10.0.0.1,nw_tos=0,icmp_type=0,icmp_code=0 actions=output:1
+mininet> 

@@ -1,0 +1,90 @@
+#!/cygdrive/c/mscgen_0.20/packaging/win32/buildstage/w32/../../binstage/w32/mscgen-0.20/bin/mscgen -Tpng
+#
+# msg_types.msc: Sample msc input file with URLs
+#
+# This file is PUBLIC DOMAIN and may be freely reproduced,  distributed,
+# transmitted, used, modified, built upon, or otherwise exploited by
+# anyone for any purpose, commercial or non-commercial, and in any way,
+# including by methods that have not yet been invented or conceived.
+#
+# This file is provided "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+# EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+#
+
+
+// This sample uses all the different ways of making "arrows" between lines -
+// be it a signal, method, call-back etc... - and also uses links (via "ismap"s).
+//
+// Run "mscgen -T png -i msg_types.msc -o msg_types.png"
+// to transform it into a png and use
+// "mscgen -T ismap -i msg_types.msc -o msg_types.ismap"
+// to create the ismap.
+//
+//
+
+msc {
+
+A,B;
+
+--- [label="Start", ID="1"];
+
+A->B [label="signal"];
+A<-B [label="signal"];
+
+
+A=>B [label="method"];
+A<=B [label="method"];
+
+A>>B [label="return"];
+A<<B [label="return"];
+
+A -X B [label="loss"];
+A X- B [label="loss"];
+
+
+A=>>B [label="call-back"];
+A<<=B [label="call-back", URL="www.google.com"];
+
+--- [label="Left arcs", ID="2", IDURL="www.google.co.uk"];
+
+A->A [label="signal"];
+A<-A [label="signal"];
+
+
+A=>A [label="method"];
+A<=A [label="method"];
+
+A>>A [label="return"];
+A<<A [label="return"];
+
+A=>>A [label="call-back"];
+A<<=A [label="call-back", URL="www.google.com", ID="3"];
+
+A -X A [label="loss"];
+A X- A [label="loss"];
+
+--- [label="Right arcs"];
+
+B->B [label="signal"];
+B<-B [label="signal"];
+
+
+B=>B [label="method"];
+B<=B [label="method"];
+
+B>>B [label="return"];
+B<<B [label="return"];
+
+B=>>B [label="call-back", ID="4"];
+B<<=B [label="call-back", URL="www.google.com"];
+
+B -X B [label="loss"];
+B X- B [label="loss"];
+
+
+--- [label="End of arcs", URL="www.google.com"];
+
+
+... [label="Some time passes", URL="www.google.com"];
+}

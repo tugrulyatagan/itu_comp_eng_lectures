@@ -1,0 +1,72 @@
+console-1
+---------------
+vagrant@coursera-sdn:~/pox$ 
+vagrant@coursera-sdn:~/pox$ ./pox.py log.level --DEBUG misc.s1h3controllerNormal
+POX 0.2.0 (carp) / Copyright 2011-2013 James McCauley, et al.
+INFO:misc.s1h3controllerNormal:Normal switch running.
+DEBUG:core:POX 0.2.0 (carp) going up...
+DEBUG:core:Running on CPython (2.7.6/Mar 22 2014 22:59:56)
+DEBUG:core:Platform is Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+INFO:core:POX 0.2.0 (carp) is up.
+DEBUG:openflow.of_01:Listening on 0.0.0.0:6633
+INFO:openflow.of_01:[None 1] closed
+INFO:openflow.of_01:[00-00-00-00-00-01 2] connected
+INFO:misc.s1h3controllerNormal:Normal switching 00-00-00-00-00-01
+
+
+
+console-2
+---------------
+vagrant@coursera-sdn:/vagrant/hw6$ sudo python s1h3topoRemote.py
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 h3 
+*** Adding switches:
+s1 
+*** Adding links:
+(1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h1, s1) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h2, s1) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (h3, s1) 
+*** Configuring hosts
+h1 h2 h3 
+*** Starting controller
+*** Starting 1 switches
+s1 (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) (1.00Mbit 10ms delay 0% loss) 
+Dumping host connections
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+h3 h3-eth0:s1-eth3
+*** Starting CLI:
+mininet> 
+mininet> dump
+<CPULimitedHost h1: h1-eth0:10.0.0.1 pid=6983> 
+<CPULimitedHost h2: h2-eth0:10.0.0.2 pid=6990> 
+<CPULimitedHost h3: h3-eth0:10.0.0.3 pid=6993> 
+<OVSSwitch s1: lo:127.0.0.1,s1-eth1:None,s1-eth2:None,s1-eth3:None pid=6998> 
+<RemoteController c0: 127.0.0.1:6633 pid=6976> 
+mininet> 
+mininet> net
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+h3 h3-eth0:s1-eth3
+s1 lo:  s1-eth1:h1-eth0 s1-eth2:h2-eth0 s1-eth3:h3-eth0
+c0
+mininet> 
+mininet> nodes
+available nodes are: 
+c0 h1 h2 h3 s1
+mininet> 
+mininet> sh ovs-ofctl dump-flows s1
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=68.354s, table=0, n_packets=20, n_bytes=1584, idle_age=58, actions=NORMAL
+mininet> 
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 h3 
+h2 -> h1 h3 
+h3 -> h1 h2 
+*** Results: 0% dropped (6/6 received)
+mininet> 
+mininet> 
+mininet> sh ovs-ofctl dump-flows s1
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=74.943s, table=0, n_packets=38, n_bytes=3012, idle_age=1, actions=NORMAL

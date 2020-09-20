@@ -1,0 +1,43 @@
+#!/cygdrive/c/mscgen_0.20/packaging/win32/buildstage/w32/../../binstage/w32/mscgen-0.20/bin/mscgen -Tpng
+#
+# simple_prog_desc.msc: Sample msc input file
+#
+# This file is PUBLIC DOMAIN and may be freely reproduced,  distributed,
+# transmitted, used, modified, built upon, or otherwise exploited by
+# anyone for any purpose, commercial or non-commercial, and in any way,
+# including by methods that have not yet been invented or conceived.
+#
+# This file is provided "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+# EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+#
+
+
+// This is a short msc description that represents a fictive program
+// and gives a quick overview of the "program flow".
+//
+// Run "mscgen -T png -i simple_prog_desc.msc -o simple_prog_desc.png"
+// to transform it into a png.
+//
+// This sample is also displayed at: http://www.mcternan.me.uk/mscgen/
+//
+
+msc {
+  a, "b", c ;
+
+  a->b [ label = "ab()" ] ;
+  b->c [ label = "bc(TRUE)"];
+  c->c [ label = "process(1)" ];
+  c->c [ label = "process(2)" ];
+  ...;
+  c->c [ label = "process(n)" ];
+  c->c [ label = "process(END)" ];
+  a<-c [ label = "callback()"];
+  ---  [ label = "If more to run", ID="*" ];
+  a->a [ label = "next()"];
+  a->c [ label = "ac()"];
+  b<-c [ label = "cb(TRUE)"];
+  b->b [ label = "stalled(...)"];
+  a<-b [ label = "ab() = FALSE"];
+}
+

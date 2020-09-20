@@ -1,0 +1,4 @@
+Homework #2, question #2 disable Skype analysis
+Gönderen	Mesaj
+Ýrfan Ali 
+28 Þubat 2017 15:21	Speaking with Benyamin, to better look at the packet traces go to Wireshark->Analyze->Enabled protocols and disable Skype and skype_udp.

@@ -1,0 +1,56 @@
+#!/cygdrive/c/mscgen_0.20/packaging/win32/buildstage/w32/../../binstage/w32/mscgen-0.20/bin/mscgen -Tpng
+#
+# boxes_example.msc: Example MSC using boxes
+#
+# This file is PUBLIC DOMAIN and may be freely reproduced,  distributed,
+# transmitted, used, modified, built upon, or otherwise exploited by
+# anyone for any purpose, commercial or non-commercial, and in any way,
+# including by methods that have not yet been invented or conceived.
+#
+# This file is provided "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+# EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+#
+
+
+//
+// This example shows how to make and use different kind of "boxes".
+//
+//
+// Run "mscgen -T png -i boxes_example.msc -o boxes_example.png"
+// to transform it into a png.
+//
+// A very similar sample is displayed at: http://www.mcternan.me.uk/mscgen/
+//
+
+msc {
+
+   # The entities
+   A, B, C;
+
+   # The relations
+   |||;
+
+   // The following three boxes will be aligned due to the use
+   // of "comma" to separate them (instead of semi-colon).
+
+   A box A [label="box"],   // Box (with "square corners") placed upon line "A"
+   B rbox B [label="rbox"], // Box (with "round corners") upon the line "B"
+   C abox C [label="abox"], // Box (with "<>-sides") upon the line "C"
+   |||; // This adds some space between the boxes here and the boxes below.
+        //  - similar to an empty line in a text document.
+
+
+   A abox B [label="abox"]; // Box spanning from A to B (covering both).
+   |||;
+   B rbox C [label="rbox"];
+   |||;
+   A box A [label="box"],
+   B rbox B [label="rbox"],
+   C abox C [label="abox"],
+   ---;
+   ---;
+
+}
+
+

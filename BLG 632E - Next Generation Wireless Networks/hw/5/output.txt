@@ -1,0 +1,46 @@
+vagrant@coursera-sdn:/vagrant/hw5$ sudo ./CustomTopo.py
+a. Setting link parameters
+b. Creating Custom Topology
+c. Firing up Mininet
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+*** Adding switches:
+access_ty1 access_ty2 core_ty1 edge_ty1 edge_ty2 edge_ty3 edge_ty4 
+*** Adding links:
+(50.00Mbit 5ms delay) (50.00Mbit 5ms delay) (access_ty1, core_ty1) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) (access_ty1, edge_ty1) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) (access_ty1, edge_ty2) (50.00Mbit 5ms delay) (50.00Mbit 5ms delay) (access_ty2, core_ty1) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) (access_ty2, edge_ty3) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) (access_ty2, edge_ty4) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty1, host_ty1) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty1, host_ty2) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty2, host_ty3) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty2, host_ty4) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty3, host_ty5) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty3, host_ty6) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty4, host_ty7) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) (edge_ty4, host_ty8) 
+*** Configuring hosts
+host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+*** Starting controller
+*** Starting 7 switches
+access_ty1 (50.00Mbit 5ms delay) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) access_ty2 (50.00Mbit 5ms delay) (30.00Mbit 10ms delay) (30.00Mbit 10ms delay) core_ty1 (50.00Mbit 5ms delay) (50.00Mbit 5ms delay) edge_ty1 (30.00Mbit 10ms delay) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) edge_ty2 (30.00Mbit 10ms delay) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) edge_ty3 (30.00Mbit 10ms delay) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) edge_ty4 (30.00Mbit 10ms delay) (10.00Mbit 15ms delay) (10.00Mbit 15ms delay) 
+Dumping host connections
+host_ty1 host_ty1-eth0:edge_ty1-eth2
+host_ty2 host_ty2-eth0:edge_ty1-eth3
+host_ty3 host_ty3-eth0:edge_ty2-eth2
+host_ty4 host_ty4-eth0:edge_ty2-eth3
+host_ty5 host_ty5-eth0:edge_ty3-eth2
+host_ty6 host_ty6-eth0:edge_ty3-eth3
+host_ty7 host_ty7-eth0:edge_ty4-eth2
+host_ty8 host_ty8-eth0:edge_ty4-eth3
+d. Starting Test
+*** Ping: testing ping reachability
+host_ty1 -> host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+host_ty2 -> host_ty1 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+host_ty3 -> host_ty1 host_ty2 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+host_ty4 -> host_ty1 host_ty2 host_ty3 host_ty5 host_ty6 host_ty7 host_ty8 
+host_ty5 -> host_ty1 host_ty2 host_ty3 host_ty4 host_ty6 host_ty7 host_ty8 
+host_ty6 -> host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty7 host_ty8 
+host_ty7 -> host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty8 
+host_ty8 -> host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 
+*** Results: 0% dropped (56/56 received)
+e. Stopping Mininet
+*** Stopping 7 switches
+access_ty1 ...access_ty2 ...core_ty1 ..edge_ty1 ...edge_ty2 ...edge_ty3 ...edge_ty4 ...
+*** Stopping 8 hosts
+host_ty1 host_ty2 host_ty3 host_ty4 host_ty5 host_ty6 host_ty7 host_ty8 
+*** Stopping 1 controllers
+c0 
+*** Done
+vagrant@coursera-sdn:/vagrant/hw5$
