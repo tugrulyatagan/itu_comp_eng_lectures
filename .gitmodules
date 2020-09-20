@@ -10,3 +10,11 @@
 	path = BLG 500 - Staj/Yenihayat/harita
 	url = https://github.com/tugrulyatagan/harita
 	branch = master
+[submodule "BLG YLT - Tez Çalışması/thesis"]
+	path = BLG YLT - Tez Çalışması/thesis
+	url = https://github.com/tugrulyatagan/thesis
+	branch = master
+[submodule "BLG YLT - Tez Çalışması/paper"]
+	path = BLG YLT - Tez Çalışması/paper
+	url = https://github.com/tugrulyatagan/paper
+	branch = master
