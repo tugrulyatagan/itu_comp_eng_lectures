@@ -1,0 +1,17 @@
+N=512;
+fo=100;
+f1=3*fo;
+fs=1500;
+dt=1/fs;
+t=0:dt:(N-1)/fs;
+y=sin(2*pi*fo*t)+ 0.8*cos(2*pi*f1*t)+0.1*randn(1,N);
+p=fft(y);
+f=(0:(N/2)-1)*fs/512;
+figure(1)
+plot(f,abs(p(1:256)))
+xlabel('Freq')
+ylabel('Magn')
+figure(2)
+plot(f,angle(p(1:256)))
+xlabel('Freq')
+ylabel('Phase')
