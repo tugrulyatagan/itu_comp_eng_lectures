@@ -1,0 +1,5 @@
+s Toby Trent 333-33-3333 350
+s Lauren Lewis 123-12-3123 420
+c Silvia Carson 222-33-4444 0.1 3200
+p Vivian Bartel 777-88-5555 15 29
+i Abby Bradford Istanbul Technical University
